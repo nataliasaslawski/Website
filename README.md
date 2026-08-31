@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Natalia Saslawski — Website
 
-## Getting Started
+Next.js 15 (App Router) + TypeScript + Tailwind CSS v4, built against the
+`Master_Website_Briefing_Claude_Code._31.08.2026.docx` and the client's design
+system package (`Natalia Saslawski Design System.zip`).
 
-First, run the development server:
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. If newly added Tailwind classes don't seem to
+apply in dev mode (a known Tailwind v4 / Next dev-server JIT quirk), stop and
+restart `npm run dev` — `npm run build` always regenerates CSS correctly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/` — one folder per route (App Router). Metadata (title/description)
+  is set per page.
+- `src/components/ui/` — generic building blocks (Button, Container, Eyebrow, Faq).
+- `src/components/layout/` — header/footer.
+- `src/components/home/`, `src/components/contact/` — page-specific sections.
+- `src/lib/content.ts` — site-wide constants (nav, CTAs, **placeholder**
+  domain/email — see TODO below).
+- `src/lib/images.ts` — central image registry. **To swap a placeholder photo
+  for a real one: replace the file in `public/images/...` (or add a new file)
+  and update the path in this one file** — no page/component code changes needed.
+- `src/lib/posts.ts` — blog/insights data layer, currently returns no posts.
+  Swap `getPosts`/`getPost` for real Sanity queries once that project exists;
+  the UI in `src/app/insights/` doesn't need to change.
 
-## Learn More
+## Design system
 
-To learn more about Next.js, take a look at the following resources:
+Colors, type scale, spacing and effects are wired up as CSS variables /
+Tailwind theme tokens in `src/app/globals.css`, taken directly from the
+client-supplied design system. Fonts (Cormorant Garamond, Work Sans, Lato)
+are self-hosted via `next/font/google` (downloaded at build time, served from
+this site's own origin — no runtime calls to Google).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Known placeholders — must be resolved before launch
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Photography**: all photos are temporary stand-ins from the client's
+  moodboard (`public/images/moodboard/`), approved for interim use. Swap via
+  `src/lib/images.ts` once professional photos exist.
+- **Logo**: `public/brand/logo-light*.png` were derived programmatically from
+  the supplied `logo-navy.png` (color-remapped for dark backgrounds, shape
+  unchanged) — replace with an official file if/when the client provides one.
+- **Domain & email**: `src/lib/content.ts` uses obvious placeholder values
+  (`ihre-domain-platzhalter.de`) — no real domain or email address was ever
+  supplied. Update before launch.
+- **Phone number**: none was supplied; the Kontakt page currently omits one
+  ("Telefonnummer folgt in Kürze").
+- **Impressum / Datenschutz**: structurally complete but explicitly marked as
+  placeholders in the UI — need real legal content, ideally reviewed by the
+  client's legal/data-protection advisor before going live.
+- **Contact form**: `/api/contact` validates and honeypot-checks submissions
+  but doesn't send email yet — needs `RESEND_API_KEY` (or an equivalent
+  provider) once that account exists. Until then it degrades gracefully to a
+  "please email me directly" message.
+- **Booking (Cal.com)**: not yet embedded — the Kontakt page's Erstgespräch
+  section currently points to the contact form instead.
+- **CMS (Sanity)**: not yet connected — Insights page shows a clean empty
+  state. See `src/lib/posts.ts`.
+- **Analytics (Plausible)**: not yet added.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+None of the above required creating third-party accounts, which isn't
+something to do on the client's behalf — she'll need to set those up (Resend,
+Cal.com, Sanity, Plausible, a domain registrar, and a Vercel project for
+hosting), after which each integration is a scoped, mechanical follow-up.

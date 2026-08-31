@@ -47,7 +47,7 @@ export default function UeberMichPage() {
           </div>
           <div className="lg:order-1">
             <Eyebrow>Über mich</Eyebrow>
-            <h1 className="mt-4 font-display text-3xl font-medium leading-tight text-navy-900 md:text-4xl">
+            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-4xl">
               Natalia Saslawski
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">

@@ -143,6 +143,13 @@ body {
   line-height: 1.55;
 }
 
+/* Grid items default to min-width:auto, which stops long headlines from
+   wrapping and causes horizontal overflow on narrow screens. This site uses
+   CSS grid for every two-column section, so fix it once, globally. */
+.grid > * {
+  min-width: 0;
+}
+
 ::selection {
   background: var(--navy-900);
   color: var(--paper-050);

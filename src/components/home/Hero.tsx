@@ -10,7 +10,7 @@ export function Hero() {
       <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
         <div className="max-w-xl">
           <Eyebrow>Executive Search &amp; Talent Advisory</Eyebrow>
-          <h1 className="mt-5 font-display text-3xl font-medium leading-tight text-navy-900 md:text-4xl">
+          <h1 className="mt-5 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-4xl">
             Executive Search &amp; Talent Advisory für anspruchsvolle
             Schlüsselpositionen
           </h1>

@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/*
+  Design tokens sourced from the client-supplied design system package
+  ("Natalia Saslawski Design System.zip" / tokens/*.css, _ds_manifest.json).
+  Do not invent new brand colors — extend only with derived shades.
+*/
+:root {
+  /* Color primitives */
+  --navy-900: #0d1b2a;
+  --navy-800: oklch(from #0d1b2a calc(l + 0.08) c h);
+  --navy-700: oklch(from #0d1b2a calc(l + 0.16) c h);
+  --cream-100: #e7dfd2;
+  --cream-050: oklch(from #e7dfd2 calc(l + 0.03) c h);
+  --taupe-400: #aca79a;
+  --taupe-500: oklch(from #aca79a calc(l - 0.08) c h);
+  --taupe-600: #8b8173;
+  --taupe-700: oklch(from #8b8173 calc(l - 0.12) c h);
+  --paper-050: #f6f4f1;
+  --white: #ffffff;
+
+  /* Semantic surfaces */
+  --surface-page: var(--paper-050);
+  --surface-card: var(--white);
+  --surface-elevated: var(--cream-100);
+  --surface-inverse: var(--navy-900);
+  --surface-muted: var(--cream-050);
+
+  /* Semantic text */
+  --text-primary: var(--navy-900);
+  --text-secondary: var(--taupe-700);
+  --text-muted: var(--taupe-600);
+  --text-inverse: var(--paper-050);
+  --text-inverse-muted: oklch(from var(--paper-050) calc(l - 0.18) c h);
+
+  /* Borders / overlays / accents */
+  --border-subtle: oklch(from var(--taupe-400) l c h / 0.35);
+  --border-default: oklch(from var(--taupe-400) l c h / 0.6);
+  --border-strong: var(--navy-900);
+  --accent: var(--taupe-600);
+  --accent-strong: var(--navy-900);
+  --focus-ring: oklch(from var(--navy-900) l c h / 0.4);
+  --overlay-scrim: oklch(from var(--navy-900) l c h / 0.55);
+
+  /* Layout */
+  --container-max: 1180px;
+  --container-narrow: 760px;
+}
+
+@theme inline {
+  /* Fonts (wired up via next/font in layout.tsx) */
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-work-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-wordmark: var(--font-lato), -apple-system, "Segoe UI", sans-serif;
+
+  /* Color utilities: bg-navy-900, text-taupe-600, border-cream-100, etc. */
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-cream-100: var(--cream-100);
+  --color-cream-050: var(--cream-050);
+  --color-taupe-400: var(--taupe-400);
+  --color-taupe-500: var(--taupe-500);
+  --color-taupe-600: var(--taupe-600);
+  --color-taupe-700: var(--taupe-700);
+  --color-paper-050: var(--paper-050);
+  --color-white: var(--white);
+
+  --color-surface-page: var(--surface-page);
+  --color-surface-card: var(--surface-card);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-inverse: var(--surface-inverse);
+  --color-surface-muted: var(--surface-muted);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-inverse: var(--text-inverse);
+  --color-text-inverse-muted: var(--text-inverse-muted);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-focus-ring: var(--focus-ring);
+  --color-overlay-scrim: var(--overlay-scrim);
+
+  /* Type scale: overrides Tailwind's default text-* sizes with the brand scale */
+  --text-eyebrow: 12px;
+  --text-eyebrow--line-height: 1.6;
+  --text-xs: 13px;
+  --text-xs--line-height: 1.55;
+  --text-sm: 15px;
+  --text-sm--line-height: 1.55;
+  --text-base: 17px;
+  --text-base--line-height: 1.55;
+  --text-md: 20px;
+  --text-md--line-height: 1.4;
+  --text-lg: 26px;
+  --text-lg--line-height: 1.25;
+  --text-xl: 34px;
+  --text-xl--line-height: 1.15;
+  --text-2xl: 46px;
+  --text-2xl--line-height: 1.08;
+  --text-3xl: 64px;
+  --text-3xl--line-height: 1.08;
+  --text-4xl: 88px;
+  --text-4xl--line-height: 1.02;
+
+  --tracking-normal: 0em;
+  --tracking-wide: 0.14em;
+  --tracking-wider: 0.22em;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Radius: sharp, near-square corners per brand guide */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px oklch(from var(--navy-900) l c h / 0.06);
+  --shadow-md: 0 4px 16px oklch(from var(--navy-900) l c h / 0.08);
+  --shadow-lg: 0 16px 40px oklch(from var(--navy-900) l c h / 0.12);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 140ms;
+  --duration-normal: 220ms;
+  --duration-slow: 360ms;
+}
+
+body {
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.55;
+}
+
+::selection {
+  background: var(--navy-900);
+  color: var(--paper-050);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

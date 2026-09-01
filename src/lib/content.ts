@@ -15,7 +15,26 @@ export const site = {
   email: "kontakt@ihre-domain-platzhalter.de",
 } as const;
 
+// Header nav: "Für Unternehmen" and "Für Personalberatungen" are grouped
+// under one "Leistungen" dropdown entry per client request (2026-09-01) —
+// the two pages themselves still exist and are linked individually elsewhere
+// (homepage service cards, footer).
 export const nav = [
+  { href: "/", label: "Home" },
+  { href: "/ueber-mich", label: "Über mich" },
+  {
+    label: "Leistungen",
+    children: [
+      { href: "/fuer-unternehmen", label: "Für Unternehmen" },
+      { href: "/fuer-personalberatungen", label: "Für Personalberatungen" },
+    ],
+  },
+  { href: "/insights", label: "Insights" },
+  { href: "/kontakt", label: "Kontakt" },
+] as const;
+
+// Flat version for the footer, which lists every page individually.
+export const footerNav = [
   { href: "/", label: "Home" },
   { href: "/ueber-mich", label: "Über mich" },
   { href: "/fuer-unternehmen", label: "Für Unternehmen" },

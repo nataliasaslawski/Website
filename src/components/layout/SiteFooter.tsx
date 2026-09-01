@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { nav, site } from "@/lib/content";
+import { footerNav, site } from "@/lib/content";
 import { brand } from "@/lib/images";
 
 const legal = [
@@ -39,7 +39,7 @@ export function SiteFooter() {
               Navigation
             </span>
             <ul className="mt-4 space-y-3">
-              {nav.map((item) => (
+              {footerNav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

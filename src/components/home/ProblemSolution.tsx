@@ -2,12 +2,12 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const problems = [
-  "komplexe oder sehr enge Anforderungsprofile",
-  "schwer erreichbare Kandidatenmärkte",
-  "fehlende Transparenz darüber, wo relevante Kandidat:innen zu finden sind",
-  "Suchstrategien, die zu eng oder nicht marktgerecht aufgesetzt sind",
-  "geringe Resonanz auf klassische Recruiting-Kanäle",
-  "interne Kapazitätsengpässe",
+  "komplexe oder sehr spezifische Anforderungsprofile die Suche stark eingrenzen",
+  "relevante Kandidat:innen schwer erreichbar sind",
+  "der Zielmarkt wenig transparent ist",
+  "Suchstrategien zu eng oder nicht marktgerecht angelegt sind",
+  "klassische Recruiting-Kanäle kaum Resonanz erzeugen",
+  "interne Ressourcen für eine intensive Suche fehlen",
 ];
 
 const solutionPoints = [
@@ -26,12 +26,11 @@ export function ProblemSolution() {
         <div>
           <Eyebrow>Die Ausgangslage</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Anspruchsvolle Positionen lassen sich häufig nicht mit
-            Standard-Recruiting lösen.
+            Anspruchsvolle Positionen brauchen mehr als
+            Standard-Recruiting.
           </h2>
           <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-            Besonders bei Fach-, Führungs- und Schlüsselpositionen entstehen
-            Herausforderungen durch:
+            Besetzungen werden besonders dann anspruchsvoll, wenn …
           </p>
           <ul className="mt-6 space-y-3">
             {problems.map((item) => (

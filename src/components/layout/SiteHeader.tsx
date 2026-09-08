@@ -27,18 +27,15 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border-subtle bg-surface-page/95 backdrop-blur">
       <div className="mx-auto flex h-20 w-full max-w-[var(--container-max)] items-center justify-between px-6 md:px-10">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link href="/" onClick={() => setOpen(false)}>
           <Image
-            src={brand.markNavy}
-            alt="Natalia Saslawski"
-            width={572}
+            src={brand.logoNavy}
+            alt="Natalia Saslawski – Executive Search & Talent Advisory"
+            width={1600}
             height={526}
-            className="h-7 w-auto"
+            className="h-14 w-auto"
             priority
           />
-          <span className="font-wordmark text-[15px] font-semibold tracking-[0.06em] text-navy-900">
-            NATALIA SASLAWSKI
-          </span>
         </Link>
 
         <div className="flex items-center gap-8">

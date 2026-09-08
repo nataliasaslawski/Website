@@ -15,14 +15,14 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <Image
-              src={brand.markLight}
-              alt="Natalia Saslawski"
-              width={570}
+              src={brand.logoLight}
+              alt="Natalia Saslawski – Executive Search & Talent Advisory"
+              width={1600}
               height={526}
-              className="h-8 w-auto"
+              className="h-16 w-auto"
             />
             <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-text-inverse-muted">
-              {site.tagline} — {site.locationShort}, {site.region}.
+              {site.locationShort}, {site.region}.
             </p>
             <a
               href="https://www.linkedin.com"

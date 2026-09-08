@@ -19,14 +19,12 @@ export function Hero() {
 
       <Container narrow className="relative z-10 py-24 text-center">
         <h1 className="font-display text-3xl font-medium leading-tight text-text-inverse md:text-4xl lg:text-[3rem]">
-          Erfolgreiche Besetzung ist kein Zufall. Durch Erfahrung,
-          Marktkenntnis und Menschengespür zur Entscheidungssicherheit.
+          Was morgen zählt, beginnt heute. Mit den richtigen Menschen.
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-[17px] leading-relaxed text-text-inverse-muted">
-          Strategische und persönliche Begleitung bei anspruchsvollen
-          Besetzungen – von der Rollenklärung und Suchstrategie über
-          Marktanalyse, Research und Direktansprache bis zur fundierten
-          Kandidatenauswahl.
+          Durch Erfahrung, Marktkenntnis und Menschengespür zur
+          Entscheidungssicherheit. Strategische und persönliche Begleitung
+          bei anspruchsvollen Besetzungen.
         </p>
       </Container>
     </section>

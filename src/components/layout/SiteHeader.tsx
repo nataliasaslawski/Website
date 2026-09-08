@@ -31,8 +31,8 @@ export function SiteHeader() {
           <Image
             src={brand.markNavy}
             alt="Natalia Saslawski"
-            width={36}
-            height={26}
+            width={572}
+            height={526}
             className="h-7 w-auto"
             priority
           />

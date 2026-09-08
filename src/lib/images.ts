@@ -37,8 +37,8 @@ export const images = {
 } as const;
 
 export const brand = {
-  logoNavy: "/brand/logo-navy.png",
-  logoLight: "/brand/logo-light.png",
-  markNavy: "/brand/logo-navy-mark.png",
-  markLight: "/brand/logo-light-mark.png",
+  logoNavy: "/brand/logo-navy-full.png",
+  logoLight: "/brand/logo-light-full.png",
+  markNavy: "/brand/logo-navy-mark2.png",
+  markLight: "/brand/logo-light-mark2.png",
 } as const;

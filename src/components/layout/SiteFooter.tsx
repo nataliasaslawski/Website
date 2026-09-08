@@ -17,8 +17,8 @@ export function SiteFooter() {
             <Image
               src={brand.markLight}
               alt="Natalia Saslawski"
-              width={40}
-              height={29}
+              width={570}
+              height={526}
               className="h-8 w-auto"
             />
             <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-text-inverse-muted">

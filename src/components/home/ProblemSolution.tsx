@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const problems = [
-  "komplexe oder sehr spezifische Anforderungsprofile die Suche stark eingrenzen",
+  "komplexe oder sehr spezifische Anforderungen die Suche stark eingrenzen",
   "relevante Kandidat:innen schwer erreichbar sind",
   "der Zielmarkt wenig transparent ist",
   "Suchstrategien zu eng oder nicht marktgerecht angelegt sind",
@@ -29,7 +29,7 @@ export function ProblemSolution() {
             Anspruchsvolle Positionen brauchen mehr als
             Standard-Recruiting.
           </h2>
-          <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+          <p className="mt-5 text-md font-medium leading-relaxed text-navy-900">
             Besetzungen werden besonders dann anspruchsvoll, wenn …
           </p>
           <ul className="mt-6 space-y-3">

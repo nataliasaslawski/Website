@@ -47,14 +47,15 @@ export function ProblemSolution() {
         <div>
           <Eyebrow>Der Ansatz</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Strategische Talent Advisory verbunden mit operativer
+            Strategische Beratung, verbunden mit operativer
             Search-Kompetenz.
           </h2>
           <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-            Die Zusammenarbeit beginnt nicht erst bei der Kandidatensuche.
-            Zunächst werden Rolle, Anforderungen, Suchparameter und relevante
-            Kandidatenmärkte verstanden und hinterfragt. Darauf aufbauend wird
-            eine fundierte Suchstrategie entwickelt und operativ umgesetzt.
+            Die Zusammenarbeit beginnt nicht erst bei der Profilsuche.
+            Zunächst werden Rolle, Unternehmenskontext, Anforderungen,
+            Suchparameter und relevante Zielmärkte verstanden und
+            hinterfragt. Darauf aufbauend wird eine fundierte Suchstrategie
+            entwickelt und operativ umgesetzt.
           </p>
           <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3">
             {solutionPoints.map((item) => (

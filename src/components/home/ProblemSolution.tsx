@@ -30,7 +30,7 @@ export function ProblemSolution() {
             Standard-Recruiting.
           </h2>
           <p className="mt-5 text-md font-medium leading-relaxed text-navy-900">
-            Besetzungen werden besonders dann anspruchsvoll, wenn …
+            Was anspruchsvolle Besetzungen erschwert
           </p>
           <ul className="mt-6 space-y-3">
             {problems.map((item) => (

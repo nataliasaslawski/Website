@@ -14,7 +14,7 @@ const solutionPoints = [
   "Marktverständnis",
   "strukturierte Suchmethodik",
   "Research und Sourcing",
-  "persönliche Ansprache und überzeugende Kandidat:innengewinnung",
+  "Gewinnung relevanter Kandidat:innen",
   "fundierte Kandidatenbewertung",
   "Beratung auf Augenhöhe",
 ];

@@ -42,6 +42,11 @@ export function ProblemSolution() {
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-[15px] leading-relaxed text-text-secondary">
+            Gerade in diesen Situationen braucht es mehr als Reichweite –
+            entscheidend sind Marktverständnis, eine klare Suchstrategie und
+            der Zugang zu relevanten Profilen.
+          </p>
         </div>
 
         <div>
@@ -72,9 +77,8 @@ export function ProblemSolution() {
           </ul>
           <p className="mt-6 text-[15px] leading-relaxed text-text-secondary">
             Ziel ist nicht, möglichst viele Profile zu präsentieren, sondern
-            die Kandidat:innen zu identifizieren, die für die jeweilige
-            Aufgabe tatsächlich relevant sind und sowohl fachlich als auch
-            persönlich zur Rolle und zum Unternehmen passen.
+            Kandidat:innen zu identifizieren, die fachlich wie persönlich zur
+            Rolle und zum Unternehmen passen.
           </p>
         </div>
       </Container>

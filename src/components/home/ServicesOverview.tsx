@@ -11,7 +11,7 @@ const services = [
     points: [
       "Rollen- und Anforderungsanalyse",
       "Suchstrategie, Markt- und Zielfirmenanalyse",
-      "Research, Sourcing und Direktansprache",
+      "Research, Sourcing und Kandidat:innengewinnung",
       "Kandidatenqualifizierung und Begleitung des Auswahlprozesses",
     ],
     href: "/fuer-unternehmen",
@@ -19,9 +19,9 @@ const services = [
   },
   {
     label: "Für Personalberatungen",
-    title: "Seniorige Search-Projektunterstützung",
+    title: "Professionelle Search-Unterstützung für anspruchsvolle Mandate",
     description:
-      "Flexible externe Unterstützung für Personalberatungen und Executive-Search-Boutiquen bei anspruchsvollen oder kapazitätsintensiven Mandaten.",
+      "Flexible externe Unterstützung für Personalberatungen und Executive-Search-Boutiquen bei anspruchsvollen Mandaten oder temporären Kapazitätsengpässen.",
     points: [
       "Suchstrategie, Markt- und Zielfirmenanalyse",
       "Research, Sourcing und Direktansprache",
@@ -33,9 +33,9 @@ const services = [
   },
   {
     label: "Talent Advisory",
-    title: "Strategische Beratung rund um Search & Recruiting",
+    title: "Strategische Beratung für Talentgewinnung",
     description:
-      "Beratung zu Anforderungsprofilen, Kandidatenmärkten und Suchstrategien – eigenständig oder in Verbindung mit einem Search-Projekt.",
+      "Beratung zu Anforderungsprofilen, Zielmärkten und Suchstrategien – eigenständig oder in Verbindung mit einem Search-Projekt.",
     points: [
       "Anforderungsprofile schärfen",
       "Kandidatenmärkte und alternative Zielmärkte analysieren",

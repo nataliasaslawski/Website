@@ -19,9 +19,9 @@ const services = [
   },
   {
     label: "Für Personalberatungen",
-    title: "Professionelle Search-Unterstützung für anspruchsvolle Mandate",
+    title: "Professionelle Unterstützung",
     description:
-      "Flexible externe Unterstützung für Personalberatungen und Executive-Search-Boutiquen bei anspruchsvollen Mandaten oder temporären Kapazitätsengpässen.",
+      "Flexible externe Unterstützung für Personalberatungen bei anspruchsvollen Mandaten oder temporären Kapazitätsengpässen.",
     points: [
       "Suchstrategie, Markt- und Zielfirmenanalyse",
       "Research, Sourcing und Direktansprache",

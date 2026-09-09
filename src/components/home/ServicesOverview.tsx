@@ -26,7 +26,7 @@ const services = [
       "Suchstrategie, Markt- und Zielfirmenanalyse",
       "Research, Sourcing und Direktansprache",
       "Long- und Shortlists, Kandidatenqualifizierung",
-      "Projektkoordination und eigenständige Search-Workstreams",
+      "Projektkoordination und operative Projektdurchführung",
     ],
     href: "/fuer-personalberatungen",
     cta: "Mehr für Personalberatungen",

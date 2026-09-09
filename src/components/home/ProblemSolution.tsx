@@ -14,7 +14,7 @@ const solutionPoints = [
   "Marktverständnis",
   "strukturierte Suchmethodik",
   "Research und Sourcing",
-  "persönliche Direktansprache",
+  "persönliche Ansprache und überzeugende Kandidat:innengewinnung",
   "fundierte Kandidatenbewertung",
   "Beratung auf Augenhöhe",
 ];
@@ -57,6 +57,9 @@ export function ProblemSolution() {
             hinterfragt. Darauf aufbauend wird eine fundierte Suchstrategie
             entwickelt und operativ umgesetzt.
           </p>
+          <p className="mt-6 text-md font-normal leading-relaxed text-navy-900">
+            Im Mittelpunkt stehen dabei
+          </p>
           <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3">
             {solutionPoints.map((item) => (
               <li
@@ -70,7 +73,8 @@ export function ProblemSolution() {
           <p className="mt-6 text-[15px] leading-relaxed text-text-secondary">
             Ziel ist nicht, möglichst viele Profile zu präsentieren, sondern
             die Kandidat:innen zu identifizieren, die für die jeweilige
-            Aufgabe tatsächlich relevant sind.
+            Aufgabe tatsächlich relevant sind und sowohl fachlich als auch
+            persönlich zur Rolle und zum Unternehmen passen.
           </p>
         </div>
       </Container>

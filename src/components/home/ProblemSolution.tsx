@@ -29,7 +29,7 @@ export function ProblemSolution() {
             Anspruchsvolle Positionen brauchen mehr als
             Standard-Recruiting.
           </h2>
-          <p className="mt-5 text-md font-medium leading-relaxed text-navy-900">
+          <p className="mt-5 text-md font-normal leading-relaxed text-navy-900">
             Was anspruchsvolle Besetzungen erschwert
           </p>
           <ul className="mt-6 space-y-3">

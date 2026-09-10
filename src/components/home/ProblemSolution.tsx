@@ -16,6 +16,9 @@ export function ProblemSolution() {
   return (
     <section className="bg-surface-page">
       <div className="pt-16 md:pt-24">
+        <Container className="pb-8 md:pb-10">
+          <Eyebrow>Die Ausgangslage</Eyebrow>
+        </Container>
         <div className="grid w-full overflow-hidden lg:grid-cols-2">
           <div className="relative min-h-[280px] w-full lg:min-h-[440px]">
             <Image
@@ -28,8 +31,7 @@ export function ProblemSolution() {
           </div>
           <div className="flex flex-col justify-center bg-cream-100 p-8 md:p-14 lg:px-20">
             <div className="max-w-xl">
-              <Eyebrow>Die Ausgangslage</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
                 Anspruchsvolle Positionen brauchen mehr als
                 Standard-Recruiting.
               </h2>

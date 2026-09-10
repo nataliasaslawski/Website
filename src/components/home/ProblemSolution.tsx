@@ -1,14 +1,7 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-
-const problems = [
-  "komplexe oder sehr spezifische Anforderungen die Suche stark eingrenzen",
-  "relevante Kandidat:innen schwer erreichbar sind",
-  "der Zielmarkt wenig transparent ist",
-  "Suchstrategien zu eng oder nicht marktgerecht angelegt sind",
-  "klassische Recruiting-Kanäle kaum Resonanz erzeugen",
-  "interne Ressourcen für eine intensive Suche fehlen",
-];
+import { images } from "@/lib/images";
 
 const solutionPoints = [
   "Marktverständnis",
@@ -22,34 +15,37 @@ const solutionPoints = [
 export function ProblemSolution() {
   return (
     <section className="bg-surface-page">
-      <Container className="grid gap-16 py-16 md:py-24 lg:grid-cols-2 lg:gap-20">
-        <div>
-          <Eyebrow>Die Ausgangslage</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Anspruchsvolle Positionen brauchen mehr als
-            Standard-Recruiting.
-          </h2>
-          <p className="mt-5 text-md font-normal leading-relaxed text-navy-900">
-            Was anspruchsvolle Besetzungen erschwert
-          </p>
-          <ul className="mt-6 space-y-3">
-            {problems.map((item) => (
-              <li
-                key={item}
-                className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-text-secondary"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 text-[15px] leading-relaxed text-text-secondary">
-            Gerade in diesen Situationen braucht es mehr als Reichweite –
-            entscheidend sind Marktverständnis, eine klare Suchstrategie und
-            der Zugang zu relevanten Profilen.
-          </p>
+      <Container className="py-16 md:py-24">
+        <div className="grid overflow-hidden lg:grid-cols-2">
+          <div className="relative min-h-[280px] w-full">
+            <Image
+              src={images.home.ausgangslage}
+              alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+          </div>
+          <div className="flex flex-col justify-center bg-taupe-400 p-8 md:p-14">
+            <Eyebrow>Die Ausgangslage</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Anspruchsvolle Positionen brauchen mehr als
+              Standard-Recruiting.
+            </h2>
+            <p className="mt-5 text-[15px] leading-relaxed text-navy-900">
+              Was anspruchsvolle Besetzungen erschwert: komplexe oder sehr
+              spezifische Anforderungen, schwer erreichbare Kandidat:innen,
+              ein wenig transparenter Zielmarkt, zu eng angelegte
+              Suchstrategien, geringe Resonanz auf klassischen Kanälen und
+              fehlende interne Ressourcen für eine intensive Suche. Gerade in
+              diesen Situationen braucht es mehr als Reichweite –
+              entscheidend sind Marktverständnis, eine klare Suchstrategie
+              und der Zugang zu relevanten Profilen.
+            </p>
+          </div>
         </div>
 
-        <div>
+        <div className="mx-auto mt-16 max-w-2xl md:mt-24">
           <Eyebrow>Der Ansatz</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Strategische Beratung, verbunden mit operativer

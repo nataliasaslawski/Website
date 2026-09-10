@@ -18,7 +18,7 @@ const stations = [
   },
   {
     title: "Führungsverantwortung",
-    text: "Beförderungen in Führungsrollen in zwei Personalberatungen – unter anderem mit Teamaufbau, interner Rekrutierung, Ressourcen- und Performance-Steuerung sowie Mitarbeiterentwicklung.",
+    text: "Beförderungen in Führungsrollen in zwei Personalberatungen – unter anderem mit Teamaufbau, Ressourcen- und Performance-Steuerung sowie Einarbeitung, Coaching und fachlicher Entwicklung neuer Kolleg:innen.",
   },
   {
     title: "Inhouse Talent Acquisition",

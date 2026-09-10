@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 const items = [
   {
     title: "Senior-Level-Erfahrung",
-    text: "Rund 15 Jahre Erfahrung in Personalberatung, Professional Search und Executive Search – mit Kenntnis unterschiedlicher Branchen, Unternehmensgrößen und Kandidatenmärkte.",
+    text: "Rund 15 Jahre Erfahrung in Personalberatung, Professional Search und Executive Search – mit Kenntnis unterschiedlicher Branchen, Unternehmensgrößen und Kandidat:innenmärkte.",
   },
   {
     title: "Mehrere Perspektiven auf Recruiting",
@@ -12,7 +12,7 @@ const items = [
   },
   {
     title: "Strukturierte Suchmethodik",
-    text: "Suchprojekte werden über Zielfirmen, Marktsegmente, Funktionsbezeichnungen, Kompetenzprofile und alternative Kandidatenpools systematisch aufgebaut und bearbeitet.",
+    text: "Suchprojekte werden über Zielfirmen, Marktsegmente, Funktionen, Kompetenzprofile und alternative Kandidat:innenpools systematisch aufgebaut und bearbeitet.",
   },
   {
     title: "Persönliche Mandatsführung",
@@ -27,7 +27,8 @@ export function ExpertiseTrust() {
         <div className="max-w-2xl">
           <Eyebrow>Erfahrung &amp; Arbeitsweise</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Vertrauen entsteht durch Erfahrung, nicht durch Versprechen
+            Vertrauen entsteht durch Erfahrung und Verständnis – nicht durch
+            Versprechen
           </h2>
         </div>
 

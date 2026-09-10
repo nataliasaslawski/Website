@@ -36,7 +36,7 @@ export function ProblemSolution() {
             {problems.map((item) => (
               <li
                 key={item}
-                className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-text-secondary first:border-none first:pt-0"
+                className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-text-secondary"
               >
                 {item}
               </li>

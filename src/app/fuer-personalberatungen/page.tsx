@@ -47,11 +47,11 @@ export default function FuerPersonalberatungenPage() {
         <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow>Für Personalberatungen</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-4xl">
-              Seniorige Search-Projektunterstützung
+            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
+              Professionelle Search-Projektunterstützung
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
-              Flexible externe Unterstützung für Personalberatungen und
+              Externe Unterstützung für Personalberatungen und
               Executive-Search-Boutiquen bei laufenden oder neuen Mandaten –
               seniorig, eigenständig und ohne lange Einarbeitung.
             </p>

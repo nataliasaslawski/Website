@@ -16,7 +16,7 @@ const items = [
   },
   {
     title: "Persönliche Mandatsführung",
-    text: "Die Zusammenarbeit erfolgt direkt mit einer erfahrenen Ansprechpartnerin – ohne Weitergabe an wechselnde Junior-Ressourcen oder zusätzliche Koordinationsebenen.",
+    text: "Ich begleite Mandate persönlich und durchgängig – mit direktem Austausch, klarer Verantwortung und kontinuierlicher Steuerung des gesamten Prozesses.",
   },
 ];
 

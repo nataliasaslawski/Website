@@ -21,13 +21,13 @@ export function FounderTeaser() {
         <div>
           <Eyebrow>Über die Beraterin</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Rund 16 Jahre Erfahrung in Recruiting, Personalberatung und Search
+            15 Jahre Erfahrung in Executive Search und Personalberatung
           </h2>
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary">
-            Natalia Saslawski verbindet Erfahrung aus Personalberatung,
+            Ich verbinde langjährige Erfahrung aus Personalberatung,
             Führungsverantwortung und Inhouse Talent Acquisition mit
-            Professional- und Executive-Search-Kompetenz bis hin zu
-            anspruchsvollen Führungs- und Schlüsselpositionen.
+            fundierter Professional- und Executive-Search-Expertise aus
+            zahlreichen erfolgreichen Besetzungen.
           </p>
           <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary">
             Im Mittelpunkt steht eine persönliche, pragmatische und beratende

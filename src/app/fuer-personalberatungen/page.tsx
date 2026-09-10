@@ -25,7 +25,7 @@ const services = [
   "Research und Sourcing",
   "Longlist-Erstellung",
   "Direktansprache",
-  "Kandidatenidentifikation und Vorqualifizierung",
+  "Kandidat:innenidentifikation und Vorqualifizierung",
   "Unterstützung bei Long- und Shortlists",
   "Projektkoordination",
   "Übernahme definierter Search-Workstreams oder umfangreicherer Projektteile",
@@ -36,7 +36,7 @@ const outcomes = [
   "Professionelle Search-Kompetenz ohne lange Einarbeitung",
   "Eigenständige Bearbeitung klar definierter Projektteile oder ganzer Search-Projekte",
   "Flexible Kapazität bei Projektspitzen",
-  "Hohe Qualität in Research, Sourcing, Direktansprache und Kandidatengewinnung",
+  "Hohe Qualität in Research, Sourcing, Direktansprache und Kandidat:innengewinnung",
   "Eine Zusammenarbeit, die gegenüber Ihren Endkund:innen professionell anschlussfähig ist",
 ];
 
@@ -135,7 +135,7 @@ export default function FuerPersonalberatungenPage() {
               ))}
             </ul>
             <p className="mt-6 border-t border-border-subtle pt-6 text-[15px] leading-relaxed text-text-secondary">
-              Vertraulichkeit gegenüber Ihrer Beratung, Ihren Unternehmenskunden
+              Vertraulichkeit gegenüber Ihrer Beratung, Ihren Unternehmenskund:innen
               und den angesprochenen Kandidat:innen hat für mich höchste
               Priorität – die Zusammenarbeit kann je nach Wunsch im
               Hintergrund oder sichtbar erfolgen.

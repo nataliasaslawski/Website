@@ -31,7 +31,7 @@ const items = [
   {
     question: "Worauf basiert Ihr Erfolg bei anspruchsvollen Besetzungen?",
     answer:
-      "Langjährige Erfahrung aus zahlreichen erfolgreichen Besetzungen in unterschiedlichen Marktsituationen und Konjunkturphasen, ausgeprägte Menschenkenntnis und ein gutes Gespür für beide Seiten des Prozesses: Ich verstehe, was Unternehmen und Entscheider:innen wirklich brauchen, und kann gleichzeitig Kandidat:innen für eine Rolle und ein Umfeld gewinnen. Diese Verbindung aus Marktverständnis, Einschätzungsvermögen und persönlicher Ansprache ist für mich ein wesentlicher Erfolgsfaktor.",
+      "Langjährige Erfahrung, belegt durch zahlreiche erfolgreiche Besetzungen in unterschiedlichen Marktsituationen und Konjunkturphasen, ausgeprägte Menschenkenntnis und ein gutes Gespür für beide Seiten des Prozesses: Ich verstehe, was Unternehmen und Entscheider:innen wirklich brauchen, und kann gleichzeitig Kandidat:innen für eine Rolle und ein Umfeld gewinnen. Diese Verbindung aus Marktverständnis, Einschätzungsvermögen und persönlicher Ansprache ist für mich ein wesentlicher Erfolgsfaktor.",
   },
   {
     question: "Wie kann ein erstes Gespräch vereinbart werden?",

@@ -92,20 +92,29 @@ export function SiteHeader() {
                         }`}
                       />
                     </button>
-                    {leistungenOpen && (
-                      <div className="absolute left-1/2 top-full mt-3 w-64 -translate-x-1/2 border border-border-default bg-surface-card py-2 text-left shadow-md lg:left-0 lg:translate-x-0">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            onClick={() => setLeistungenOpen(false)}
-                            className="block px-4 py-2.5 text-sm text-text-secondary transition-colors hover:bg-surface-elevated hover:text-navy-900"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+                    <div
+                      aria-hidden={!leistungenOpen}
+                      className={`absolute left-1/2 top-full w-64 -translate-x-1/2 overflow-hidden border bg-surface-card text-left shadow-md transition-all duration-300 ease-out lg:left-0 lg:translate-x-0 ${
+                        leistungenOpen
+                          ? "mt-3 max-h-60 border-border-default py-2 opacity-100"
+                          : "mt-0 max-h-0 border-transparent py-0 opacity-0 pointer-events-none"
+                      }`}
+                    >
+                      {item.children.map((child, i) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={() => setLeistungenOpen(false)}
+                          tabIndex={leistungenOpen ? 0 : -1}
+                          style={{ transitionDelay: leistungenOpen ? `${i * 40}ms` : "0ms" }}
+                          className={`block px-4 py-2.5 text-sm text-text-secondary transition-all duration-300 ease-out hover:bg-surface-elevated hover:text-navy-900 ${
+                            leistungenOpen ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
+                          }`}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 );
               }

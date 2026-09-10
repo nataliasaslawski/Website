@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const stations = [
   {
     title: "Personalberatung & Search",
-    text: "Rund 15 Jahre in der Personalberatung, mit Schwerpunkt auf Professional und Executive Search bis hin zu Geschäftsleitungs- und C-Level-Mandaten. Mandate über unterschiedliche Branchen, Unternehmensgrößen und Hierarchieebenen hinweg, mit wiederkehrendem Schwerpunkt im industriellen bzw. produzierenden Umfeld.",
+    text: "Rund 15 Jahre in der Personalberatung, mit Schwerpunkt auf Professional und Executive Search bis hin zu Geschäftsleitungs- und C-Level-Mandaten. Besetzungen über unterschiedliche Branchen, Unternehmensgrößen und Hierarchieebenen hinweg, mit wiederkehrendem Schwerpunkt im industriellen bzw. produzierenden Umfeld.",
   },
   {
     title: "Führungsverantwortung",

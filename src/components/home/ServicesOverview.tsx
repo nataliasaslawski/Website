@@ -7,7 +7,7 @@ const services = [
     label: "Für Unternehmen",
     title: "Executive & Professional Search",
     description:
-      "Unterstützung bei der Besetzung anspruchsvoller Fach-, Führungs- und Schlüsselpositionen – von der Suchstrategie bis zur Kandidatenauswahl.",
+      "Unterstützung bei der Besetzung anspruchsvoller Fach-, Führungs- und Schlüsselpositionen – von der Suchstrategie bis zur erfolgreichen Besetzung.",
     points: [
       "Rollen- und Anforderungsanalyse",
       "Suchstrategie, Markt- und Zielfirmenanalyse",

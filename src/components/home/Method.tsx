@@ -20,7 +20,7 @@ const steps = [
   {
     n: "04",
     title: "Bewerten",
-    text: "Erfahrung, Kompetenzen, Motivation und mögliche Passung strukturiert bewerten.",
+    text: "Erfahrung, Kompetenzen, Motivation, Persönlichkeit und mögliche Passung strukturiert bewerten.",
   },
   {
     n: "05",

@@ -104,7 +104,7 @@ export default function FuerPersonalberatungenPage() {
             </h2>
             <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
               Ziel ist keine reine zusätzliche Research-Kapazität, sondern
-              seniorige Unterstützung, die eigenständig arbeitet und
+              professionelle Unterstützung, die eigenständig arbeitet und
               bestehende Search-Projekte fachlich und operativ verstärkt.
             </p>
             <ul className="mt-6 space-y-3">

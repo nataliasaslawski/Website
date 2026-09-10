@@ -111,13 +111,13 @@ export default function UeberMichPage() {
               übertragbar sind und welches Potenzial für eine neue Aufgabe
               besteht. Diese Einschätzung verbinde ich mit einer strukturierten
               Suchmethodik und einem realistischen Blick auf den jeweiligen
-              Kandidatenmarkt.
+              Kandidat:innenmarkt.
             </p>
             <p>
               Nach vielen Jahren in der Personalberatung weiß ich außerdem,
               woran Suchprozesse häufig scheitern – und wie sich das durch
               eine klare Suchstrategie, Verbindlichkeit im Prozess und eine
-              persönliche, direkte Kandidatenansprache vermeiden lässt.
+              persönliche, direkte Kandidat:innenansprache vermeiden lässt.
             </p>
           </div>
         </Container>

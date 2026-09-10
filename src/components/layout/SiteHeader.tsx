@@ -40,8 +40,10 @@ export function SiteHeader() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const linkClasses = `text-sm tracking-[0.01em] transition-colors ${
-    overlay ? "text-text-inverse/85 hover:text-text-inverse" : "text-text-secondary hover:text-navy-900"
+  const linkClasses = `relative text-sm tracking-[0.01em] transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:transition-all after:duration-300 after:ease-out hover:after:w-full ${
+    overlay
+      ? "text-text-inverse/85 hover:text-text-inverse after:bg-paper-050"
+      : "text-text-secondary hover:text-navy-900 after:bg-navy-900"
   }`;
 
   return (

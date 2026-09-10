@@ -15,9 +15,9 @@ const solutionPoints = [
 export function ProblemSolution() {
   return (
     <section className="bg-surface-page">
-      <Container className="py-16 md:py-24">
-        <div className="grid overflow-hidden lg:grid-cols-2">
-          <div className="relative min-h-[280px] w-full">
+      <div className="pt-16 md:pt-24">
+        <div className="grid w-full overflow-hidden lg:grid-cols-2">
+          <div className="relative min-h-[280px] w-full lg:min-h-[440px]">
             <Image
               src={images.home.ausgangslage}
               alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
@@ -26,25 +26,29 @@ export function ProblemSolution() {
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>
-          <div className="flex flex-col justify-center bg-taupe-400 p-8 md:p-14">
-            <Eyebrow>Die Ausgangslage</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Anspruchsvolle Positionen brauchen mehr als
-              Standard-Recruiting.
-            </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-navy-900">
-              Was anspruchsvolle Besetzungen erschwert: komplexe oder sehr
-              spezifische Anforderungen, schwer erreichbare Kandidat:innen,
-              ein wenig transparenter Zielmarkt, zu eng angelegte
-              Suchstrategien, geringe Resonanz auf klassischen Kanälen und
-              fehlende interne Ressourcen für eine intensive Suche. Gerade in
-              diesen Situationen braucht es mehr als Reichweite –
-              entscheidend sind Marktverständnis, eine klare Suchstrategie
-              und der Zugang zu relevanten Profilen.
-            </p>
+          <div className="flex flex-col justify-center bg-cream-100 p-8 md:p-14 lg:px-20">
+            <div className="max-w-xl">
+              <Eyebrow>Die Ausgangslage</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Anspruchsvolle Positionen brauchen mehr als
+                Standard-Recruiting.
+              </h2>
+              <p className="mt-5 text-[15px] leading-relaxed text-navy-900">
+                Was anspruchsvolle Besetzungen erschwert: komplexe oder sehr
+                spezifische Anforderungen, schwer erreichbare
+                Kandidat:innen, ein wenig transparenter Zielmarkt, zu eng
+                angelegte Suchstrategien, geringe Resonanz auf klassischen
+                Kanälen und fehlende interne Ressourcen für eine intensive
+                Suche. Gerade in diesen Situationen braucht es mehr als
+                Reichweite – entscheidend sind Marktverständnis, eine klare
+                Suchstrategie und der Zugang zu relevanten Profilen.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
 
+      <Container className="pb-16 md:pb-24">
         <div className="mx-auto mt-16 max-w-2xl md:mt-24">
           <Eyebrow>Der Ansatz</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">

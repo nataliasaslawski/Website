@@ -14,8 +14,8 @@ const steps = [
   },
   {
     n: "03",
-    title: "Suchen & Ansprechen",
-    text: "Relevante Kandidat:innen systematisch identifizieren und persönlich ansprechen.",
+    title: "Finden & Aktivieren",
+    text: "Relevante Kandidat:innen identifizieren, persönlich ansprechen und für den Prozess aktivieren.",
   },
   {
     n: "04",

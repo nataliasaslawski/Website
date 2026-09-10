@@ -124,7 +124,7 @@ export default function UeberMichPage() {
       </section>
 
       <section className="bg-surface-inverse text-text-inverse">
-        <Container narrow className="py-16 text-center md:py-24">
+        <Container className="py-16 text-center md:py-24">
           <h2 className="font-display text-2xl font-medium leading-snug md:text-[2.25rem]">
             Lassen Sie uns über Ihr aktuelles Search-Projekt sprechen.
           </h2>

@@ -6,17 +6,17 @@ const items = [
   {
     question: "Für welche Positionen ist die Zusammenarbeit geeignet?",
     answer:
-      "Vor allem für anspruchsvolle Fach-, Führungs- und Schlüsselpositionen, bei denen klassische Recruiting-Wege nicht ausreichend funktionieren oder zusätzliche Search-Kompetenz benötigt wird.",
+      "Vor allem für anspruchsvolle Fach-, Führungs- und Schlüsselpositionen, bei denen klassische Recruiting-Wege nicht ausreichend funktionieren und zusätzliche Search-Kompetenz benötigt wird.",
   },
   {
-    question: "Arbeiten Sie deutschlandweit?",
+    question: "In welchen Regionen sind Sie tätig?",
     answer:
-      "Ja. Der Schwerpunkt liegt auf Deutschland und dem DACH-Raum, mit regionaler Basis in Frankfurt am Main / Rhein-Main.",
+      "Der Schwerpunkt liegt auf Deutschland und dem DACH-Raum, mit regionaler Basis in Frankfurt am Main / Rhein-Main.",
   },
   {
     question: "Wie läuft die Zusammenarbeit ab?",
     answer:
-      "Zu Beginn werden Ausgangssituation, Rolle, Anforderungen und bisherige Suchaktivitäten gemeinsam besprochen. Anschließend wird der passende Projektumfang definiert und die Such- bzw. Beratungsstrategie aufgesetzt.",
+      "Zu Beginn werden Ausgangssituation, Rolle, Anforderungen und bisherige Suchaktivitäten gemeinsam besprochen. Anschließend wird der passende Projektumfang definiert und die Such- bzw. Beratungsstrategie aufgesetzt. Darauf aufbauend begleite ich den Prozess von der Identifikation und Gewinnung geeigneter Kandidat:innen über die Bewertung und Auswahl bis zur erfolgreichen Besetzung.",
   },
   {
     question: "Können auch einzelne Teile eines Search-Projekts übernommen werden?",
@@ -24,14 +24,9 @@ const items = [
       "Ja. Die Zusammenarbeit kann je nach Bedarf ein vollständiges Search-Projekt oder einzelne Leistungsbausteine umfassen.",
   },
   {
-    question: "Arbeiten Sie auch mit Personalberatungen zusammen?",
+    question: "Was unterscheidet Ihre Leistung von klassischem Recruiting?",
     answer:
-      "Ja. Personalberatungen und Executive-Search-Boutiquen können flexibel bei laufenden oder neuen Mandaten unterstützt werden.",
-  },
-  {
-    question: "Was unterscheidet die Zusammenarbeit von klassischem Recruiting?",
-    answer:
-      "Im Mittelpunkt steht nicht nur die operative Kandidatensuche, sondern die Verbindung aus Suchstrategie, Marktanalyse, Research, Direktansprache, Kandidatenbewertung und persönlicher Beratung.",
+      "Im Mittelpunkt steht nicht nur die operative Kandidat:innensuche, sondern die Verbindung aus Suchstrategie, Marktanalyse, Research, Direktansprache, Kandidat:innenbewertung und persönlicher Beratung. Ziel ist eine erfolgreiche Besetzung – entsprechend wird jedes fortgeführte Mandat konsequent und zielgerichtet bis zum Abschluss bearbeitet.",
   },
   {
     question: "Wie kann ein erstes Gespräch vereinbart werden?",

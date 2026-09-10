@@ -8,13 +8,13 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Über mich",
   description:
-    "Natalia Saslawski – rund 16 Jahre Erfahrung in Personalberatung, Professional und Executive Search sowie Inhouse Talent Acquisition.",
+    "Natalia Saslawski – rund 15 Jahre Erfahrung in Personalberatung, Professional und Executive Search sowie Inhouse Talent Acquisition.",
 };
 
 const stations = [
   {
     title: "Personalberatung & Search",
-    text: "Rund 16 Jahre in der Personalberatung, mit Schwerpunkt auf Professional und Executive Search bis hin zu Geschäftsleitungs- und C-Level-Mandaten. Mandate über unterschiedliche Branchen, Unternehmensgrößen und Hierarchieebenen hinweg, mit wiederkehrendem Schwerpunkt im industriellen bzw. produzierenden Umfeld.",
+    text: "Rund 15 Jahre in der Personalberatung, mit Schwerpunkt auf Professional und Executive Search bis hin zu Geschäftsleitungs- und C-Level-Mandaten. Mandate über unterschiedliche Branchen, Unternehmensgrößen und Hierarchieebenen hinweg, mit wiederkehrendem Schwerpunkt im industriellen bzw. produzierenden Umfeld.",
   },
   {
     title: "Führungsverantwortung",
@@ -51,7 +51,7 @@ export default function UeberMichPage() {
               Natalia Saslawski
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
-              Executive Search &amp; Talent Advisory mit rund 16 Jahren
+              Executive Search &amp; Talent Advisory mit rund 15 Jahren
               Erfahrung in Recruiting, Personalberatung und Search. Meine
               Arbeit verbindet operative Search-Kompetenz mit strategischer
               Beratung – persönlich, strukturiert und mit einem realistischen

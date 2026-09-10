@@ -26,7 +26,7 @@ export default async function InsightsPage() {
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
               Fachliche Beiträge zu Executive Search, Suchstrategien,
               Kandidatenmärkten und Recruiting-Prozessen — praxisnah und aus
-              rund 16 Jahren Erfahrung in Personalberatung und Search.
+              rund 15 Jahren Erfahrung in Personalberatung und Search.
             </p>
           </div>
 

@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 const items = [
   {
     title: "Senior-Level-Erfahrung",
-    text: "Rund 16 Jahre Erfahrung in Personalberatung, Professional Search und Executive Search – mit Kenntnis unterschiedlicher Branchen, Unternehmensgrößen und Kandidatenmärkte.",
+    text: "Rund 15 Jahre Erfahrung in Personalberatung, Professional Search und Executive Search – mit Kenntnis unterschiedlicher Branchen, Unternehmensgrößen und Kandidatenmärkte.",
   },
   {
     title: "Mehrere Perspektiven auf Recruiting",

@@ -8,7 +8,7 @@ const items = [
   },
   {
     title: "Mehrere Perspektiven auf Recruiting",
-    text: "Erfahrung aus Personalberatung, Führungsverantwortung und Inhouse Talent Acquisition – dadurch ein Verständnis sowohl für Unternehmen als auch für die Arbeitsweise von Personalberatungen.",
+    text: "Erfahrung aus Personalberatung, Führungsverantwortung und Inhouse Talent Acquisition schafft ein Verständnis für die Perspektiven von Unternehmen, Kandidat:innen sowie die Arbeitsweise von Personalberatungen.",
   },
   {
     title: "Strukturierte Suchmethodik",

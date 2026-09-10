@@ -52,7 +52,7 @@ export default function UeberMichPage() {
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
               Executive Search &amp; Talent Advisory mit rund 15 Jahren
-              Erfahrung in der Personalberatung und im Recruiting. Meine
+              Erfahrung in der Personalberatung. Meine
               Arbeit verbindet operative Search-Kompetenz mit strategischer
               Beratung – persönlich, strukturiert und mit einem realistischen
               Blick auf den Kandidatenmarkt.

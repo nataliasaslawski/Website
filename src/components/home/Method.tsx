@@ -5,7 +5,7 @@ const steps = [
   {
     n: "01",
     title: "Verstehen",
-    text: "Rolle, Unternehmen, Ausgangssituation, Anforderungen und bisherige Erfahrungen im Recruiting verstehen.",
+    text: "Rolle, Unternehmen, Kontext, Ausgangssituation, Anforderungen, Ziel der Besetzung und Erwartungen an die Rolle verstehen.",
   },
   {
     n: "02",
@@ -36,7 +36,7 @@ export function Method() {
         <div className="max-w-2xl">
           <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug md:text-[2rem]">
-            Ein strukturierter Prozess statt eines starren Suchschemas
+            Ein strukturierter Prozess statt eines standardisierten Suchschemas
           </h2>
         </div>
 

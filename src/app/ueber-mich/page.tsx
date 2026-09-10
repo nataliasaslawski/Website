@@ -26,7 +26,7 @@ const stations = [
   },
   {
     title: "Akademischer Hintergrund",
-    text: "Abgeschlossenes Architekturstudium (Dipl.-Ing. FH) und Berufserfahrung im Gewerbeimmobilienumfeld vor dem Wechsel ins Recruiting – eine Grundlage, die hilft, komplexe Unternehmens- und Projektkontexte schnell zu erfassen.",
+    text: "Abgeschlossenes Architekturstudium (Dipl.-Ing. FH) und Berufserfahrung im Gewerbeimmobilienumfeld vor dem Wechsel ins Recruiting. Ausschlaggebend war mein wachsendes Interesse daran, Entscheidungen beratend zu begleiten, die das Wachstum von Unternehmen prägen.",
   },
 ];
 

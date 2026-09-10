@@ -48,7 +48,7 @@ export default function FuerPersonalberatungenPage() {
           <div>
             <Eyebrow>Für Personalberatungen</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
-              Professionelle Search-Projektunterstützung
+              Professionelle Projektunterstützung
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
               Externe Unterstützung für Personalberatungen und

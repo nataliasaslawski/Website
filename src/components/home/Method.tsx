@@ -10,7 +10,7 @@ const steps = [
   {
     n: "02",
     title: "Analysieren",
-    text: "Suchparameter, Kandidatenmarkt, Zielfirmen, Branchen, Funktionsbezeichnungen und mögliche alternative Märkte analysieren.",
+    text: "Suchparameter, Kandidat:innenmarkt, Branchen, Zielfirmen sowie mögliche alternative Märkte analysieren.",
   },
   {
     n: "03",

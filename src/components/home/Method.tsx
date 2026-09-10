@@ -15,7 +15,7 @@ const steps = [
   {
     n: "03",
     title: "Finden & Aktivieren",
-    text: "Relevante Kandidat:innen identifizieren, persönlich ansprechen und für den Prozess aktivieren.",
+    text: "Relevante Kandidat:innen identifizieren, persönlich ansprechen und für den Prozess gewinnen.",
   },
   {
     n: "04",

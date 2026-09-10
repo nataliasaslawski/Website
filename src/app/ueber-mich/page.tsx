@@ -47,12 +47,12 @@ export default function UeberMichPage() {
           </div>
           <div className="lg:order-1">
             <Eyebrow>Über mich</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-4xl">
+            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
               Natalia Saslawski
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
               Executive Search &amp; Talent Advisory mit rund 15 Jahren
-              Erfahrung in Recruiting, Personalberatung und Search. Meine
+              Erfahrung in der Personalberatung und im Recruiting. Meine
               Arbeit verbindet operative Search-Kompetenz mit strategischer
               Beratung – persönlich, strukturiert und mit einem realistischen
               Blick auf den Kandidatenmarkt.

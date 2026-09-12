@@ -20,7 +20,7 @@ export default async function InsightsPage() {
         <Container className="py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Insights</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-4xl">
+            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
               Perspektiven aus Recruiting, Search und Talent Advisory
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">

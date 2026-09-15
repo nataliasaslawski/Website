@@ -61,11 +61,11 @@ export function ProblemSolution() {
                 Unternehmenskultur passen.
               </p>
 
-              <div aria-hidden="true" className="mt-8 flex justify-end pr-1">
-                <div className="relative h-14 w-20">
-                  <span className="absolute left-0 top-1 h-10 w-10 rounded-full bg-taupe-400/25" />
-                  <span className="absolute left-6 top-0 h-11 w-11 rounded-full bg-taupe-600/18" />
-                  <span className="absolute left-3 top-5 h-8 w-8 rounded-full bg-taupe-400/30" />
+              <div aria-hidden="true" className="mt-10 flex justify-end pr-1">
+                <div className="relative h-36 w-52">
+                  <span className="absolute left-0 top-4 h-24 w-24 rounded-full bg-taupe-400/18" />
+                  <span className="absolute left-14 top-0 h-28 w-28 rounded-full bg-taupe-600/14" />
+                  <span className="absolute left-8 top-12 h-20 w-20 rounded-full bg-taupe-400/22" />
                 </div>
               </div>
             </div>

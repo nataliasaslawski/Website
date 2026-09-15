@@ -18,6 +18,8 @@
   --taupe-700: oklch(from #8b8173 calc(l - 0.12) c h);
   --paper-050: #f6f4f1;
   --white: #ffffff;
+  /* Client-approved test accent: muted mauve/dusty-rose for the "Vorgehensweise" section */
+  --mauve-700: #4f3b40;
 
   /* Semantic surfaces */
   --surface-page: var(--paper-050);
@@ -65,6 +67,7 @@
   --color-taupe-700: var(--taupe-700);
   --color-paper-050: var(--paper-050);
   --color-white: var(--white);
+  --color-mauve-700: var(--mauve-700);
 
   --color-surface-page: var(--surface-page);
   --color-surface-card: var(--surface-card);

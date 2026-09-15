@@ -41,6 +41,14 @@ export function Method() {
         <span className="absolute left-16 top-36 h-36 w-36 rounded-full bg-navy-800/22" />
       </div>
 
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-14 -left-16 hidden h-[16rem] w-[18rem] lg:block"
+      >
+        <span className="absolute left-0 top-4 h-32 w-32 rounded-full bg-navy-800/38" />
+        <span className="absolute left-16 top-12 h-24 w-24 rounded-full bg-navy-700/28" />
+      </div>
+
       <Container className="relative py-20 md:py-28">
         <div className="max-w-4xl">
           <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>

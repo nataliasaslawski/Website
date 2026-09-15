@@ -9,11 +9,11 @@ export function ProblemSolution() {
       <section className="relative overflow-hidden bg-cream-100/40">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-0 top-1/2 hidden h-[28rem] w-[32rem] -translate-y-[55%] lg:block"
+          className="pointer-events-none absolute -right-24 top-1/2 hidden h-[30rem] w-[36rem] -translate-y-1/2 lg:block"
         >
-          <span className="absolute -right-14 top-6 h-64 w-64 rounded-full bg-taupe-400/12" />
-          <span className="absolute right-12 top-52 h-44 w-44 rounded-full bg-taupe-600/10" />
-          <span className="absolute -right-6 bottom-6 h-32 w-32 rounded-full bg-taupe-400/15" />
+          <span className="absolute left-24 top-2 h-72 w-72 rounded-full bg-taupe-400/14" />
+          <span className="absolute left-0 top-44 h-56 w-56 rounded-full bg-taupe-600/11" />
+          <span className="absolute left-48 bottom-0 h-44 w-44 rounded-full bg-taupe-400/17" />
         </div>
 
         <Container className="relative py-14 md:py-20">

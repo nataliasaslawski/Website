@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { images } from "@/lib/images";
+import { images, brand } from "@/lib/images";
 
 export function ProblemSolution() {
   return (
@@ -62,11 +62,13 @@ export function ProblemSolution() {
               </p>
 
               <div aria-hidden="true" className="mt-10 flex justify-end pr-1">
-                <div className="relative h-44 w-56">
-                  <span className="absolute left-0 top-8 h-24 w-24 rounded-full bg-taupe-400/18" />
-                  <span className="absolute left-20 top-0 h-28 w-28 rounded-full bg-taupe-600/14" />
-                  <span className="absolute left-16 top-24 h-20 w-20 rounded-full bg-taupe-400/22" />
-                </div>
+                <Image
+                  src={brand.markNavy}
+                  alt=""
+                  width={349}
+                  height={326}
+                  className="h-auto w-64 opacity-[0.08] md:w-80"
+                />
               </div>
             </div>
 

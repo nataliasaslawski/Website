@@ -31,28 +31,47 @@ const steps = [
 
 export function Method() {
   return (
-    <section className="bg-surface-inverse text-text-inverse">
-      <Container className="py-16 md:py-24">
+    <section className="relative overflow-hidden bg-surface-page">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-16 top-0 hidden h-56 w-72 lg:block"
+      >
+        <span className="absolute left-16 top-0 h-40 w-40 rounded-full bg-taupe-400/14" />
+        <span className="absolute left-0 top-16 h-32 w-32 rounded-full bg-taupe-600/11" />
+        <span className="absolute left-28 top-24 h-24 w-24 rounded-full bg-taupe-400/18" />
+      </div>
+
+      <Container className="relative py-14 md:py-20">
         <div className="max-w-4xl">
-          <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug md:text-[2rem]">
+          <Eyebrow>Vorgehensweise</Eyebrow>
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Ein strukturierter Prozess statt eines standardisierten Suchschemas
           </h2>
         </div>
 
-        <div className="relative mt-14 max-w-2xl">
-          <div
-            aria-hidden="true"
-            className="absolute bottom-2 left-0 top-2 w-px bg-[oklch(from_var(--paper-050)_l_c_h_/_0.25)]"
-          />
-          <div className="space-y-10">
-            {steps.map((step) => (
-              <div key={step.n} className="pl-10 md:pl-12">
-                <span className="font-display text-lg text-taupe-400">{step.n}</span>
-                <h3 className="mt-2 text-[19px] font-medium text-text-inverse">
-                  {step.title}
-                </h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-text-inverse-muted">
+        <div className="mt-10 grid gap-x-12 gap-y-6 md:grid-cols-2 md:gap-x-16">
+          <div className="space-y-6">
+            {steps.slice(0, 3).map((step) => (
+              <div key={step.n} className="border-t border-border-subtle pt-4">
+                <div className="flex items-baseline gap-2">
+                  <span className="font-display text-base text-taupe-600">{step.n}</span>
+                  <h3 className="text-[16px] font-medium text-navy-900">{step.title}</h3>
+                </div>
+                <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-6">
+            {steps.slice(3).map((step) => (
+              <div key={step.n} className="border-t border-border-subtle pt-4">
+                <div className="flex items-baseline gap-2">
+                  <span className="font-display text-base text-taupe-600">{step.n}</span>
+                  <h3 className="text-[16px] font-medium text-navy-900">{step.title}</h3>
+                </div>
+                <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
                   {step.text}
                 </p>
               </div>

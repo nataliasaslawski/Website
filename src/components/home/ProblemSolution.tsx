@@ -38,7 +38,7 @@ export function ProblemSolution() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
+        <Container className="py-14 md:py-20">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
               <Eyebrow>Mein Ansatz</Eyebrow>
@@ -54,9 +54,15 @@ export function ProblemSolution() {
                 weiterentwickelt, und führe den Besetzungsprozess operativ
                 durch.
               </p>
+              <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
+                Entscheidend ist für mich dabei nicht die Anzahl
+                präsentierter Profile, sondern die Identifikation von
+                Kandidat:innen, die fachlich, persönlich und zur jeweiligen
+                Unternehmenskultur passen.
+              </p>
             </div>
 
-            <div className="relative aspect-[3/4] w-full border border-border-default">
+            <div className="relative aspect-[3/2] w-full border border-border-default">
               <Image
                 src={images.home.ansatzPortrait}
                 alt="Natalia Saslawski"

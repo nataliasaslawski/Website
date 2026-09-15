@@ -24,22 +24,22 @@ const services = [
 export function ServicesOverview() {
   return (
     <section className="relative overflow-hidden bg-surface-elevated">
+      {/* top-left corner circle, mirrored to Vorgehensweise's top-right circle.
+          z-10 lifts it above the (unpositioned) card grid so it visibly runs
+          across the "Für Unternehmen" card's corner at low opacity. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-64 top-1/2 hidden h-[18rem] w-[18rem] -translate-y-1/2 xl:block"
-      >
-        <span className="absolute left-2 top-0 h-32 w-32 rounded-full bg-navy-900/8" />
-        <span className="absolute left-14 top-8 h-24 w-24 rounded-full bg-navy-900/6" />
-        <span className="absolute left-6 top-20 h-16 w-16 rounded-full bg-navy-900/5" />
-      </div>
+        className="pointer-events-none absolute -left-24 -top-24 z-10 hidden h-[22rem] w-[22rem] rounded-full bg-navy-900/10 xl:block"
+      />
 
+      {/* bottom-right seam circle: continues into the dark Vorgehensweise section
+          below and across the "Für Personalberatungen" card's corner. Center sits
+          exactly on the section boundary (bottom: -R); same size/horizontal offset
+          as the matching circle in Method.tsx. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-10 -left-10 hidden h-[14rem] w-[16rem] xl:block"
-      >
-        <span className="absolute bottom-2 left-0 h-32 w-32 rounded-full bg-navy-900/7" />
-        <span className="absolute bottom-8 left-14 h-24 w-24 rounded-full bg-navy-900/5" />
-      </div>
+        className="pointer-events-none absolute -bottom-48 right-24 z-10 hidden h-96 w-96 rounded-full bg-navy-900/11 xl:block"
+      />
 
       <Container className="relative py-16 md:py-24">
         <Eyebrow>Leistungen</Eyebrow>

@@ -32,6 +32,14 @@ const steps = [
 export function Method() {
   return (
     <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
+      {/* seam circle: continues the bottom-right circle from the Leistungen section
+          above. Same size/horizontal offset (right-24, h-96 w-96), center sits
+          exactly on the shared section boundary (top: -R). */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-48 right-24 hidden h-96 w-96 rounded-full bg-cream-100/13 xl:block"
+      />
+
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 top-1/2 hidden h-[26rem] w-[26rem] -translate-y-1/2 lg:block"

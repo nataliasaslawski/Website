@@ -43,10 +43,10 @@ export function Method() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-8 -left-8 hidden h-[20rem] w-[22rem] lg:block"
+        className="pointer-events-none absolute -bottom-10 -left-10 hidden h-[14rem] w-[18rem] lg:block"
       >
-        <span className="absolute left-0 top-4 h-40 w-40 rounded-full bg-navy-800/46" />
-        <span className="absolute left-20 top-14 h-32 w-32 rounded-full bg-navy-700/34" />
+        <span className="absolute bottom-2 left-0 h-40 w-40 rounded-full bg-navy-800/46" />
+        <span className="absolute bottom-10 left-20 h-32 w-32 rounded-full bg-navy-700/34" />
       </div>
 
       <Container className="relative py-20 md:py-28">

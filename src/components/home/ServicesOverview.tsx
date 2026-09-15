@@ -7,7 +7,7 @@ const services = [
     label: "Für Unternehmen",
     title: "Executive & Professional Search",
     description:
-      "Unterstützung bei der Besetzung anspruchsvoller Fach-, Führungs- und Schlüsselpositionen – von der Suchstrategie bis zur erfolgreichen Besetzung.",
+      "Unterstützung bei der Besetzung anspruchsvoller Fach-, Führungs- und Schlüsselpositionen sowie strategische Beratung rund um Recruiting und Talentgewinnung.",
     href: "/fuer-unternehmen",
     cta: "Mehr für Unternehmen",
   },
@@ -19,14 +19,6 @@ const services = [
     href: "/fuer-personalberatungen",
     cta: "Mehr für Personalberatungen",
   },
-  {
-    label: "Talent Advisory",
-    title: "Strategische Beratung für Talentgewinnung",
-    description:
-      "Beratung zu Anforderungsprofilen, Zielmärkten und Suchstrategien – eigenständig oder in Verbindung mit einem Search-Projekt.",
-    href: "/fuer-unternehmen#talent-advisory",
-    cta: "Mehr erfahren",
-  },
 ];
 
 export function ServicesOverview() {
@@ -35,7 +27,7 @@ export function ServicesOverview() {
       <Container className="py-16 md:py-24">
         <Eyebrow>Leistungen</Eyebrow>
 
-        <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-3">
+        <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">
           {services.map((service) => (
             <div key={service.title} className="flex flex-col bg-surface-card p-10">
               <Eyebrow>{service.label}</Eyebrow>

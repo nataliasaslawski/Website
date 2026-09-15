@@ -60,6 +60,14 @@ export function ProblemSolution() {
                 Kandidat:innen, die fachlich, persönlich und zur jeweiligen
                 Unternehmenskultur passen.
               </p>
+
+              <div aria-hidden="true" className="mt-8 flex justify-end pr-1">
+                <div className="relative h-14 w-20">
+                  <span className="absolute left-0 top-1 h-10 w-10 rounded-full bg-taupe-400/25" />
+                  <span className="absolute left-6 top-0 h-11 w-11 rounded-full bg-taupe-600/18" />
+                  <span className="absolute left-3 top-5 h-8 w-8 rounded-full bg-taupe-400/30" />
+                </div>
+              </div>
             </div>
 
             <div className="relative aspect-[3/2] w-full border border-border-default">

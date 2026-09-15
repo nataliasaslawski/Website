@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { images, brand } from "@/lib/images";
+import { images } from "@/lib/images";
 
 export function ProblemSolution() {
   return (
@@ -60,16 +60,6 @@ export function ProblemSolution() {
                 Kandidat:innen, die fachlich, persönlich und zur jeweiligen
                 Unternehmenskultur passen.
               </p>
-
-              <div aria-hidden="true" className="mt-10 flex justify-end pr-1">
-                <Image
-                  src={brand.markNavy}
-                  alt=""
-                  width={349}
-                  height={326}
-                  className="h-auto w-64 opacity-[0.08] md:w-80"
-                />
-              </div>
             </div>
 
             <div className="relative aspect-[3/2] w-full border border-border-default">

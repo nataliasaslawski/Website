@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { images, brand } from "@/lib/images";
+import { images } from "@/lib/images";
 
 export function Hero() {
   return (
@@ -18,14 +18,6 @@ export function Hero() {
       </div>
 
       <Container narrow className="relative z-10 py-24 text-center">
-        <Image
-          src={brand.logoLight}
-          alt="Natalia Saslawski – Executive Search & Talent Advisory"
-          width={1600}
-          height={326}
-          className="mx-auto mb-10 h-16 w-auto md:h-20"
-          priority
-        />
         <h1 className="font-display text-3xl font-medium leading-tight text-text-inverse md:text-4xl lg:text-[3rem]">
           Was morgen zählt, beginnt heute. Mit den richtigen Menschen.
         </h1>

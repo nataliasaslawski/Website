@@ -3,32 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
 import { nav } from "@/lib/content";
 import { brand } from "@/lib/images";
 
-export function SiteHeader() {
-  const pathname = usePathname();
-  const isHome = pathname === "/";
+const linkClasses =
+  "relative text-sm tracking-[0.01em] text-text-secondary transition-colors hover:text-navy-900 after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-navy-900 after:transition-all after:duration-300 after:ease-out hover:after:w-full";
 
+export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [leistungenOpen, setLeistungenOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // On the homepage the header floats transparently over the hero image
-  // until the user scrolls, then becomes the normal solid bar.
-  const overlay = isHome && !scrolled && !open;
-
-  useEffect(() => {
-    if (!isHome) return;
-    function handleScroll() {
-      setScrolled(window.scrollY > 48);
-    }
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHome]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -40,37 +24,19 @@ export function SiteHeader() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const linkClasses = `relative text-sm tracking-[0.01em] transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:transition-all after:duration-300 after:ease-out hover:after:w-full ${
-    overlay
-      ? "text-text-inverse/85 hover:text-text-inverse after:bg-paper-050"
-      : "text-text-secondary hover:text-navy-900 after:bg-navy-900"
-  }`;
-
   return (
-    <header
-      className={`${isHome ? "fixed" : "sticky"} top-0 left-0 z-50 w-full transition-colors duration-300 ${
-        overlay
-          ? "border-b border-transparent bg-transparent"
-          : "border-b border-border-subtle bg-surface-page/95 backdrop-blur"
-      }`}
-    >
-      <div
-        className={`mx-auto flex h-20 w-full max-w-[var(--container-max)] items-center px-6 md:px-10 ${
-          isHome ? "justify-center" : "justify-between"
-        }`}
-      >
-        {!isHome && (
-          <Link href="/" onClick={() => setOpen(false)}>
-            <Image
-              src={brand.logoNavy}
-              alt="Natalia Saslawski – Executive Search & Talent Advisory"
-              width={1600}
-              height={526}
-              className="h-14 w-auto"
-              priority
-            />
-          </Link>
-        )}
+    <header className="sticky top-0 z-50 border-b border-border-subtle bg-surface-page/95 backdrop-blur">
+      <div className="mx-auto flex h-20 w-full max-w-[var(--container-max)] items-center justify-between px-6 md:px-10">
+        <Link href="/" onClick={() => setOpen(false)}>
+          <Image
+            src={brand.logoNavy}
+            alt="Natalia Saslawski – Executive Search & Talent Advisory"
+            width={1600}
+            height={526}
+            className="h-14 w-auto"
+            priority
+          />
+        </Link>
 
         <div className="flex items-center gap-8">
           <nav className="hidden items-center gap-9 lg:flex">
@@ -131,19 +97,17 @@ export function SiteHeader() {
             aria-label={open ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className={`flex h-10 w-10 items-center justify-center border lg:hidden ${
-              overlay ? "border-paper-050/50" : "border-border-default"
-            }`}
+            className="flex h-10 w-10 items-center justify-center border border-border-default lg:hidden"
           >
             <span className="relative block h-3.5 w-5">
               <span
-                className={`absolute left-0 top-0 h-px w-5 transition-transform ${overlay ? "bg-paper-050" : "bg-navy-900"} ${open ? "translate-y-[7px] rotate-45" : ""}`}
+                className={`absolute left-0 top-0 h-px w-5 bg-navy-900 transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`}
               />
               <span
-                className={`absolute left-0 top-[7px] h-px w-5 transition-opacity ${overlay ? "bg-paper-050" : "bg-navy-900"} ${open ? "opacity-0" : "opacity-100"}`}
+                className={`absolute left-0 top-[7px] h-px w-5 bg-navy-900 transition-opacity ${open ? "opacity-0" : "opacity-100"}`}
               />
               <span
-                className={`absolute left-0 top-[14px] h-px w-5 transition-transform ${overlay ? "bg-paper-050" : "bg-navy-900"} ${open ? "-translate-y-[7px] -rotate-45" : ""}`}
+                className={`absolute left-0 top-[14px] h-px w-5 bg-navy-900 transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`}
               />
             </span>
           </button>

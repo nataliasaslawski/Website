@@ -31,8 +31,17 @@ const steps = [
 
 export function Method() {
   return (
-    <section className="bg-surface-inverse text-text-inverse">
-      <Container className="py-20 md:py-28">
+    <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-24 top-1/2 hidden h-[32rem] w-[34rem] -translate-y-1/2 lg:block"
+      >
+        <span className="absolute left-0 top-2 h-72 w-72 rounded-full bg-navy-800/55" />
+        <span className="absolute left-36 top-24 h-60 w-60 rounded-full bg-navy-700/40" />
+        <span className="absolute left-12 top-56 h-52 w-52 rounded-full bg-navy-800/30" />
+      </div>
+
+      <Container className="relative py-20 md:py-28">
         <div className="max-w-4xl">
           <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug md:text-[2rem]">

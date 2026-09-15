@@ -62,10 +62,10 @@ export function ProblemSolution() {
               </p>
 
               <div aria-hidden="true" className="mt-10 flex justify-end pr-1">
-                <div className="relative h-36 w-52">
-                  <span className="absolute left-0 top-4 h-24 w-24 rounded-full bg-taupe-400/18" />
-                  <span className="absolute left-14 top-0 h-28 w-28 rounded-full bg-taupe-600/14" />
-                  <span className="absolute left-8 top-12 h-20 w-20 rounded-full bg-taupe-400/22" />
+                <div className="relative h-44 w-56">
+                  <span className="absolute left-0 top-8 h-24 w-24 rounded-full bg-taupe-400/18" />
+                  <span className="absolute left-20 top-0 h-28 w-28 rounded-full bg-taupe-600/14" />
+                  <span className="absolute left-16 top-24 h-20 w-20 rounded-full bg-taupe-400/22" />
                 </div>
               </div>
             </div>

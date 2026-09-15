@@ -31,7 +31,7 @@ const steps = [
 
 export function Method() {
   return (
-    <section className="bg-mauve-700 text-text-inverse">
+    <section className="bg-taupe-600 text-text-inverse">
       <Container className="py-16 md:py-24">
         <div className="max-w-4xl">
           <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
@@ -42,10 +42,13 @@ export function Method() {
 
         <div className="mt-12 grid gap-8 md:grid-cols-5 md:gap-6">
           {steps.map((step) => (
-            <div key={step.n} className="border-t border-border-subtle pt-6">
-              <span className="font-display text-lg text-taupe-400">{step.n}</span>
+            <div
+              key={step.n}
+              className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.35)] pt-6"
+            >
+              <span className="font-display text-lg text-cream-100">{step.n}</span>
               <h3 className="mt-3 text-[17px] font-medium text-text-inverse">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-inverse/85">
+              <p className="mt-2 text-sm leading-relaxed text-text-inverse/90">
                 {step.text}
               </p>
             </div>

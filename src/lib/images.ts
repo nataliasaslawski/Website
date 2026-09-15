@@ -12,7 +12,6 @@
 export const images = {
   home: {
     hero: "/images/moodboard/business-portrait.png",
-    ausgangslage: "/images/moodboard/buero-abends.png",
     methodAccent: "/images/moodboard/talent-strategy.png",
     aboutTeaser: "/images/moodboard/sessel-interieur.png",
   },

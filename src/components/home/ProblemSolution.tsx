@@ -1,87 +1,63 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { images } from "@/lib/images";
-
-const solutionPoints = [
-  "Marktverständnis",
-  "strukturierte Suchmethodik",
-  "Research und Sourcing",
-  "Gewinnung relevanter Kandidat:innen",
-  "fundierte Kandidatenbewertung",
-  "Beratung auf Augenhöhe",
-];
 
 export function ProblemSolution() {
   return (
     <section className="bg-surface-page">
-      <div className="pt-16 md:pt-24">
-        <Container className="pb-8 md:pb-10">
+      <Container className="py-16 md:py-24">
+        <div className="max-w-2xl">
           <Eyebrow>Die Ausgangslage</Eyebrow>
-        </Container>
-        <div className="grid w-full overflow-hidden lg:grid-cols-2">
-          <div className="relative min-h-[280px] w-full lg:min-h-[440px]">
-            <Image
-              src={images.home.ausgangslage}
-              alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-          </div>
-          <div className="flex flex-col justify-center bg-cream-100 p-8 md:p-14 lg:px-20">
-            <div className="max-w-xl">
-              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-                Anspruchsvolle Positionen brauchen mehr als
-                Standard-Recruiting.
-              </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-navy-900">
-                Was anspruchsvolle Besetzungen erschwert: komplexe oder sehr
-                spezifische Anforderungen, schwer erreichbare
-                Kandidat:innen, ein wenig transparenter Zielmarkt, zu eng
-                angelegte Suchstrategien, geringe Resonanz auf klassischen
-                Kanälen und fehlende interne Ressourcen für eine intensive
-                Suche. Gerade in diesen Situationen braucht es mehr als
-                Reichweite – entscheidend sind Marktverständnis, eine klare
-                Suchstrategie und der Zugang zu relevanten Profilen.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <Container className="pb-16 md:pb-24">
-        <div className="mx-auto mt-16 max-w-2xl md:mt-24">
-          <Eyebrow>Der Ansatz</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Strategische Beratung, verbunden mit operativer
-            Search-Kompetenz.
+            Anspruchsvolle Positionen brauchen mehr als
+            Standard-Recruiting.
           </h2>
           <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-            Die Zusammenarbeit beginnt nicht erst bei der Profilsuche.
-            Zunächst werden Rolle, Unternehmenskontext, Anforderungen,
-            Suchparameter und relevante Zielmärkte verstanden und
-            hinterfragt. Darauf aufbauend wird eine fundierte Suchstrategie
-            entwickelt und operativ umgesetzt.
+            Je spezifischer eine Rolle, desto anspruchsvoller wird die
+            Suche. Oft sind relevante Kandidat:innen nur schwer erreichbar,
+            Zielmärkte eng und klassische Recruiting-Kanäle wenig wirksam.
+            Gleichzeitig müssen fachliche Anforderungen, Unternehmenskontext
+            und persönliche Passung zusammengebracht werden. Gerade bei
+            Schlüsselpositionen braucht es deshalb mehr als Reichweite:
+            Marktverständnis, Klarheit in der Suche und einen
+            differenzierten Blick auf relevante Kandidat:innenmärkte.
           </p>
-          <p className="mt-6 text-md font-normal leading-relaxed text-navy-900">
-            Im Mittelpunkt stehen dabei
-          </p>
-          <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3">
-            {solutionPoints.map((item) => (
-              <li
-                key={item}
-                className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-navy-900"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 text-[15px] leading-relaxed text-text-secondary">
-            Ziel ist nicht, möglichst viele Profile zu präsentieren, sondern
-            Kandidat:innen zu identifizieren, die fachlich wie persönlich zur
-            Rolle und zum Unternehmen passen.
-          </p>
+        </div>
+
+        <div className="mt-16 grid items-center gap-12 md:mt-24 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <Eyebrow>Mein Ansatz</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Strategische Beratung, verbunden mit operativer
+              Besetzungskompetenz.
+            </h2>
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              Am Anfang steht für mich ein klares Verständnis der Rolle, des
+              Unternehmenskontextes und der Anforderungen. Darauf aufbauend
+              entwickle ich eine fundierte Suchstrategie, die sich im
+              Zusammenspiel mit den Marktergebnissen kontinuierlich
+              weiterentwickelt, und führe den Besetzungsprozess operativ
+              durch.
+            </p>
+          </div>
+
+          <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-elevated">
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              className="text-taupe-600"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
+            </svg>
+            <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+              Businessfoto folgt in Kürze
+            </span>
+          </div>
         </div>
       </Container>
     </section>

@@ -23,8 +23,25 @@ const services = [
 
 export function ServicesOverview() {
   return (
-    <section className="bg-surface-elevated">
-      <Container className="py-16 md:py-24">
+    <section className="relative overflow-hidden bg-surface-elevated">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-64 top-1/2 hidden h-[18rem] w-[18rem] -translate-y-1/2 xl:block"
+      >
+        <span className="absolute left-2 top-0 h-32 w-32 rounded-full bg-navy-900/8" />
+        <span className="absolute left-14 top-8 h-24 w-24 rounded-full bg-navy-900/6" />
+        <span className="absolute left-6 top-20 h-16 w-16 rounded-full bg-navy-900/5" />
+      </div>
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-10 -left-10 hidden h-[14rem] w-[16rem] xl:block"
+      >
+        <span className="absolute bottom-2 left-0 h-32 w-32 rounded-full bg-navy-900/7" />
+        <span className="absolute bottom-8 left-14 h-24 w-24 rounded-full bg-navy-900/5" />
+      </div>
+
+      <Container className="relative py-16 md:py-24">
         <Eyebrow>Leistungen</Eyebrow>
 
         <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">

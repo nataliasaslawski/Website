@@ -24,21 +24,39 @@ const services = [
 export function ServicesOverview() {
   return (
     <section className="relative overflow-hidden bg-surface-elevated">
-      {/* top-left corner circle, mirrored to Vorgehensweise's top-right circle.
-          z-10 lifts it above the (unpositioned) card grid so it visibly runs
-          across the "Für Unternehmen" card's corner at low opacity. */}
+      {/* top-left cluster, mirrored to Vorgehensweise's top-right cluster.
+          z-10 lifts the circles above the (unpositioned) card grid so they
+          visibly run across the "Für Unternehmen" card's corner at low opacity. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -left-24 -top-24 z-10 hidden h-[22rem] w-[22rem] rounded-full bg-navy-900/10 xl:block"
+        className="pointer-events-none absolute -left-24 -top-24 z-10 hidden h-[22rem] w-[22rem] rounded-full bg-navy-900/7 xl:block"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-4 top-20 z-10 hidden h-56 w-56 rounded-full bg-navy-900/6 xl:block"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-24 -top-8 z-10 hidden h-40 w-40 rounded-full bg-navy-900/6 xl:block"
       />
 
-      {/* bottom-right seam circle: continues into the dark Vorgehensweise section
-          below and across the "Für Personalberatungen" card's corner. Center sits
-          exactly on the section boundary (bottom: -R); same size/horizontal offset
-          as the matching circle in Method.tsx. */}
+      {/* bottom-right cluster. The largest circle is the seam anchor: it continues
+          into the dark Vorgehensweise section below and across the
+          "Für Personalberatungen" card's corner. Its center sits exactly on the
+          section boundary (bottom: -R); same size/horizontal offset as the
+          matching circle in Method.tsx. The two smaller satellites stay clear of
+          the boundary and only add to the cluster within Leistungen. */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-48 right-24 z-10 hidden h-96 w-96 rounded-full bg-navy-900/11 xl:block"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-8 right-56 z-10 hidden h-56 w-56 rounded-full bg-navy-900/6 xl:block"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-24 right-8 z-10 hidden h-40 w-40 rounded-full bg-navy-900/7 xl:block"
       />
 
       <Container className="relative py-16 md:py-24">

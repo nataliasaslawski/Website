@@ -51,15 +51,9 @@ export function ServicesOverview() {
   return (
     <section className="bg-surface-elevated">
       <Container className="py-16 md:py-24">
-        <div className="max-w-2xl">
-          <Eyebrow>Leistungen</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Executive Search, Professional Search und Talent Advisory aus
-            einer Hand
-          </h2>
-        </div>
+        <Eyebrow>Leistungen</Eyebrow>
 
-        <div className="mt-12 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-3">
+        <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-3">
           {services.map((service) => (
             <div key={service.title} className="flex flex-col bg-surface-card p-8">
               <Eyebrow>{service.label}</Eyebrow>

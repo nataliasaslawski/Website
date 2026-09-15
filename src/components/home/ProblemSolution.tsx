@@ -4,33 +4,33 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 export function ProblemSolution() {
   return (
     <>
-      <section className="bg-cream-100/40">
-        <Container className="py-14 md:py-20">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-20">
-            <div className="max-w-3xl">
-              <Eyebrow>Die Ausgangslage</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
-                Anspruchsvolle Positionen brauchen mehr als
-                Standard-Recruiting.
-              </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-                Je spezifischer eine Rolle, desto anspruchsvoller wird die
-                Suche. Oft sind relevante Kandidat:innen nur schwer erreichbar,
-                Zielmärkte eng und klassische Recruiting-Kanäle wenig wirksam.
-                Gleichzeitig müssen fachliche Anforderungen, Unternehmenskontext
-                und persönliche Passung zusammengebracht werden. Gerade bei
-                Schlüsselpositionen braucht es deshalb mehr als Reichweite:
-                Marktverständnis, Klarheit in der Suche und einen
-                differenzierten Blick auf relevante Kandidat:innenmärkte.
-              </p>
-            </div>
+      <section className="relative overflow-hidden bg-cream-100/40">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-24 top-1/2 hidden h-[30rem] w-[36rem] -translate-y-1/2 lg:block"
+        >
+          <span className="absolute left-24 top-2 h-72 w-72 rounded-full bg-taupe-400/15" />
+          <span className="absolute left-0 top-44 h-56 w-56 rounded-full bg-taupe-600/12" />
+          <span className="absolute left-48 bottom-0 h-44 w-44 rounded-full bg-taupe-400/20" />
+        </div>
 
-            <div
-              aria-hidden="true"
-              className="hidden select-none font-display text-[9rem] font-medium leading-none text-taupe-400/25 lg:block lg:text-[10rem]"
-            >
-              01
-            </div>
+        <Container className="relative py-14 md:py-20">
+          <div className="max-w-3xl">
+            <Eyebrow>Die Ausgangslage</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
+              Anspruchsvolle Positionen brauchen mehr als
+              Standard-Recruiting.
+            </h2>
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              Je spezifischer eine Rolle, desto anspruchsvoller wird die
+              Suche. Oft sind relevante Kandidat:innen nur schwer erreichbar,
+              Zielmärkte eng und klassische Recruiting-Kanäle wenig wirksam.
+              Gleichzeitig müssen fachliche Anforderungen, Unternehmenskontext
+              und persönliche Passung zusammengebracht werden. Gerade bei
+              Schlüsselpositionen braucht es deshalb mehr als Reichweite:
+              Marktverständnis, Klarheit in der Suche und einen
+              differenzierten Blick auf relevante Kandidat:innenmärkte.
+            </p>
           </div>
         </Container>
       </section>

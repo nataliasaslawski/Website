@@ -5,12 +5,12 @@ const steps = [
   {
     n: "01",
     title: "Verstehen",
-    text: "Rolle, Unternehmen, Kontext, Ausgangssituation, Anforderungen, Ziel der Besetzung und Erwartungen an die Rolle verstehen.",
+    text: "Rolle, Unternehmen, Kontext, Anforderungen und Ziel der Besetzung erfassen.",
   },
   {
     n: "02",
     title: "Analysieren",
-    text: "Suchparameter, Kandidat:innenmarkt, Branchen, Zielfirmen sowie mögliche alternative Märkte analysieren.",
+    text: "Suchparameter, Kandidat:innenmarkt, Branchen, Zielfirmen und alternative Märkte einordnen.",
   },
   {
     n: "03",
@@ -25,7 +25,7 @@ const steps = [
   {
     n: "05",
     title: "Begleiten",
-    text: "Erkenntnisse transparent kommunizieren, Suchstrategie bei Bedarf anpassen und den weiteren Auswahlprozess begleiten.",
+    text: "Erkenntnisse transparent kommunizieren, Suchstrategie bei Bedarf anpassen und den Auswahlprozess begleiten.",
   },
 ];
 
@@ -40,16 +40,24 @@ export function Method() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-5 md:gap-6">
-          {steps.map((step) => (
-            <div key={step.n} className="border-t border-[oklch(from_var(--paper-050)_l_c_h_/_0.25)] pt-6">
-              <span className="font-display text-lg text-taupe-400">{step.n}</span>
-              <h3 className="mt-3 text-[17px] font-medium text-text-inverse">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-inverse-muted">
-                {step.text}
-              </p>
-            </div>
-          ))}
+        <div className="relative mt-14 max-w-2xl">
+          <div
+            aria-hidden="true"
+            className="absolute bottom-2 left-0 top-2 w-px bg-[oklch(from_var(--paper-050)_l_c_h_/_0.25)]"
+          />
+          <div className="space-y-10">
+            {steps.map((step) => (
+              <div key={step.n} className="pl-10 md:pl-12">
+                <span className="font-display text-lg text-taupe-400">{step.n}</span>
+                <h3 className="mt-2 text-[19px] font-medium text-text-inverse">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-text-inverse-muted">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </section>

@@ -19,7 +19,7 @@ export function FounderTeaser() {
         </div>
 
         <div>
-          <Eyebrow>Über die Beraterin</Eyebrow>
+          <Eyebrow>Über mich</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             15 Jahre Erfahrung in Executive Search und Personalberatung
           </h2>

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { images } from "@/lib/images";
 
 export function ProblemSolution() {
   return (
@@ -54,23 +56,14 @@ export function ProblemSolution() {
               </p>
             </div>
 
-            <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-elevated">
-              <svg
-                width="52"
-                height="52"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                className="text-taupe-600"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="8" r="3.5" />
-                <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
-              </svg>
-              <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
-                Businessfoto folgt in Kürze
-              </span>
+            <div className="relative aspect-[3/4] w-full border border-border-default">
+              <Image
+                src={images.home.ansatzPortrait}
+                alt="Natalia Saslawski"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
             </div>
           </div>
         </Container>

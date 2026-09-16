@@ -4,7 +4,7 @@ import { images } from "@/lib/images";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-navy-900">
+    <section className="relative flex min-h-[52vh] items-center overflow-hidden bg-navy-900">
       <div className="absolute inset-0">
         <Image
           src={images.home.hero}
@@ -17,7 +17,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-overlay-scrim" />
       </div>
 
-      <Container narrow className="relative z-10 py-32 text-center">
+      <Container narrow className="relative z-10 py-20 text-center md:py-24">
         <h1 className="font-display text-3xl font-medium leading-tight text-text-inverse md:text-4xl lg:text-[3rem]">
           Was morgen zählt, beginnt heute. Mit den richtigen Menschen.
         </h1>

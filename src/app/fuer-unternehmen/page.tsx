@@ -93,12 +93,13 @@ const processSteps = [
 
 const outcomes = [
   "Klarheit über den relevanten Kandidatenmarkt",
-  "Realistische und fundierte Suchstrategie",
-  "Zugang zu Kandidat:innen außerhalb klassischer Bewerbermärkte",
-  "Strukturierte Identifikation und Ansprache relevanter Profile",
+  "Fundierte, praxisbewährte Suchstrategien",
+  "Direkter Zugang zu relevanten, nicht wechselaktiven Kandidat:innen",
+  "Zahlreiche Besetzungen über unterschiedliche Konjunkturphasen und Kandidatenmärkte hinweg",
   "Qualifizierte Kandidat:innen statt möglichst großer Profilmengen",
   "Entlastung interner Recruiting- oder Search-Ressourcen",
   "Fundierte Entscheidungsgrundlagen für den weiteren Auswahlprozess",
+  "Strategie, Search und Prozessbegleitung aus einer Hand",
 ];
 
 export default function FuerUnternehmenPage() {

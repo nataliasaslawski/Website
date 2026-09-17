@@ -29,6 +29,7 @@ const serviceTiles = [
       "Suchstrategie & Zielmarktdefinition",
       "Research, Direktansprache & Qualifizierung",
       "Kandidatenbewertung & Begleitung des Auswahlprozesses",
+      "Besetzung einzelner Schlüsselpositionen bis hin zu kompletten Teams",
     ],
   },
   {
@@ -59,6 +60,7 @@ const serviceTiles = [
       "Aufbau und Weiterentwicklung von Recruiting-/TA-Strukturen",
       "Optimierung von Prozessen und Zusammenarbeit",
       "Steuerung größerer Recruiting- und Transformationsprojekte",
+      "Aufbau und Besetzung neuer Teams und Funktionen",
     ],
   },
 ];

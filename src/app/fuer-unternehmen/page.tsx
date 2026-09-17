@@ -55,7 +55,7 @@ const serviceTiles = [
   {
     title: "Interim Recruiting & Talent Acquisition",
     description:
-      "Temporäre Unterstützung bei Aufbau-, Veränderungs- und Optimierungsprojekten im Recruiting – von der Projektleitung bis zur operativen Umsetzung.",
+      "Temporäre Unterstützung bei Aufbau-, Veränderungs- und Optimierungsprojekten im Recruiting.",
     points: [
       "Aufbau und Weiterentwicklung von Recruiting-/TA-Strukturen",
       "Optimierung von Prozessen und Zusammenarbeit",

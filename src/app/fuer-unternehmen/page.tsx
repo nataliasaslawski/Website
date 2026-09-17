@@ -20,17 +20,47 @@ const situations = [
   "Interne Recruiting-Kapazitäten reichen für eine intensive Suche und Direktansprache nicht aus.",
 ];
 
-const services = [
-  "Rollen- und Anforderungsanalyse",
-  "Entwicklung und Schärfung der Suchstrategie",
-  "Markt- und Wettbewerbsanalyse",
-  "Definition relevanter Zielfirmen und Kandidatenmärkte",
-  "Research und Sourcing",
-  "Direktansprache potenzieller Kandidat:innen",
-  "Erstgespräche und Qualifizierung",
-  "Strukturierte Kandidatenbewertung",
-  "Erstellung und Präsentation geeigneter Kandidatenprofile",
-  "Begleitung und Beratung im Auswahlprozess",
+const serviceTiles = [
+  {
+    title: "Executive & Professional Search",
+    description:
+      "Ganzheitliche Besetzung anspruchsvoller Fach-, Führungs- und Schlüsselpositionen – von der Suchstrategie bis zur Kandidatenpräsentation.",
+    points: [
+      "Suchstrategie & Zielmarktdefinition",
+      "Research, Direktansprache & Qualifizierung",
+      "Kandidatenbewertung & Begleitung des Auswahlprozesses",
+    ],
+  },
+  {
+    title: "Kandidatenmarktanalyse & Talent Mapping",
+    description:
+      "Transparenz über relevante Zielunternehmen, Kandidatenmärkte und tatsächlich ansprechbare Profile.",
+    points: [
+      "Markt- und Wettbewerbsanalyse",
+      "Identifikation relevanter Kandidat:innen",
+      "Optional: erste Ansprache und Aufbau einer Kandidatenpipeline",
+    ],
+  },
+  {
+    title: "Talent Advisory & Recruiting-Beratung",
+    description:
+      "Strategische Unterstützung bei komplexen Recruiting- und Talent-Acquisition-Fragestellungen.",
+    points: [
+      "Anforderungsprofile & Suchstrategien schärfen",
+      "Auswahl- und Recruitingprozesse strukturieren",
+      "Talentgewinnung und Arbeitgeberpositionierung verbessern",
+    ],
+  },
+  {
+    title: "Interim Recruiting & Talent Acquisition",
+    description:
+      "Temporäre Unterstützung bei Aufbau-, Veränderungs- und Optimierungsprojekten im Recruiting – von der Projektleitung bis zur operativen Umsetzung.",
+    points: [
+      "Aufbau und Weiterentwicklung von Recruiting-/TA-Strukturen",
+      "Optimierung von Prozessen und Zusammenarbeit",
+      "Steuerung größerer Recruiting- und Transformationsprojekte",
+    ],
+  },
 ];
 
 const outcomes = [
@@ -41,15 +71,6 @@ const outcomes = [
   "Qualifizierte Kandidat:innen statt möglichst großer Profilmengen",
   "Entlastung interner Recruiting- oder Search-Ressourcen",
   "Fundierte Entscheidungsgrundlagen für den weiteren Auswahlprozess",
-];
-
-const advisoryPoints = [
-  "Anforderungsprofile schärfen",
-  "Kandidatenmärkte analysieren",
-  "Alternative Zielmärkte identifizieren",
-  "Suchstrategien entwickeln oder überprüfen",
-  "Auswahl- und Bewertungskriterien strukturieren",
-  "Recruiting- und Talent-Acquisition-Prozesse optimieren",
 ];
 
 export default function FuerUnternehmenPage() {
@@ -112,31 +133,42 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="grid gap-16 py-16 md:py-24 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <Eyebrow>Leistungen &amp; Vorgehensweise</Eyebrow>
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl">
+            <Eyebrow>Leistungen</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Mögliche Leistungsbausteine
             </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-              Die konkrete Ausgestaltung richtet sich nach Position,
-              Ausgangssituation und vorhandenen internen
-              Recruiting-Ressourcen – als vollständiges Search-Mandat oder in
-              einzelnen Projektbausteinen.
-            </p>
-            <ul className="mt-6 space-y-3">
-              {services.map((item) => (
-                <li
-                  key={item}
-                  className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-navy-900 first:border-none first:pt-0"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
 
-          <div>
+          <div className="mt-10 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">
+            {serviceTiles.map((tile) => (
+              <div key={tile.title} className="flex flex-col bg-surface-card p-8 md:p-10">
+                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                  {tile.title}
+                </h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                  {tile.description}
+                </p>
+                <ul className="mt-5 space-y-2.5">
+                  {tile.points.map((point) => (
+                    <li
+                      key={point}
+                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-navy-900 first:border-none first:pt-0"
+                    >
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-surface-elevated">
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl">
             <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Was Sie aus der Zusammenarbeit mitnehmen
@@ -151,41 +183,6 @@ export default function FuerUnternehmenPage() {
                 </li>
               ))}
             </ul>
-          </div>
-        </Container>
-      </section>
-
-      <section id="talent-advisory" className="scroll-mt-24 bg-surface-elevated">
-        <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          <div>
-            <Eyebrow>Talent Advisory</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Strategische Beratung rund um Search &amp; Recruiting
-            </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-              Ergänzende Beratungsleistungen für anspruchsvolle Recruiting-
-              und Search-Fragestellungen – eigenständig oder in Verbindung
-              mit einem Search-Projekt.
-            </p>
-            <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {advisoryPoints.map((item) => (
-                <li
-                  key={item}
-                  className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-navy-900"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-card">
-            <Image
-              src={images.companies.secondary}
-              alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 40vw, 90vw"
-            />
           </div>
         </Container>
       </section>

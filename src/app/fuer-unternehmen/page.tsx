@@ -219,8 +219,8 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-24">
-          <div className="max-w-2xl">
+        <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+          <div>
             <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Was Sie aus der Zusammenarbeit mitnehmen
@@ -235,6 +235,25 @@ export default function FuerUnternehmenPage() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-card">
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              className="text-taupe-600"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
+            </svg>
+            <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+              Bildplatzhalter
+            </span>
           </div>
         </Container>
       </section>

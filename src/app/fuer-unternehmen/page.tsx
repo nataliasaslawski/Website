@@ -137,7 +137,7 @@ export default function FuerUnternehmenPage() {
           <div className="max-w-2xl">
             <Eyebrow>Leistungen</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Mögliche Leistungsbausteine
+              Formen der Zusammenarbeit
             </h2>
           </div>
 

@@ -63,6 +63,19 @@ const serviceTiles = [
   },
 ];
 
+const processSteps = [
+  {
+    n: "01",
+    title: "Verstehen & Einordnen",
+    text: "Rolle, Unternehmen, Ausgangssituation und Anforderungen erfassen und in den relevanten Markt- und Suchkontext einordnen.",
+  },
+  {
+    n: "02",
+    title: "Suchstrategie entwickeln",
+    text: "Relevante Märkte, Zielunternehmen und Suchfelder analysieren und daraus eine fundierte Suchstrategie entwickeln.",
+  },
+];
+
 const outcomes = [
   "Klarheit über den relevanten Kandidatenmarkt",
   "Realistische und fundierte Suchstrategie",
@@ -160,6 +173,27 @@ export default function FuerUnternehmenPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-surface-inverse text-text-inverse">
+        <Container className="py-16 md:py-24">
+          <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
+
+          <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-6">
+            {processSteps.map((step) => (
+              <div
+                key={step.n}
+                className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.35)] pt-6"
+              >
+                <span className="font-display text-lg text-cream-100">{step.n}</span>
+                <h3 className="mt-3 text-[17px] font-medium text-text-inverse">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-text-inverse/90">
+                  {step.text}
+                </p>
               </div>
             ))}
           </div>

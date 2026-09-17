@@ -172,27 +172,42 @@ export default function FuerUnternehmenPage() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">
-            {serviceTiles.map((tile) => (
-              <div key={tile.title} className="flex flex-col bg-surface-card p-8 md:p-10">
-                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
-                  {tile.title}
-                </h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
-                  {tile.description}
-                </p>
-                <ul className="mt-5 space-y-2.5">
-                  {tile.points.map((point) => (
-                    <li
-                      key={point}
-                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-navy-900 first:border-none first:pt-0"
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="mt-10 grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
+            <div className="space-y-10">
+              {serviceTiles.map((tile) => (
+                <div
+                  key={tile.title}
+                  className="border-t border-border-default pt-8 first:border-none first:pt-0"
+                >
+                  <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                    {tile.title}
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                    {tile.description}
+                  </p>
+                  <ul className="mt-4 space-y-2">
+                    {tile.points.map((point) => (
+                      <li
+                        key={point}
+                        className="text-sm leading-relaxed text-navy-900"
+                      >
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="relative aspect-[3/4] w-full overflow-hidden bg-surface-elevated lg:aspect-auto lg:h-full">
+              <Image
+                src={images.companies.secondary}
+                alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
+            </div>
           </div>
         </Container>
       </section>

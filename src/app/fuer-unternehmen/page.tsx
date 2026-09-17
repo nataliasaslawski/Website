@@ -74,6 +74,21 @@ const processSteps = [
     title: "Suchstrategie entwickeln",
     text: "Relevante Märkte, Zielunternehmen und Suchfelder analysieren und daraus eine fundierte Suchstrategie entwickeln.",
   },
+  {
+    n: "03",
+    title: "Finden & Aktivieren",
+    text: "Relevante Kandidat:innen identifizieren, persönlich ansprechen und für den Prozess gewinnen.",
+  },
+  {
+    n: "04",
+    title: "Bewerten",
+    text: "Erfahrung, Kompetenzen, Motivation, Persönlichkeit und mögliche Passung strukturiert bewerten.",
+  },
+  {
+    n: "05",
+    title: "Entscheiden & Begleiten",
+    text: "Erkenntnisse transparent kommunizieren, geeignete Kandidat:innen vorstellen und den weiteren Auswahlprozess beratend begleiten.",
+  },
 ];
 
 const outcomes = [
@@ -183,7 +198,7 @@ export default function FuerUnternehmenPage() {
         <Container className="py-16 md:py-24">
           <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
 
-          <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-6">
+          <div className="mt-10 grid gap-8 md:grid-cols-5 md:gap-6">
             {processSteps.map((step) => (
               <div
                 key={step.n}

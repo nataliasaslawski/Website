@@ -109,16 +109,19 @@ export default function FuerUnternehmenPage() {
           <div>
             <Eyebrow>Für Unternehmen</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
-              Executive &amp; Professional Search für anspruchsvolle
-              Positionen
+              Besetzung anspruchsvoller Fach-, Führungs- und
+              Schlüsselpositionen
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
-              Unterstützung bei der Besetzung anspruchsvoller Fach-,
-              Führungs- und Schlüsselpositionen – von der Klärung des
-              Suchprofils und der Entwicklung einer fundierten Suchstrategie
-              über Research, Sourcing und Direktansprache bis zur
-              strukturierten Kandidatenbewertung und Begleitung des
+              Ich unterstütze Unternehmen bei komplexen Besetzungen – von der
+              Klärung des Suchprofils über die Entwicklung der Suchstrategie
+              bis zur strukturierten Kandidatenbewertung und Begleitung des
               Auswahlprozesses.
+            </p>
+            <p className="mt-4 text-[17px] leading-relaxed text-text-secondary">
+              Dabei verbinde ich langjährige Search-Erfahrung mit fundierter
+              Marktkenntnis und einer individuell entwickelten
+              Suchstrategie.
             </p>
             <div className="mt-8">
               <Button href="/kontakt#erstgespraech" variant="primary">

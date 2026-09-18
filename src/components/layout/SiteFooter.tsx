@@ -14,13 +14,15 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-[var(--container-max)] px-6 py-16 md:px-10 md:py-20">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <Image
-              src={brand.logoLight}
-              alt="Natalia Saslawski – Executive Search & Talent Advisory"
-              width={1600}
-              height={526}
-              className="h-16 w-auto"
-            />
+            <div className="inline-block bg-cream-050 px-6 py-4">
+              <Image
+                src={brand.logoNavy}
+                alt="Natalia Saslawski – Executive Search & Talent Advisory"
+                width={1600}
+                height={526}
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-text-inverse-muted">
               {site.locationShort}, {site.region}.
             </p>

@@ -66,8 +66,13 @@ export default function KontaktPage() {
               <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
                 Telefon
               </dt>
-              <dd className="mt-2 text-[15px] text-text-muted">
-                Telefonnummer folgt in Kürze.
+              <dd className="mt-2 text-[15px]">
+                <a
+                  href="tel:+4917643983941"
+                  className="text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
+                >
+                  +49 176 43983941
+                </a>
               </dd>
             </div>
             <div className="border-t border-border-default py-5">
@@ -89,12 +94,23 @@ export default function KontaktPage() {
               </dt>
               <dd className="mt-2 text-[15px]">
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/natalia-saslawski-20788467/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
+                  className="inline-flex items-center gap-2 text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
                 >
-                  Auf LinkedIn vernetzen
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    className="text-taupe-600"
+                  >
+                    <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+                  </svg>
+                  <span>LinkedIn-Profil</span>
+                  <span className="sr-only"> (öffnet in neuem Tab)</span>
                 </a>
               </dd>
             </div>

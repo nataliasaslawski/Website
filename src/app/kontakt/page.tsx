@@ -44,47 +44,61 @@ export default function KontaktPage() {
       </section>
 
       <section id="erstgespraech" className="scroll-mt-24 bg-surface-elevated">
-        <Container className="grid gap-10 py-16 md:py-20 lg:grid-cols-2 lg:gap-16">
-          <div className="border border-border-default bg-surface-card p-8">
-            <Eyebrow>Erstgespräch</Eyebrow>
-            <h2 className="mt-3 font-display text-xl font-medium text-navy-900">
-              Termin für ein unverbindliches Erstgespräch
+        <Container className="grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+          <div>
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Kontakt aufnehmen
             </h2>
-            <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
-              Die Online-Terminbuchung wird derzeit eingerichtet. Bis dahin
-              erreichen Sie mich am schnellsten über das Kontaktformular oder
-              per E-Mail — ich melde mich zeitnah mit Terminvorschlägen
-              zurück.
+            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary">
+              Sie möchten sich zu einer möglichen Zusammenarbeit austauschen
+              oder haben Fragen zu meinen Leistungen?
             </p>
-            <a
-              href="#kontaktformular"
-              className="mt-6 inline-flex items-center justify-center rounded-[var(--radius-sm)] bg-navy-900 px-6 py-3 text-sm font-medium text-text-inverse transition-colors hover:bg-navy-800"
-            >
-              Zum Kontaktformular
-            </a>
+            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary">
+              Kontaktieren Sie mich gerne telefonisch, per E-Mail, über
+              LinkedIn oder über das Kontaktformular. Ich melde mich zeitnah
+              persönlich bei Ihnen zurück und wir stimmen bei Bedarf einen
+              passenden Gesprächstermin ab.
+            </p>
           </div>
 
-          <div id="rueckruf" className="scroll-mt-24 border border-border-default bg-surface-card p-8">
-            <Eyebrow>Rückruf</Eyebrow>
-            <h2 className="mt-3 font-display text-xl font-medium text-navy-900">
-              Rückruf anfragen
-            </h2>
-            <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
-              Hinterlassen Sie kurz Ihr Anliegen und Ihre Telefonnummer im
-              Kontaktformular — ich rufe Sie gerne zurück.
-            </p>
-            <div className="mt-6 space-y-1 text-[15px] text-text-secondary">
-              <p>
-                E-Mail:{" "}
-                <a href={`mailto:${site.email}`} className="text-navy-900 underline decoration-taupe-600 underline-offset-4">
+          <dl id="rueckruf" className="scroll-mt-24 self-center">
+            <div className="border-t border-border-default py-5">
+              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+                Telefon
+              </dt>
+              <dd className="mt-2 text-[15px] text-text-muted">
+                Telefonnummer folgt in Kürze.
+              </dd>
+            </div>
+            <div className="border-t border-border-default py-5">
+              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+                E-Mail
+              </dt>
+              <dd className="mt-2 text-[15px]">
+                <a
+                  href={`mailto:${site.email}`}
+                  className="text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
+                >
                   {site.email}
                 </a>
-              </p>
-              <p className="text-text-muted">
-                Telefonnummer folgt in Kürze.
-              </p>
+              </dd>
             </div>
-          </div>
+            <div className="border-y border-border-default py-5">
+              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+                LinkedIn
+              </dt>
+              <dd className="mt-2 text-[15px]">
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
+                >
+                  Auf LinkedIn vernetzen
+                </a>
+              </dd>
+            </div>
+          </dl>
         </Container>
       </section>
 

@@ -6,7 +6,7 @@ export function IntroStatement() {
   return (
     <section className="bg-surface-elevated">
       <Container className="py-20 md:py-28">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
             <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Executive Search &amp; Talent Advisory
@@ -22,16 +22,14 @@ export function IntroStatement() {
             </p>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative aspect-[4/5] w-full max-w-[22rem] overflow-hidden">
-              <Image
-                src={images.home.introPortrait}
-                alt="Natalia Saslawski"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 22rem, 90vw"
-              />
-            </div>
+          <div className="relative aspect-[3/2] w-full overflow-hidden">
+            <Image
+              src={images.home.introPortrait}
+              alt="Natalia Saslawski"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 55vw, 90vw"
+            />
           </div>
         </div>
       </Container>

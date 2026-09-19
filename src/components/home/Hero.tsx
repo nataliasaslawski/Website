@@ -4,17 +4,17 @@ import { images } from "@/lib/images";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[52vh] items-center overflow-hidden bg-navy-900">
+    <section className="relative flex min-h-[60vh] items-center overflow-hidden bg-navy-900">
       <div className="absolute inset-0">
         <Image
           src={images.home.hero}
           alt=""
           fill
           priority
-          className="scale-105 object-cover blur-sm"
+          className="object-cover object-[50%_22%]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-overlay-scrim" />
+        <div className="absolute inset-0 bg-navy-900/65" />
       </div>
 
       <Container narrow className="relative z-10 py-20 text-center md:py-24">

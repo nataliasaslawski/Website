@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { brand } from "@/lib/images";
+import { images } from "@/lib/images";
 
 export function IntroStatement() {
   return (
@@ -23,13 +23,15 @@ export function IntroStatement() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <Image
-              src={brand.markNavy}
-              alt=""
-              width={349}
-              height={326}
-              className="h-auto w-40 opacity-30 md:w-48"
-            />
+            <div className="relative aspect-[4/5] w-full max-w-[22rem] overflow-hidden">
+              <Image
+                src={images.home.introPortrait}
+                alt="Natalia Saslawski"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 22rem, 90vw"
+              />
+            </div>
           </div>
         </div>
       </Container>

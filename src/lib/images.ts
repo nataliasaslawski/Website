@@ -15,6 +15,7 @@ export const images = {
     methodAccent: "/images/moodboard/talent-strategy.png",
     aboutTeaser: "/images/moodboard/sessel-interieur.png",
     ansatzPortrait: "/images/portraits/natalia-ansatz.webp",
+    introPortrait: "/images/portraits/natalia-intro.webp",
   },
   about: {
     portrait: "/images/moodboard/businessfrau-schreibtisch.png",

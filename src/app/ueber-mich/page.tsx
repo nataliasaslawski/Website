@@ -46,22 +46,22 @@ export default function UeberMichPage() {
             </h2>
             <div className="max-w-xl text-[16px] leading-[1.8] text-text-secondary">
             <p className="mt-6">
-              In vielen Jahren Personalberatung habe ich unzählige Gespräche mit Unternehmen, Führungskräften und Kandidat:innen geführt. Ich habe Suchprojekte begleitet, bei denen der vermeintlich perfekte Kandidat am Ende doch nicht der Richtige war – und andere, bei denen sich hinter einem zunächst unscheinbaren Profil genau die Persönlichkeit verbarg, die ein Unternehmen gesucht hatte.
+              In vielen Jahren Personalberatung habe ich unzählige Gespräche mit Unternehmen, Führungskräften und Kandidat:innen geführt. Ich habe erlebt, dass der vermeintlich perfekte Kandidat am Ende doch nicht der Richtige war – und dass sich hinter einem zunächst unscheinbaren Profil genau die Persönlichkeit verbarg, die ein Unternehmen gesucht hatte.
             </p>
             <p className="mt-6">
-              Genau das macht Executive Search für mich bis heute spannend. Es geht nicht nur darum, Menschen zu finden, die eine fachliche Anforderung erfüllen. Entscheidend ist zu verstehen, was hinter einer Position wirklich gebraucht wird – und was einen Menschen dazu bewegt, über einen Wechsel nachzudenken.
+              Genau das macht Executive Search für mich bis heute spannend. Entscheidend ist nicht nur, wer eine fachliche Anforderung erfüllt, sondern was hinter einer Position wirklich gebraucht wird – und was Menschen zu einem Wechsel bewegt.
             </p>
             <p className="mt-6">
-              Über die Jahre habe ich dabei eines gelernt: Eine gute Suche beginnt lange vor der ersten Kandidatenansprache. Mit Zuhören, Einordnen, Hinterfragen und einem realistischen Blick auf den Markt. Besonders reizen mich komplexe Mandate, bei denen die naheliegende Suche nicht ausreicht und zunächst Klarheit über Anforderungen, Märkte oder mögliche Kandidatenfelder entstehen muss.
+              Eine gute Suche beginnt für mich lange vor der ersten Kandidatenansprache: mit Zuhören, Einordnen, Hinterfragen und einem realistischen Blick auf den Markt. Besonders reizen mich komplexe Mandate, bei denen die naheliegende Suche nicht ausreicht.
             </p>
             <p className="mt-6">
-              Vielleicht liegt mir diese Arbeitsweise auch deshalb, weil ich ursprünglich aus der Architektur komme: Strukturen verstehen, Zusammenhänge erkennen und aus vielen einzelnen Anforderungen eine tragfähige Lösung entwickeln. Dieser Blick begleitet mich bis heute.
+              Vielleicht liegt mir diese Arbeitsweise auch deshalb, weil ich ursprünglich aus der Architektur komme: Strukturen verstehen, Zusammenhänge erkennen und aus vielen Anforderungen eine tragfähige Lösung entwickeln. Dieser Blick begleitet mich bis heute.
             </p>
             <p className="mt-6">
-              Der Schritt in die Selbstständigkeit war für mich deshalb kein Neuanfang, sondern eine bewusste Entscheidung, meine langjährige Search-Erfahrung in eigener Verantwortung einzusetzen – als persönliche Boutique-Beratung, verbindlich und mit durchgängiger Begleitung von der Suchstrategie bis zur Umsetzung.
+              Der Schritt in die Selbstständigkeit war für mich kein Neuanfang, sondern die bewusste Entscheidung, meine langjährige Search-Erfahrung in eigener Verantwortung einzusetzen – als persönliche Boutique-Beratung mit durchgängiger Begleitung von der Suchstrategie bis zur Umsetzung.
             </p>
             <p className="mt-6">
-              Heute bedeutet das für mich vor allem, genau so arbeiten zu können, wie ich es für eine gute Besetzung für richtig halte: nah am Mandat, nah am Markt und persönlich verantwortlich für den gesamten Prozess.
+              So ist aus vielen Jahren Search-Erfahrung die Art der Beratung entstanden, für die ich heute stehe: persönlich, verbindlich und mit einem Arbeitsstil, der Kundenwunsch und Suchrealität in einen produktiven Dialog bringt.
             </p>
             </div>
             <div className="mt-10">

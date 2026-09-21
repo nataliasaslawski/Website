@@ -34,6 +34,11 @@ const items = [
       "Langjährige Erfahrung, belegt durch zahlreiche erfolgreiche Besetzungen in unterschiedlichen Marktsituationen und Konjunkturphasen, ausgeprägte Menschenkenntnis und ein gutes Gespür für beide Seiten des Prozesses: Ich verstehe, was Unternehmen und Entscheider:innen wirklich brauchen, und kann gleichzeitig Kandidat:innen für eine Rolle und ein Umfeld gewinnen. Diese Verbindung aus Marktverständnis, Einschätzungsvermögen und persönlicher Ansprache ist für mich ein wesentlicher Erfolgsfaktor.",
   },
   {
+    question: "Wie können Sie uns als externe Beraterin bei internen Recruiting-Entscheidungen unterstützen?",
+    answer:
+      "Die Grundlage ist zunächst ein genaues Verständnis Ihrer Organisation, der jeweiligen Rolle, der Ausgangssituation und der internen Rahmenbedingungen. Dieses Wissen verbinde ich mit meiner langjährigen Erfahrung aus unterschiedlichen Suchmandaten, Marktkenntnis und dem Blick von außen. So entstehen keine pauschalen Empfehlungen, sondern konkrete, auf Ihre Situation zugeschnittene Einschätzungen und Entscheidungsgrundlagen.",
+  },
+  {
     question: "Wie kann ein erstes Gespräch vereinbart werden?",
     answer:
       "Über die Terminbuchung, eine Rückrufanfrage oder direkte Kontaktaufnahme per E-Mail bzw. Kontaktformular.",

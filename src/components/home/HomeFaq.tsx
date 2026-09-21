@@ -26,7 +26,7 @@ const items = [
   {
     question: "Was unterscheidet Ihre Leistung von klassischem Recruiting?",
     answer:
-      "Im Mittelpunkt steht nicht nur die operative Kandidat:innensuche, sondern die Verbindung aus Suchstrategie, Marktanalyse, Research, Direktansprache, Kandidat:innenbewertung und persönlicher Beratung. Ziel ist eine erfolgreiche Besetzung – entsprechend wird jedes fortgeführte Mandat konsequent und zielgerichtet bis zum Abschluss bearbeitet.",
+      "Im Mittelpunkt steht nicht nur die operative Kandidat:innensuche, sondern die Verbindung aus Suchstrategie, Marktanalyse, Research, Direktansprache, fundierter Kandidat:innenbewertung und persönlicher Beratung. Kandidat:innen und Entscheider:innen werden während des gesamten Prozesses individuell und persönlich begleitet. Ziel ist eine erfolgreiche Besetzung – entsprechend wird jedes Mandat konsequent und zielgerichtet bis zum Abschluss betreut. Gleichzeitig entsteht eine qualifizierte Kandidat:innenpipeline, die auch für weitere oder zukünftige Besetzungen relevant sein kann.",
   },
   {
     question: "Worauf basiert Ihr Erfolg bei anspruchsvollen Besetzungen?",

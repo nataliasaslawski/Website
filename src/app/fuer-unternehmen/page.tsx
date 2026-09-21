@@ -93,17 +93,25 @@ const processSteps = [
   },
 ];
 
-const industries = [
-  "Industrie & Produktion",
-  "Maschinen- & Anlagenbau",
-  "Automotive – Hersteller sowie Tier-1- und Tier-2-Zulieferer",
-  "Automatisierungstechnik & Robotik",
-  "Technische Produkte & Lösungen",
-  "Technische Gebäudeausrüstung (TGA)",
-  "Architektur & Bau",
-  "Chemie",
-  "Pharma & Life Sciences",
-  "Consumer Goods",
+const industryGroups = [
+  {
+    title: "Industrie & Technologie",
+    items: [
+      "Industrie & Produktion",
+      "Maschinen- & Anlagenbau",
+      "Automotive – Hersteller sowie Tier-1- und Tier-2-Zulieferer",
+      "Automatisierungstechnik & Robotik",
+      "Technische Produkte & Lösungen",
+    ],
+  },
+  {
+    title: "Bau & Gebäudetechnik",
+    items: ["Technische Gebäudeausrüstung (TGA)", "Architektur & Bau"],
+  },
+  {
+    title: "Chemie, Life Sciences & Konsumgüter",
+    items: ["Chemie", "Pharma & Life Sciences", "Consumer Goods"],
+  },
 ];
 
 const outcomes = [
@@ -286,16 +294,28 @@ export default function FuerUnternehmenPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-x-10 gap-y-4 md:grid-cols-2">
-            {industries.map((item) => (
-              <li
-                key={item}
-                className="border-t border-border-default pt-4 text-[15px] leading-relaxed text-navy-900"
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {industryGroups.map((group) => (
+              <div
+                key={group.title}
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
               >
-                {item}
-              </li>
+                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                  {group.title}
+                </h3>
+                <ul className="mt-5 space-y-2.5">
+                  {group.items.map((item) => (
+                    <li
+                      key={item}
+                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
 
           <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-text-secondary">
             Diese Branchenschwerpunkte bilden den Kern meiner Erfahrung und

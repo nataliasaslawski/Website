@@ -119,6 +119,31 @@ const industryGroups = [
   },
 ];
 
+const levelGroups = [
+  {
+    title: "Positionslevel",
+    items: [
+      "C-Level & Geschäftsführung",
+      "Bereichs- und Funktionsleitung",
+      "Senior Management",
+      "ausgewählte Spezialist:innen- und Schlüsselrollen",
+    ],
+  },
+  {
+    title: "Funktionsbereiche",
+    items: [
+      "Operations & Produktion",
+      "Vertrieb & Business Development",
+      "Technik & Engineering",
+      "Einkauf & Supply Chain",
+      "HR & People",
+      "Finance",
+      "Marketing / Commercial",
+      "weitere Funktionen je nach Branche und Mandat",
+    ],
+  },
+];
+
 const outcomes = [
   "Klarheit über den relevanten Kandidatenmarkt",
   "Fundierte, praxisbewährte Suchstrategien",
@@ -327,6 +352,37 @@ export default function FuerUnternehmenPage() {
             lassen sich je nach Mandat gezielt auf angrenzende und weitere
             Märkte übertragen.
           </p>
+        </Container>
+      </section>
+
+      <section className="bg-surface-elevated">
+        <Container className="py-16 md:py-20">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            Positionslevel &amp; Funktionsbereiche
+          </h2>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {levelGroups.map((group) => (
+              <div
+                key={group.title}
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
+              >
+                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                  {group.title}
+                </h3>
+                <ul className="mt-5 space-y-2.5">
+                  {group.items.map((item) => (
+                    <li
+                      key={item}
+                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </Container>
       </section>
 

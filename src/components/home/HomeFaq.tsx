@@ -38,11 +38,6 @@ const items = [
     answer:
       "Die Grundlage ist zunächst ein genaues Verständnis Ihrer Organisation, der jeweiligen Rolle, der Ausgangssituation und der internen Rahmenbedingungen. Dieses Wissen verbinde ich mit meiner langjährigen Erfahrung aus unterschiedlichen Suchmandaten, Marktkenntnis und dem Blick von außen. So entstehen keine pauschalen Empfehlungen, sondern konkrete, auf Ihre Situation zugeschnittene Einschätzungen und Entscheidungsgrundlagen.",
   },
-  {
-    question: "Wie kann ein erstes Gespräch vereinbart werden?",
-    answer:
-      "Über die Terminbuchung, eine Rückrufanfrage oder direkte Kontaktaufnahme per E-Mail bzw. Kontaktformular.",
-  },
 ];
 
 export function HomeFaq() {

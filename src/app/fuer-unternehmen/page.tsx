@@ -93,6 +93,19 @@ const processSteps = [
   },
 ];
 
+const industries = [
+  "Industrie & Produktion",
+  "Maschinen- & Anlagenbau",
+  "Automotive – Hersteller sowie Tier-1- und Tier-2-Zulieferer",
+  "Automatisierungstechnik & Robotik",
+  "Technische Produkte & Lösungen",
+  "Technische Gebäudeausrüstung (TGA)",
+  "Architektur & Bau",
+  "Chemie",
+  "Pharma & Life Sciences",
+  "Consumer Goods",
+];
+
 const outcomes = [
   "Klarheit über den relevanten Kandidatenmarkt",
   "Fundierte, praxisbewährte Suchstrategien",
@@ -256,6 +269,39 @@ export default function FuerUnternehmenPage() {
               Bildplatzhalter
             </span>
           </div>
+        </Container>
+      </section>
+
+      <section className="bg-surface-page">
+        <Container className="py-16 md:py-24">
+          <div className="max-w-3xl">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Branchenerfahrung
+            </h2>
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              Meine langjährige Erfahrung in Executive &amp; Professional
+              Search, Marktanalyse und strategischer Talentgewinnung umfasst
+              unterschiedliche Branchen und Märkte – mit besonderen
+              Schwerpunkten in den folgenden Bereichen:
+            </p>
+          </div>
+
+          <ul className="mt-10 grid gap-x-10 gap-y-4 md:grid-cols-2">
+            {industries.map((item) => (
+              <li
+                key={item}
+                className="border-t border-border-default pt-4 text-[15px] leading-relaxed text-navy-900"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-text-secondary">
+            Diese Branchenschwerpunkte bilden den Kern meiner Erfahrung und
+            lassen sich je nach Mandat gezielt auf angrenzende und weitere
+            Märkte übertragen.
+          </p>
         </Container>
       </section>
 

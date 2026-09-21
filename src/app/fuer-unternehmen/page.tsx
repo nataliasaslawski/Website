@@ -97,11 +97,12 @@ const outcomes = [
   "Klarheit über den relevanten Kandidatenmarkt",
   "Fundierte, praxisbewährte Suchstrategien",
   "Direkter Zugang zu relevanten, nicht wechselaktiven Kandidat:innen",
-  "Zahlreiche Besetzungen über unterschiedliche Konjunkturphasen und Kandidatenmärkte hinweg",
+  "Erprobte Such- und Besetzungskompetenz aus zahlreichen Besetzungen in unterschiedlichen Konjunktur- und Marktphasen",
   "Qualifizierte Kandidat:innen statt möglichst großer Profilmengen",
   "Entlastung interner Recruiting- oder Search-Ressourcen",
   "Fundierte Entscheidungsgrundlagen für den weiteren Auswahlprozess",
   "Strategie, Search und Prozessbegleitung aus einer Hand",
+  "Persönliche Verbindlichkeit, Verlässlichkeit und Diskretion in der Zusammenarbeit",
 ];
 
 export default function FuerUnternehmenPage() {

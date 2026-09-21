@@ -9,6 +9,11 @@ const items = [
       "Vor allem für anspruchsvolle Fach-, Führungs- und Schlüsselpositionen, bei denen klassische Recruiting-Wege nicht ausreichend funktionieren und zusätzliche Search-Kompetenz benötigt wird.",
   },
   {
+    question: "Für welche Unternehmen ist die Zusammenarbeit besonders geeignet?",
+    answer:
+      "Ich arbeite mit Unternehmen unterschiedlicher Größe – von kleineren und mittelständischen Unternehmen über wachstumsorientierte Start-ups bis hin zu größeren Organisationen und Konzernstrukturen. Mein Schwerpunkt liegt dabei auf Unternehmen, die anspruchsvolle Fach- und Führungspositionen besetzen oder ihre Recruitingprozesse gezielt weiterentwickeln möchten. Entscheidend ist weniger die Unternehmensgröße als der Bedarf an einer individuellen, fundierten und persönlich begleiteten Lösung.",
+  },
+  {
     question: "In welchen Regionen sind Sie tätig?",
     answer:
       "Der Schwerpunkt liegt auf Deutschland und dem DACH-Raum, mit regionaler Basis in Frankfurt am Main / Rhein-Main.",

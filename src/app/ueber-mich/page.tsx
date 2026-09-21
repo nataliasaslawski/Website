@@ -34,8 +34,43 @@ export default function UeberMichPage() {
   return (
     <>
       <section className="bg-surface-page">
-        <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated lg:order-2">
+        <Container className="grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+          <div className="lg:order-1">
+            <Eyebrow>Über mich</Eyebrow>
+            <h1 className="mt-4 font-display text-xl font-medium text-taupe-700">
+              Natalia Saslawski
+            </h1>
+            <h2 className="mt-8 max-w-xl font-display text-[2rem] font-medium leading-[1.15] text-navy-900 md:text-[2.5rem]">
+              Menschen lassen sich nicht auf Lebensläufe reduzieren. Und gute
+              Besetzungen nicht auf Stellenprofile.
+            </h2>
+            <div className="max-w-xl text-[16px] leading-[1.8] text-text-secondary">
+            <p className="mt-6">
+              In vielen Jahren Personalberatung habe ich unzählige Gespräche mit Unternehmen, Führungskräften und Kandidat:innen geführt. Ich habe Suchprojekte begleitet, bei denen der vermeintlich perfekte Kandidat am Ende doch nicht der Richtige war – und andere, bei denen sich hinter einem zunächst unscheinbaren Profil genau die Persönlichkeit verbarg, die ein Unternehmen gesucht hatte.
+            </p>
+            <p className="mt-6">
+              Genau das macht Executive Search für mich bis heute spannend. Es geht nicht nur darum, Menschen zu finden, die eine fachliche Anforderung erfüllen. Entscheidend ist zu verstehen, was hinter einer Position wirklich gebraucht wird – und was einen Menschen dazu bewegt, über einen Wechsel nachzudenken.
+            </p>
+            <p className="mt-6">
+              Über die Jahre habe ich dabei eines gelernt: Eine gute Suche beginnt lange vor der ersten Kandidatenansprache. Mit Zuhören, Einordnen, Hinterfragen und einem realistischen Blick auf den Markt. Besonders reizen mich komplexe Mandate, bei denen die naheliegende Suche nicht ausreicht und zunächst Klarheit über Anforderungen, Märkte oder mögliche Kandidatenfelder entstehen muss.
+            </p>
+            <p className="mt-6">
+              Vielleicht liegt mir diese Arbeitsweise auch deshalb, weil ich ursprünglich aus der Architektur komme: Strukturen verstehen, Zusammenhänge erkennen und aus vielen einzelnen Anforderungen eine tragfähige Lösung entwickeln. Dieser Blick begleitet mich bis heute.
+            </p>
+            <p className="mt-6">
+              Der Schritt in die Selbstständigkeit war für mich deshalb kein Neuanfang, sondern eine bewusste Entscheidung, meine langjährige Search-Erfahrung in eigener Verantwortung einzusetzen – als persönliche Boutique-Beratung, verbindlich und mit durchgängiger Begleitung von der Suchstrategie bis zur Umsetzung.
+            </p>
+            <p className="mt-6">
+              Heute bedeutet das für mich vor allem, genau so arbeiten zu können, wie ich es für eine gute Besetzung für richtig halte: nah am Mandat, nah am Markt und persönlich verantwortlich für den gesamten Prozess.
+            </p>
+            </div>
+            <div className="mt-10">
+              <Button href="/kontakt#erstgespraech" variant="primary">
+                Unverbindliches Erstgespräch vereinbaren
+              </Button>
+            </div>
+          </div>
+          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated lg:sticky lg:top-28 lg:order-2">
             <Image
               src={images.about.portrait}
               alt="Portrait-Platzhalter – wird durch professionelle Businessfotos ersetzt"
@@ -44,24 +79,6 @@ export default function UeberMichPage() {
               className="object-cover"
               sizes="(min-width: 1024px) 40vw, 90vw"
             />
-          </div>
-          <div className="lg:order-1">
-            <Eyebrow>Über mich</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
-              Natalia Saslawski
-            </h1>
-            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
-              Executive Search &amp; Talent Advisory mit rund 15 Jahren
-              Erfahrung in der Personalberatung. Meine
-              Arbeit verbindet operative Search-Kompetenz mit strategischer
-              Beratung – persönlich, strukturiert und mit einem realistischen
-              Blick auf den Kandidatenmarkt.
-            </p>
-            <div className="mt-8">
-              <Button href="/kontakt#erstgespraech" variant="primary">
-                Unverbindliches Erstgespräch vereinbaren
-              </Button>
-            </div>
           </div>
         </Container>
       </section>

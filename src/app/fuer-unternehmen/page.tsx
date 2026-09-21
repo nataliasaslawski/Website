@@ -106,7 +106,12 @@ const industryGroups = [
   },
   {
     title: "Bau & Gebäudetechnik",
-    items: ["Technische Gebäudeausrüstung (TGA)", "Architektur & Bau"],
+    items: [
+      "Technische Gebäudeausrüstung (TGA)",
+      "Architektur & Bau",
+      "Projektentwicklungsgesellschaften",
+      "Planungs- & Ingenieurbüros",
+    ],
   },
   {
     title: "Chemie, Life Sciences & Konsumgüter",

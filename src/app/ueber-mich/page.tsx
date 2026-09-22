@@ -251,7 +251,7 @@ export default function UeberMichPage() {
           </div>
 
           <div className="lg:order-2 lg:sticky lg:top-28">
-            <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated">
+            <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.about.portrait}
                 alt="Natalia Saslawski"

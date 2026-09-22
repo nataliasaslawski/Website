@@ -11,6 +11,30 @@ export const metadata: Metadata = {
     "Natalia Saslawski – rund 15 Jahre Erfahrung in Personalberatung, Professional und Executive Search sowie Inhouse Talent Acquisition.",
 };
 
+const stations = [
+  {
+    company: "WideResearch",
+    roles: ["Projektmanagerin"],
+    text: "Einstieg in die Personalberatung: Search von Grund auf gelernt, von Marktanalyse bis zur strukturierten Kandidat:innenansprache.",
+  },
+  {
+    company: "Eurosearch / Deininger Unternehmensberatung",
+    roles: ["Consultant", "Senior Consultant", "Head of Project Management"],
+    text: "Erste eigene Mandate und Aufstieg in die Verantwortung für Teams, Prozesse und Projektqualität.",
+  },
+  {
+    company: "MSU",
+    roles: ["Senior Consultant"],
+    text: "Eigenverantwortliche Betreuung anspruchsvoller Suchmandate.",
+  },
+  {
+    company: "Odgers Berndtson",
+    roles: ["Senior Consultant", "Teamleitung Industrial Practice Manufacturing"],
+    text: "Senior-Mandate sowie zusätzliche Teamleitung für das Projekt Management, bevor der Schritt in die Selbstständigkeit folgte.",
+    current: true,
+  },
+];
+
 export default function UeberMichPage() {
   return (
     <>
@@ -32,6 +56,11 @@ export default function UeberMichPage() {
             <p className="mt-6">
               Genau das macht Executive Search für mich bis heute spannend. Entscheidend ist nicht nur, wer eine fachliche Anforderung erfüllt, sondern was hinter einer Position wirklich gebraucht wird – und was Menschen zu einem Wechsel bewegt.
             </p>
+            <blockquote className="my-8 border-l-2 border-taupe-600 pl-6 font-display text-xl italic leading-snug text-navy-900 md:text-2xl">
+              „Entscheidend ist nicht nur, wer eine fachliche Anforderung
+              erfüllt, sondern was hinter einer Position wirklich gebraucht
+              wird.“
+            </blockquote>
             <p className="mt-6">
               Eine gute Suche beginnt für mich lange vor der ersten Kandidatenansprache: mit Zuhören, Einordnen, Hinterfragen und einem realistischen Blick auf den Markt. Besonders reizen mich komplexe Mandate, bei denen die naheliegende Suche nicht ausreicht.
             </p>
@@ -59,40 +88,76 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
-        <Container narrow className="py-16 md:py-24">
-          <Eyebrow>Werdegang</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Vom Projektmanagement zur Beratung und Führung
-          </h2>
-          <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-text-secondary">
-            <p>
-              Nach meinem Architekturstudium und ersten beruflichen
-              Erfahrungen in der Immobilienbranche begann mein Weg in der
-              Personalberatung.
-            </p>
-            <p>
-              Ich startete als Projektmanagerin bei WideResearch und lernte
-              Search von Grund auf kennen: Märkte analysieren, Zielunternehmen
-              identifizieren, Kandidat:innen recherchieren und ansprechen
-              sowie Suchprozesse strukturiert steuern. Bei Eurosearch bzw.
-              Deininger übernahm ich erstmals eigene Mandate, entwickelte mich
-              vom Consultant zum Senior Consultant und schließlich zur Head of
-              Project Management – mit Verantwortung für Teams, Prozesse und
-              die Qualität der Projektarbeit.
-            </p>
-            <p>
-              Es folgte eine weitere Station als Senior Consultant bei MSU,
-              bevor ich zu Odgers wechselte, wo ich erneut als Senior
-              Consultant einstieg und später zusätzlich die Teamleitung für
-              das Projekt Management der Industrial Practice Manufacturing
-              übernahm.
-            </p>
-            <p>
-              Mit jeder Station wuchs nicht nur die Verantwortung für
-              Mandate, sondern auch die für Teams, Kundenbeziehungen und die
-              Qualität komplexer Suchprozesse.
-            </p>
+      <section className="relative overflow-hidden bg-surface-elevated">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-10 -top-10 hidden h-36 w-36 rounded-full bg-navy-900/5 xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute right-24 top-14 hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
+        />
+
+        <Container className="relative py-16 md:py-24">
+          <div className="grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+            <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-card lg:sticky lg:top-28">
+              <svg
+                width="52"
+                height="52"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                className="text-taupe-600"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="8" r="3.5" />
+                <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
+              </svg>
+              <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+                Bildplatzhalter
+              </span>
+            </div>
+
+            <div>
+              <Eyebrow>Werdegang</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Vom Projektmanagement zur Beratung und Führung
+              </h2>
+
+              <div className="mt-10">
+                {stations.map((s, i) => (
+                  <div key={s.company} className="flex gap-6">
+                    <div className="relative flex w-3 flex-none flex-col items-center">
+                      <span
+                        className={
+                          s.current
+                            ? "mt-1 h-3.5 w-3.5 flex-none rounded-full bg-navy-900"
+                            : "mt-1.5 h-2.5 w-2.5 flex-none rounded-full bg-taupe-600"
+                        }
+                      />
+                      {i < stations.length - 1 && (
+                        <span className="mt-1 w-px flex-1 bg-border-default" />
+                      )}
+                    </div>
+                    <div className={i < stations.length - 1 ? "pb-10" : ""}>
+                      <span className="text-xs font-medium uppercase tracking-[0.12em] text-taupe-600">
+                        {s.company}
+                      </span>
+                      <h3 className="mt-1 font-display text-lg font-medium text-navy-900">
+                        {s.roles.join(" → ")}
+                      </h3>
+                      <p className="mt-1 text-[15px] leading-relaxed text-text-secondary">
+                        {s.text}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16 max-w-2xl space-y-5 border-t border-border-subtle pt-8 text-[15px] leading-relaxed text-text-secondary">
             <p>
               Diese Entwicklung hat mir Erfahrung aus unterschiedlichen
               Perspektiven gegeben: Als Senior Consultant habe ich

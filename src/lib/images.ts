@@ -18,7 +18,7 @@ export const images = {
     introPortrait: "/images/portraits/natalia-intro-wide.webp",
   },
   about: {
-    portrait: "/images/moodboard/businessfrau-schreibtisch.png",
+    portrait: "/images/portraits/natalia-ueber-mich.webp",
     secondary: "/images/moodboard/architektur-fassade.png",
   },
   companies: {

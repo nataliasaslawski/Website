@@ -254,7 +254,7 @@ export default function UeberMichPage() {
             <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.about.portrait}
-                alt="Portrait-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+                alt="Natalia Saslawski"
                 fill
                 priority
                 className="object-cover"

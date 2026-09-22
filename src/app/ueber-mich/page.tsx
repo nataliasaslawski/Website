@@ -11,25 +11,6 @@ export const metadata: Metadata = {
     "Natalia Saslawski – rund 15 Jahre Erfahrung in Personalberatung, Professional und Executive Search sowie Inhouse Talent Acquisition.",
 };
 
-const stations = [
-  {
-    title: "Personalberatung & Search",
-    text: "Rund 15 Jahre in der Personalberatung, mit Schwerpunkt auf Professional und Executive Search bis hin zu Geschäftsleitungs- und C-Level-Mandaten. Besetzungen über unterschiedliche Branchen, Unternehmensgrößen und Hierarchieebenen hinweg, mit wiederkehrendem Schwerpunkt im industriellen bzw. produzierenden Umfeld.",
-  },
-  {
-    title: "Führungsverantwortung",
-    text: "Beförderungen in Führungsrollen in zwei Personalberatungen – unter anderem mit Teamaufbau, Ressourcen- und Performance-Steuerung sowie Einarbeitung, Coaching und fachlicher Entwicklung neuer Kolleg:innen.",
-  },
-  {
-    title: "Inhouse Talent Acquisition",
-    text: "Erfahrung auch aus der Unternehmensperspektive – ein Verständnis dafür, wie Recruiting-Entscheidungen innerhalb von Unternehmen getroffen werden.",
-  },
-  {
-    title: "Akademischer Hintergrund",
-    text: "Abgeschlossenes Architekturstudium (Dipl.-Ing. FH) und Berufserfahrung im Gewerbeimmobilienumfeld vor dem Wechsel ins Recruiting. Ausschlaggebend war mein wachsendes Interesse daran, Entscheidungen beratend zu begleiten, die das Wachstum von Unternehmen prägen.",
-  },
-];
-
 export default function UeberMichPage() {
   return (
     <>
@@ -84,24 +65,55 @@ export default function UeberMichPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-24">
-          <div className="max-w-2xl">
-            <Eyebrow>Werdegang</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Erfahrung aus mehreren Perspektiven des Recruitings
-            </h2>
-          </div>
-          <div className="mt-12 grid gap-x-10 gap-y-10 md:grid-cols-2">
-            {stations.map((s) => (
-              <div key={s.title} className="border-t border-border-subtle pt-6">
-                <h3 className="font-display text-lg font-medium text-navy-900">
-                  {s.title}
-                </h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-text-secondary">
-                  {s.text}
-                </p>
-              </div>
-            ))}
+        <Container narrow className="py-16 md:py-24">
+          <Eyebrow>Werdegang</Eyebrow>
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            Vom Projektmanagement zur Beratung und Führung
+          </h2>
+          <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-text-secondary">
+            <p>
+              Nach meinem Architekturstudium und ersten beruflichen
+              Erfahrungen in der Immobilienbranche begann mein Weg in der
+              Personalberatung.
+            </p>
+            <p>
+              Ich startete als Projektmanagerin bei WideResearch und lernte
+              Search von Grund auf kennen: Märkte analysieren, Zielunternehmen
+              identifizieren, Kandidat:innen recherchieren und ansprechen
+              sowie Suchprozesse strukturiert steuern. Bei Eurosearch bzw.
+              Deininger übernahm ich erstmals eigene Mandate, entwickelte mich
+              vom Consultant zum Senior Consultant und schließlich zur Head of
+              Project Management – mit Verantwortung für Teams, Prozesse und
+              die Qualität der Projektarbeit.
+            </p>
+            <p>
+              Es folgte eine weitere Station als Senior Consultant bei MSU,
+              bevor ich zu Odgers wechselte, wo ich erneut als Senior
+              Consultant einstieg und später zusätzlich die Teamleitung für
+              das Projekt Management der Industrial Practice Manufacturing
+              übernahm.
+            </p>
+            <p>
+              Mit jeder Station wuchs nicht nur die Verantwortung für
+              Mandate, sondern auch die für Teams, Kundenbeziehungen und die
+              Qualität komplexer Suchprozesse.
+            </p>
+            <p>
+              Diese Entwicklung hat mir Erfahrung aus unterschiedlichen
+              Perspektiven gegeben: Als Senior Consultant habe ich
+              anspruchsvolle Mandate eigenverantwortlich bis zum erfolgreichen
+              Abschluss begleitet. Als Führungskraft habe ich Teams aufgebaut,
+              Ressourcen gesteuert und die Performance meiner Bereiche
+              verantwortet. Und als interne Mentorin habe ich
+              Junior-Kolleg:innen eingearbeitet sowie Schulungen zu Research,
+              Direktansprache und Projektmanagement durchgeführt.
+            </p>
+            <p>
+              Diese Erfahrungen prägen heute meine Arbeit als selbstständige
+              Beraterin – in der Verbindung aus operativer Search-Kompetenz,
+              Beratung, Führung und einem tiefen Verständnis dafür, wie
+              erfolgreiche Besetzungen entstehen.
+            </p>
           </div>
         </Container>
       </section>

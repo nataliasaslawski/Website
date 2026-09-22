@@ -45,11 +45,6 @@ export default function UeberMichPage() {
               So ist aus vielen Jahren Search-Erfahrung die Art der Beratung entstanden, für die ich heute stehe: persönlich, verbindlich und mit einem Arbeitsstil, der Kundenwunsch und Suchrealität in einen produktiven Dialog bringt.
             </p>
             </div>
-            <div className="mt-10">
-              <Button href="/kontakt#erstgespraech" variant="primary">
-                Unverbindliches Erstgespräch vereinbaren
-              </Button>
-            </div>
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated lg:sticky lg:top-28 lg:order-2">
             <Image

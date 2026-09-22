@@ -66,7 +66,6 @@ const stations = [
       "Teamleitung für das Projekt Management der Industrial Practice Manufacturing",
     ],
     text: "Senior-Mandate und zusätzliche Führungsverantwortung im Projektmanagement der Practice.",
-    current: true,
   },
 ];
 
@@ -260,18 +259,12 @@ export default function UeberMichPage() {
             Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
           </p>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_15rem] lg:gap-12">
+          <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_11rem] lg:gap-8">
             <div>
               {stations.map((s, i) => (
                 <div key={s.company} className="flex gap-4">
                   <div className="relative flex w-2 flex-none flex-col items-center">
-                    <span
-                      className={
-                        s.current
-                          ? "mt-1.5 h-2 w-2 flex-none rounded-full bg-navy-900"
-                          : "mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-taupe-500"
-                      }
-                    />
+                    <span className="mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-taupe-500" />
                     {i < stations.length - 1 && (
                       <span className="mt-1 w-px flex-1 bg-border-subtle" />
                     )}

@@ -33,7 +33,7 @@ const serviceTiles = [
     ],
   },
   {
-    title: "Kandidatenmarktanalyse & Talent Mapping",
+    title: "Marktanalyse & Talent Mapping",
     description:
       "Transparenz über relevante Zielunternehmen, Kandidatenmärkte und tatsächlich ansprechbare Profile.",
     points: [

@@ -71,6 +71,39 @@ const stations = [
   },
 ];
 
+const principles = [
+  {
+    title: "Qualität vor Masse",
+    text: "Nicht möglichst viele Profile, sondern genau die Kandidat:innen, deren Erfahrung, Potenzial und Persönlichkeit zur Aufgabe passen.",
+    icon: (
+      <>
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="M19 19 15.2 15.2" />
+      </>
+    ),
+  },
+  {
+    title: "Partnerschaft statt Vermittlung",
+    text: "Anforderungen einordnen, Marktfeedback offen spiegeln und gemeinsam weiterdenken, wenn Suchwege nicht zum Ziel führen.",
+    icon: (
+      <>
+        <circle cx="9.5" cy="12" r="5.5" />
+        <circle cx="15.5" cy="12" r="5.5" />
+      </>
+    ),
+  },
+  {
+    title: "Besetzungsorientierung",
+    text: "Dranbleiben, Suchwege weiterentwickeln und neue Zugänge schaffen – mit Blick auf eine Besetzung, die langfristig trägt.",
+    icon: (
+      <>
+        <path d="M5 19 19 5" />
+        <path d="M9.5 5H19v9.5" />
+      </>
+    ),
+  },
+];
+
 const perspectives = [
   {
     title: "Als Senior Consultant",
@@ -333,13 +366,13 @@ export default function UeberMichPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container narrow className="py-16 md:py-24">
-          <Eyebrow>Mein Anspruch</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Wofür ich in der Zusammenarbeit stehe
-          </h2>
-          <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-text-secondary">
-            <p>
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl">
+            <Eyebrow>Mein Anspruch</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Wofür ich in der Zusammenarbeit stehe
+            </h2>
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
               Für mich zählt Qualität vor Masse. Gute Personalberatung
               bedeutet nicht, möglichst viele Profile zu präsentieren,
               sondern genau hinzusehen: Welche Erfahrungen sind für eine neue
@@ -347,21 +380,44 @@ export default function UeberMichPage() {
               für den nächsten Schritt mit? Und passt die Persönlichkeit zu
               dem Umfeld, in dem sie künftig erfolgreich sein soll?
             </p>
-            <p>
-              Ich verstehe meine Rolle dabei als Partnerin, nicht als reine
-              Vermittlerin. Dazu gehört für mich, Anforderungen einzuordnen,
-              Marktfeedback offen zu spiegeln und auch dann weiterzudenken,
-              wenn die naheliegenden Suchwege ausgeschöpft sind.
-            </p>
-            <p>
-              Was meine Arbeit seit vielen Jahren prägt, ist eine klare
-              Besetzungsorientierung: Ich bleibe an einem Mandat dran,
-              entwickle Suchwege weiter und suche nach neuen Zugängen, wenn
-              der erste Ansatz nicht zum Ziel führt. Nicht der schnelle
-              Abschluss ist entscheidend, sondern eine Besetzung, die für
-              beide Seiten langfristig trägt.
-            </p>
-            <p>
+          </div>
+
+          <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-10">
+            {principles.map((p, i) => (
+              <div
+                key={p.title}
+                className={
+                  i > 0
+                    ? "md:border-l md:border-border-subtle md:pl-10"
+                    : ""
+                }
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-taupe-600"
+                  aria-hidden="true"
+                >
+                  {p.icon}
+                </svg>
+                <span className="mt-4 block text-xs font-medium uppercase tracking-[0.12em] text-taupe-700">
+                  {p.title}
+                </span>
+                <p className="mt-3 font-display text-[17px] leading-snug text-navy-900">
+                  {p.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 border-t border-border-subtle pt-8">
+            <p className="max-w-2xl font-display text-lg italic leading-snug text-navy-900">
               Substanz, Verbindlichkeit und Urteilsvermögen sind dabei
               wichtiger als große Versprechen.
             </p>

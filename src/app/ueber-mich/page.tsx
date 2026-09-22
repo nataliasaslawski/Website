@@ -11,27 +11,51 @@ export const metadata: Metadata = {
     "Natalia Saslawski – rund 15 Jahre Erfahrung in Personalberatung, Professional und Executive Search sowie Inhouse Talent Acquisition.",
 };
 
+const highlights = [
+  "16 Jahre Search-Erfahrung",
+  "Executive & Professional Search",
+  "Persönliche Boutique-Beratung",
+];
+
 const stations = [
   {
     company: "WideResearch",
     roles: ["Projektmanagerin"],
-    text: "Einstieg in die Personalberatung: Search von Grund auf gelernt, von Marktanalyse bis zur strukturierten Kandidat:innenansprache.",
+    text: "Einstieg in Search, Kandidatenrecherche, Marktanalyse und strukturierte Projektsteuerung.",
   },
   {
-    company: "Eurosearch / Deininger Unternehmensberatung",
+    company: "Eurosearch / Deininger",
     roles: ["Consultant", "Senior Consultant", "Head of Project Management"],
-    text: "Erste eigene Mandate und Aufstieg in die Verantwortung für Teams, Prozesse und Projektqualität.",
+    text: "Erstmals eigene Mandate, kontinuierliche Weiterentwicklung in der Beratung und schließlich Verantwortung für Teams, Prozesse und die Qualität der Projektarbeit.",
   },
   {
     company: "MSU",
     roles: ["Senior Consultant"],
-    text: "Eigenverantwortliche Betreuung anspruchsvoller Suchmandate.",
+    text: "Weitere Vertiefung anspruchsvoller Suchmandate.",
   },
   {
-    company: "Odgers Berndtson",
-    roles: ["Senior Consultant", "Teamleitung Industrial Practice Manufacturing"],
-    text: "Senior-Mandate sowie zusätzliche Teamleitung für das Projekt Management, bevor der Schritt in die Selbstständigkeit folgte.",
+    company: "Odgers",
+    roles: [
+      "Senior Consultant",
+      "Teamleitung für das Projekt Management der Industrial Practice Manufacturing",
+    ],
+    text: "Erneuter Einstieg als Senior Consultant und später zusätzliche Führungsverantwortung im Projektmanagement der Practice.",
     current: true,
+  },
+];
+
+const perspectives = [
+  {
+    title: "Als Senior Consultant",
+    text: "Ich habe anspruchsvolle Mandate eigenverantwortlich von der Analyse bis zum erfolgreichen Abschluss begleitet.",
+  },
+  {
+    title: "Als Führungskraft",
+    text: "Ich habe Teams aufgebaut, Ressourcen gesteuert und die Performance meiner Bereiche verantwortet.",
+  },
+  {
+    title: "Als interne Mentorin",
+    text: "Ich habe Junior-Kolleg:innen eingearbeitet sowie Schulungen zu Research, Direktansprache und Projektmanagement durchgeführt.",
   },
 ];
 
@@ -50,40 +74,77 @@ export default function UeberMichPage() {
               Besetzungen nicht auf Stellenprofile.
             </h2>
             <div className="max-w-xl text-[16px] leading-[1.8] text-text-secondary">
-            <p className="mt-6">
-              In vielen Jahren Personalberatung habe ich unzählige Gespräche mit Unternehmen, Führungskräften und Kandidat:innen geführt. Ich habe erlebt, dass der vermeintlich perfekte Kandidat am Ende doch nicht der Richtige war – und dass sich hinter einem zunächst unscheinbaren Profil genau die Persönlichkeit verbarg, die ein Unternehmen gesucht hatte.
-            </p>
-            <p className="mt-6">
-              Genau das macht Executive Search für mich bis heute spannend. Entscheidend ist nicht nur, wer eine fachliche Anforderung erfüllt, sondern was hinter einer Position wirklich gebraucht wird – und was Menschen zu einem Wechsel bewegt.
-            </p>
-            <blockquote className="my-8 border-l-2 border-taupe-600 pl-6 font-display text-xl italic leading-snug text-navy-900 md:text-2xl">
-              „Entscheidend ist nicht nur, wer eine fachliche Anforderung
-              erfüllt, sondern was hinter einer Position wirklich gebraucht
-              wird.“
-            </blockquote>
-            <p className="mt-6">
-              Eine gute Suche beginnt für mich lange vor der ersten Kandidatenansprache: mit Zuhören, Einordnen, Hinterfragen und einem realistischen Blick auf den Markt. Besonders reizen mich komplexe Mandate, bei denen die naheliegende Suche nicht ausreicht.
-            </p>
-            <p className="mt-6">
-              Vielleicht liegt mir diese Arbeitsweise auch deshalb, weil ich ursprünglich aus der Architektur komme: Strukturen verstehen, Zusammenhänge erkennen und aus vielen Anforderungen eine tragfähige Lösung entwickeln. Dieser Blick begleitet mich bis heute.
-            </p>
-            <p className="mt-6">
-              Der Schritt in die Selbstständigkeit war für mich kein Neuanfang, sondern die bewusste Entscheidung, meine langjährige Search-Erfahrung in eigener Verantwortung einzusetzen – als persönliche Boutique-Beratung mit durchgängiger Begleitung von der Suchstrategie bis zur Umsetzung.
-            </p>
-            <p className="mt-6">
-              So ist aus vielen Jahren Search-Erfahrung die Art der Beratung entstanden, für die ich heute stehe: persönlich, verbindlich und mit einem Arbeitsstil, der Kundenwunsch und Suchrealität in einen produktiven Dialog bringt.
-            </p>
+              <p className="mt-6">
+                In vielen Jahren Personalberatung habe ich unzählige Gespräche
+                mit Unternehmen, Führungskräften und Kandidat:innen geführt.
+                Ich habe erlebt, dass der vermeintlich perfekte Kandidat am
+                Ende doch nicht der Richtige war – und dass sich hinter einem
+                zunächst unscheinbaren Profil genau die Persönlichkeit
+                verbarg, die ein Unternehmen gesucht hatte.
+              </p>
+              <p className="mt-6">
+                Genau das macht Executive Search für mich bis heute spannend.
+                Entscheidend ist nicht nur, wer eine fachliche Anforderung
+                erfüllt, sondern was hinter einer Position wirklich gebraucht
+                wird – und was Menschen zu einem Wechsel bewegt.
+              </p>
+              <p className="mt-6">
+                Eine gute Suche beginnt für mich lange vor der ersten
+                Kandidatenansprache: mit Zuhören, Einordnen, Hinterfragen und
+                einem realistischen Blick auf den Markt. Besonders reizen mich
+                komplexe Mandate, bei denen die naheliegende Suche nicht
+                ausreicht.
+              </p>
+              <p className="mt-6">
+                Diese strukturierte Arbeitsweise habe ich über viele Jahre und
+                Projekte entwickelt. Dabei sind zahlreiche erfolgreiche
+                Besetzungen entstanden, auf die ich mit Freude zurückblicke –
+                nicht zuletzt, weil einige dieser Entscheidungen Unternehmen
+                und Teams langfristig begleitet haben.
+              </p>
+              <p className="mt-6">
+                Der Schritt in die Selbstständigkeit war für mich kein
+                Neuanfang, sondern die bewusste Entscheidung, meine
+                langjährige Search-Erfahrung in eigener Verantwortung
+                einzusetzen – als persönliche Boutique-Beratung mit
+                durchgängiger Begleitung von der Suchstrategie bis zur
+                Umsetzung. So ist die Art der Beratung entstanden, für die ich
+                heute stehe: persönlich, verbindlich und mit einem Arbeitsstil,
+                der Kundenwunsch und Suchrealität in einen produktiven Dialog
+                bringt.
+              </p>
+            </div>
+
+            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-border-subtle pt-6 text-xs font-medium uppercase tracking-[0.08em] text-taupe-700">
+              {highlights.map((item, i) => (
+                <span key={item} className="flex items-center gap-x-6">
+                  {i > 0 && <span className="text-border-default">·</span>}
+                  {item}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-8">
+              <Button href="/kontakt#erstgespraech" variant="primary">
+                Unverbindliches Erstgespräch vereinbaren
+              </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated lg:sticky lg:top-28 lg:order-2">
-            <Image
-              src={images.about.portrait}
-              alt="Portrait-Platzhalter – wird durch professionelle Businessfotos ersetzt"
-              fill
-              priority
-              className="object-cover"
-              sizes="(min-width: 1024px) 40vw, 90vw"
-            />
+
+          <div className="lg:order-2 lg:sticky lg:top-28">
+            <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated">
+              <Image
+                src={images.about.portrait}
+                alt="Portrait-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
+            </div>
+            <p className="mt-4 text-center font-display text-[15px] italic text-taupe-700">
+              Menschen. Möglichkeiten. Zusammenbringen.
+            </p>
           </div>
         </Container>
       </section>
@@ -99,82 +160,87 @@ export default function UeberMichPage() {
         />
 
         <Container className="relative py-16 md:py-24">
-          <div className="grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-            <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-card lg:sticky lg:top-28">
-              <svg
-                width="52"
-                height="52"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                className="text-taupe-600"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="8" r="3.5" />
-                <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
-              </svg>
-              <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
-                Bildplatzhalter
-              </span>
-            </div>
+          <Eyebrow>Werdegang</Eyebrow>
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            Vom Projektmanagement zur Beratung und Führung
+          </h2>
 
+          <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_18rem] lg:gap-16">
             <div>
-              <Eyebrow>Werdegang</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-                Vom Projektmanagement zur Beratung und Führung
-              </h2>
-
-              <div className="mt-10">
-                {stations.map((s, i) => (
-                  <div key={s.company} className="flex gap-6">
-                    <div className="relative flex w-3 flex-none flex-col items-center">
-                      <span
-                        className={
-                          s.current
-                            ? "mt-1 h-3.5 w-3.5 flex-none rounded-full bg-navy-900"
-                            : "mt-1.5 h-2.5 w-2.5 flex-none rounded-full bg-taupe-600"
-                        }
-                      />
-                      {i < stations.length - 1 && (
-                        <span className="mt-1 w-px flex-1 bg-border-default" />
-                      )}
-                    </div>
-                    <div className={i < stations.length - 1 ? "pb-10" : ""}>
-                      <span className="text-xs font-medium uppercase tracking-[0.12em] text-taupe-600">
+              {stations.map((s, i) => (
+                <div key={s.company} className="flex gap-6">
+                  <div className="relative flex w-3 flex-none flex-col items-center">
+                    <span
+                      className={
+                        s.current
+                          ? "mt-1 h-3.5 w-3.5 flex-none rounded-full bg-navy-900"
+                          : "mt-1.5 h-2.5 w-2.5 flex-none rounded-full bg-taupe-600"
+                      }
+                    />
+                    {i < stations.length - 1 && (
+                      <span className="mt-1 w-px flex-1 bg-border-default" />
+                    )}
+                  </div>
+                  <div className={i < stations.length - 1 ? "pb-10" : ""}>
+                    <div className="md:grid md:grid-cols-[9rem_1fr] md:gap-x-8">
+                      <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700 md:pt-1">
                         {s.company}
                       </span>
-                      <h3 className="mt-1 font-display text-lg font-medium text-navy-900">
-                        {s.roles.join(" → ")}
-                      </h3>
-                      <p className="mt-1 text-[15px] leading-relaxed text-text-secondary">
-                        {s.text}
-                      </p>
+                      <div>
+                        <h3 className="mt-1 font-display text-lg font-medium text-navy-900 md:mt-0">
+                          {s.roles.join(" → ")}
+                        </h3>
+                        <p className="mt-1 text-[15px] leading-relaxed text-text-secondary">
+                          {s.text}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
+
+            <aside className="lg:sticky lg:top-32 lg:self-start">
+              <p className="border-l-2 border-taupe-600 pl-5 font-display text-lg italic leading-snug text-navy-900">
+                „Mit jeder Station wuchs nicht nur die Verantwortung für
+                Mandate, sondern auch die für Teams, Kundenbeziehungen und die
+                Qualität komplexer Suchprozesse.“
+              </p>
+            </aside>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-surface-page">
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Perspektiven, die meine Arbeit heute prägen
+            </h2>
           </div>
 
-          <div className="mt-16 max-w-2xl space-y-5 border-t border-border-subtle pt-8 text-[15px] leading-relaxed text-text-secondary">
-            <p>
-              Diese Entwicklung hat mir Erfahrung aus unterschiedlichen
-              Perspektiven gegeben: Als Senior Consultant habe ich
-              anspruchsvolle Mandate eigenverantwortlich bis zum erfolgreichen
-              Abschluss begleitet. Als Führungskraft habe ich Teams aufgebaut,
-              Ressourcen gesteuert und die Performance meiner Bereiche
-              verantwortet. Und als interne Mentorin habe ich
-              Junior-Kolleg:innen eingearbeitet sowie Schulungen zu Research,
-              Direktansprache und Projektmanagement durchgeführt.
-            </p>
-            <p>
-              Diese Erfahrungen prägen heute meine Arbeit als selbstständige
-              Beraterin – in der Verbindung aus operativer Search-Kompetenz,
-              Beratung, Führung und einem tiefen Verständnis dafür, wie
-              erfolgreiche Besetzungen entstehen.
-            </p>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {perspectives.map((p) => (
+              <div
+                key={p.title}
+                className="border border-border-subtle bg-surface-card p-8"
+              >
+                <h3 className="font-display text-lg font-medium text-navy-900">
+                  {p.title}
+                </h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                  „{p.text}“
+                </p>
+              </div>
+            ))}
           </div>
+
+          <p className="mx-auto mt-10 max-w-2xl text-center text-[15px] leading-relaxed text-text-secondary">
+            Diese Erfahrungen prägen heute meine Arbeit als selbstständige
+            Beraterin – in der Verbindung aus operativer Search-Kompetenz,
+            Beratung, Führung und einem tiefen Verständnis dafür, wie
+            erfolgreiche Besetzungen entstehen.
+          </p>
         </Container>
       </section>
 

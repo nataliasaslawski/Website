@@ -289,13 +289,14 @@ export default function UeberMichPage() {
             </div>
 
             <aside className="lg:mt-14">
-              <div className="max-w-[270px] border-t border-border-subtle pt-3">
-                <p className="font-display text-[21px] italic leading-[1.55] text-navy-900">
+              <div className="max-w-[270px]">
+                <div className="h-px w-10 bg-border-subtle" />
+                <p className="my-4 font-display text-[21px] italic leading-[1.55] text-navy-900">
                   „Mit jeder Station wuchs nicht nur die Verantwortung für
                   Mandate, sondern auch die für Teams, Kundenbeziehungen und
                   die Qualität komplexer Suchprozesse.“
                 </p>
-                <div className="mt-3 border-t border-border-subtle" />
+                <div className="h-px w-10 bg-border-subtle" />
               </div>
             </aside>
           </div>

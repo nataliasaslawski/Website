@@ -258,12 +258,12 @@ export default function UeberMichPage() {
           <h2 className="mt-3 font-display text-[1.75rem] font-medium leading-[1.15] text-navy-900 md:text-[2.375rem]">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
-          <p className="mt-3 max-w-[680px] text-[16px] leading-[1.55] text-text-muted">
+          <p className="mt-3 max-w-[680px] text-[15px] leading-[1.55] text-text-muted">
             Nach dem Architekturstudium und ersten Berufsjahren im
             Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
           </p>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_1fr] lg:gap-9">
+          <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_1fr] lg:gap-3">
             <div>
               {stations.map((s, i) => (
                 <div key={s.company} className="flex gap-4">

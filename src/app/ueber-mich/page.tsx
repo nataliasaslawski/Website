@@ -60,7 +60,7 @@ const stations = [
     text: "Weitere Vertiefung anspruchsvoller Suchmandate.",
   },
   {
-    company: "Odgers Berndtson",
+    company: "Odgers",
     roles: [
       "Senior Consultant",
       "Teamleitung für das Projekt Management der Industrial Practice Manufacturing",

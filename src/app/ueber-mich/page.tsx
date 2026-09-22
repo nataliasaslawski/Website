@@ -17,8 +17,8 @@ const highlights = [
     label: "16 Jahre Search-Erfahrung",
     icon: (
       <>
-        <circle cx="12" cy="12" r="8" />
-        <path d="M12 8v4l2.5 1.5" />
+        <circle cx="12" cy="8.5" r="3.8" />
+        <path d="M4.5 20c1-4.3 3.9-6.7 7.5-6.7s6.5 2.4 7.5 6.7" />
       </>
     ),
   },
@@ -26,9 +26,9 @@ const highlights = [
     label: "Executive & Professional Search",
     icon: (
       <>
-        <circle cx="12" cy="12" r="8" />
-        <circle cx="12" cy="12" r="3.5" />
-        <circle cx="12" cy="12" r="0.5" fill="currentColor" />
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="12" r="5" />
+        <circle cx="12" cy="12" r="1.1" fill="currentColor" />
       </>
     ),
   },
@@ -36,8 +36,8 @@ const highlights = [
     label: "Persönliche Boutique-Beratung",
     icon: (
       <>
-        <path d="M19.5 4.5c-6 0-11.5 3-13 10.5-.6 2.6.8 4.3 3 3.8C17 17.3 19 10 19.5 4.5Z" />
-        <path d="M9.5 14.5 5 19" />
+        <circle cx="12" cy="12" r="9" />
+        <path d="M15.8 8.2 13 13l-4.8 2.8L11 11l4.8-2.8Z" />
       </>
     ),
   },
@@ -105,19 +105,31 @@ const perspectives = [
   },
 ];
 
-function IconBadge({ children }: { children: ReactNode }) {
+function IconBadge({
+  children,
+  size = "sm",
+}: {
+  children: ReactNode;
+  size?: "sm" | "lg";
+}) {
+  const badge = size === "lg" ? "h-14 w-14" : "h-10 w-10";
+  const icon = size === "lg" ? 30 : 18;
+  const stroke = size === "lg" ? "1.6" : "1.3";
+  const color = size === "lg" ? "text-taupe-700" : "text-taupe-600";
   return (
-    <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-cream-100">
+    <span
+      className={`flex ${badge} flex-none items-center justify-center rounded-full bg-cream-100`}
+    >
       <svg
-        width="18"
-        height="18"
+        width={icon}
+        height={icon}
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.3"
+        strokeWidth={stroke}
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-taupe-600"
+        className={color}
         aria-hidden="true"
       >
         {children}
@@ -188,7 +200,7 @@ export default function UeberMichPage() {
                   key={h.label}
                   className="flex items-center gap-3 sm:pr-4 sm:first:pl-0 sm:[&:not(:first-child)]:pl-4"
                 >
-                  <IconBadge>{h.icon}</IconBadge>
+                  <IconBadge size="lg">{h.icon}</IconBadge>
                   <span className="text-[13px] font-medium leading-snug text-navy-900">
                     {h.label}
                   </span>

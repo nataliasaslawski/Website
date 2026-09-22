@@ -261,7 +261,7 @@ export default function UeberMichPage() {
             Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
           </p>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_9.5rem] lg:gap-6">
+          <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_8.5rem] lg:gap-5">
             <div>
               {stations.map((s, i) => (
                 <div key={s.company} className="flex gap-4">
@@ -275,10 +275,10 @@ export default function UeberMichPage() {
                     <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700">
                       {s.company}
                     </span>
-                    <h3 className="mt-1 font-display text-xl font-medium leading-snug text-navy-900">
+                    <h3 className="mt-1 font-display text-base font-medium leading-snug text-navy-900">
                       {s.roles.join(" → ")}
                     </h3>
-                    <p className="mt-1 text-[14px] leading-relaxed text-text-secondary">
+                    <p className="mt-1 text-[15px] leading-relaxed text-text-secondary">
                       {s.text}
                     </p>
                   </div>
@@ -288,7 +288,7 @@ export default function UeberMichPage() {
 
             <aside className="lg:sticky lg:top-32 lg:self-start">
               <div className="border-t border-border-subtle pt-3">
-                <p className="font-display text-base italic leading-relaxed text-navy-900">
+                <p className="font-display text-lg italic leading-relaxed text-navy-900">
                   „Mit jeder Station wuchs nicht nur die Verantwortung für
                   Mandate, sondern auch die für Teams, Kundenbeziehungen und
                   die Qualität komplexer Suchprozesse.“

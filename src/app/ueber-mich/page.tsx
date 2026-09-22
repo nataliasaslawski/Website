@@ -334,7 +334,7 @@ export default function UeberMichPage() {
 
       <section className="bg-surface-elevated">
         <Container narrow className="py-16 md:py-24">
-          <Eyebrow>Arbeitsweise</Eyebrow>
+          <Eyebrow>Mein Anspruch</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Wofür ich in der Zusammenarbeit stehe
           </h2>

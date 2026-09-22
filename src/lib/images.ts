@@ -14,7 +14,7 @@ export const images = {
     hero: "/images/portraits/beratung-hero.webp",
     methodAccent: "/images/moodboard/talent-strategy.png",
     aboutTeaser: "/images/portraits/natalia-home-teaser.webp",
-    ansatzPortrait: "/images/portraits/natalia-ansatz.webp",
+    ansatzPortrait: "/images/portraits/natalia-ansatz-beratung.webp",
     introPortrait: "/images/portraits/natalia-intro-wide.webp",
   },
   about: {

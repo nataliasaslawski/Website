@@ -336,31 +336,34 @@ export default function UeberMichPage() {
         <Container narrow className="py-16 md:py-24">
           <Eyebrow>Arbeitsweise</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Menschenkenntnis, Marktverständnis und ein strukturierter Blick
+            Wofür ich in der Zusammenarbeit stehe
           </h2>
           <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-text-secondary">
             <p>
-              Ein Lebenslauf zeigt nicht immer, was jemand tatsächlich leisten
-              kann. Erfahrung lässt sich aus anderen Branchen, Funktionen oder
-              Unternehmenskontexten übertragen – und manche Kandidat:innen
-              wirken auf dem Papier zunächst nicht wie die naheliegende
-              Besetzung, erweisen sich im Gespräch aber als genau richtig für
-              die Aufgabe.
+              Für mich zählt Qualität vor Masse. Gute Personalberatung
+              bedeutet nicht, möglichst viele Profile zu präsentieren,
+              sondern genau hinzusehen: Welche Erfahrungen sind für eine neue
+              Aufgabe wirklich übertragbar? Welches Potenzial bringt jemand
+              für den nächsten Schritt mit? Und passt die Persönlichkeit zu
+              dem Umfeld, in dem sie künftig erfolgreich sein soll?
             </p>
             <p>
-              Genau hier setzt meine Arbeit an: Ich lese nicht nur, was im
-              Lebenslauf steht, sondern versuche zu verstehen, welche
-              Verantwortung tatsächlich getragen wurde, welche Erfahrungen
-              übertragbar sind und welches Potenzial für eine neue Aufgabe
-              besteht. Diese Einschätzung verbinde ich mit einer strukturierten
-              Suchmethodik und einem realistischen Blick auf den jeweiligen
-              Kandidat:innenmarkt.
+              Ich verstehe meine Rolle dabei als Partnerin, nicht als reine
+              Vermittlerin. Dazu gehört für mich, Anforderungen einzuordnen,
+              Marktfeedback offen zu spiegeln und auch dann weiterzudenken,
+              wenn die naheliegenden Suchwege ausgeschöpft sind.
             </p>
             <p>
-              Nach vielen Jahren in der Personalberatung weiß ich außerdem,
-              woran Suchprozesse häufig scheitern – und wie sich das durch
-              eine klare Suchstrategie, Verbindlichkeit im Prozess und eine
-              persönliche, direkte Kandidat:innenansprache vermeiden lässt.
+              Was meine Arbeit seit vielen Jahren prägt, ist eine klare
+              Besetzungsorientierung: Ich bleibe an einem Mandat dran,
+              entwickle Suchwege weiter und suche nach neuen Zugängen, wenn
+              der erste Ansatz nicht zum Ziel führt. Nicht der schnelle
+              Abschluss ist entscheidend, sondern eine Besetzung, die für
+              beide Seiten langfristig trägt.
+            </p>
+            <p>
+              Substanz, Verbindlichkeit und Urteilsvermögen sind dabei
+              wichtiger als große Versprechen.
             </p>
           </div>
         </Container>

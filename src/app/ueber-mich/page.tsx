@@ -47,17 +47,17 @@ const stations = [
   {
     company: "WideResearch",
     roles: ["Projektmanagerin"],
-    text: "Einstieg in Search, Kandidatenrecherche, Marktanalyse und strukturierte Projektsteuerung.",
+    text: "Einstieg in Search, Kandidatenrecherche und Marktanalyse.",
   },
   {
     company: "Eurosearch / Deininger",
     roles: ["Consultant", "Senior Consultant", "Head of Project Management"],
-    text: "Erstmals eigene Mandate, kontinuierliche Weiterentwicklung in der Beratung und schließlich Verantwortung für Teams, Prozesse und die Qualität der Projektarbeit.",
+    text: "Erste eigene Mandate, wachsende Verantwortung für Teams und Prozesse.",
   },
   {
     company: "MSU",
     roles: ["Senior Consultant"],
-    text: "Weitere Vertiefung anspruchsvoller Suchmandate.",
+    text: "Vertiefung anspruchsvoller Suchmandate.",
   },
   {
     company: "Odgers",
@@ -65,7 +65,7 @@ const stations = [
       "Senior Consultant",
       "Teamleitung für das Projekt Management der Industrial Practice Manufacturing",
     ],
-    text: "Erneuter Einstieg als Senior Consultant und später zusätzliche Führungsverantwortung im Projektmanagement der Practice.",
+    text: "Senior-Mandate und zusätzliche Führungsverantwortung im Projektmanagement der Practice.",
     current: true,
   },
 ];
@@ -238,40 +238,40 @@ export default function UeberMichPage() {
           className="pointer-events-none absolute right-24 top-14 hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
         />
 
-        <Container className="relative py-14 md:py-20">
+        <Container className="relative py-12 md:py-16">
           <Eyebrow>Werdegang</Eyebrow>
           <h2 className="mt-3 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
-          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-text-secondary">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-text-secondary">
             Nach dem Architekturstudium und ersten Berufsjahren im
             Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
           </p>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_16rem] lg:gap-16">
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_15rem] lg:gap-12">
             <div>
               {stations.map((s, i) => (
-                <div key={s.company} className="flex gap-5">
-                  <div className="relative flex w-3 flex-none flex-col items-center">
+                <div key={s.company} className="flex gap-4">
+                  <div className="relative flex w-2 flex-none flex-col items-center">
                     <span
                       className={
                         s.current
-                          ? "mt-1 h-3 w-3 flex-none rounded-full bg-navy-900"
-                          : "mt-1 h-2 w-2 flex-none rounded-full bg-taupe-600"
+                          ? "mt-1.5 h-2 w-2 flex-none rounded-full bg-navy-900"
+                          : "mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-taupe-500"
                       }
                     />
                     {i < stations.length - 1 && (
-                      <span className="mt-1 w-px flex-1 bg-border-default" />
+                      <span className="mt-1 w-px flex-1 bg-border-subtle" />
                     )}
                   </div>
-                  <div className={i < stations.length - 1 ? "pb-5" : ""}>
-                    <h3 className="font-display text-lg font-medium leading-snug text-navy-900">
+                  <div className={i < stations.length - 1 ? "pb-3.5" : ""}>
+                    <span className="block text-[11px] font-medium uppercase tracking-[0.1em] text-taupe-700">
                       {s.company}
-                    </h3>
-                    <p className="mt-0.5 text-[15px] leading-snug text-navy-900/80">
+                    </span>
+                    <h3 className="mt-0.5 font-display text-[17px] font-medium leading-snug text-navy-900">
                       {s.roles.join(" → ")}
-                    </p>
-                    <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
+                    </h3>
+                    <p className="mt-0.5 text-[13px] leading-snug text-text-secondary">
                       {s.text}
                     </p>
                   </div>
@@ -280,14 +280,14 @@ export default function UeberMichPage() {
             </div>
 
             <aside className="lg:sticky lg:top-32 lg:self-start">
-              <div className="border-t border-border-default pt-4">
-                <p className="font-display text-base italic leading-relaxed text-navy-900">
+              <div className="border-t border-border-subtle pt-3">
+                <p className="font-display text-sm italic leading-relaxed text-navy-900">
                   „Mit jeder Station wuchs nicht nur die Verantwortung für
                   Mandate, sondern auch die für Teams, Kundenbeziehungen und
                   die Qualität komplexer Suchprozesse.“
                 </p>
               </div>
-              <div className="mt-4 border-t border-border-default" />
+              <div className="mt-3 border-t border-border-subtle" />
             </aside>
           </div>
         </Container>

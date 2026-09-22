@@ -28,7 +28,9 @@ const highlights = [
       <>
         <circle cx="12" cy="12" r="9" />
         <circle cx="12" cy="12" r="5" />
-        <circle cx="12" cy="12" r="1.1" fill="currentColor" />
+        <circle cx="12" cy="12" r="1" fill="currentColor" />
+        <path d="M4.5 19.5 10.3 13.7" />
+        <path d="M6.8 13.4 10.3 13.7 10 17.2" />
       </>
     ),
   },

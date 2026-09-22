@@ -252,33 +252,35 @@ export default function UeberMichPage() {
         />
 
         <Container className="relative py-12 md:py-16">
-          <Eyebrow>Werdegang</Eyebrow>
-          <h2 className="mt-3 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+          <span className="block text-[12px] font-medium uppercase tracking-[0.18em] text-accent">
+            Werdegang
+          </span>
+          <h2 className="mt-3 font-display text-[1.75rem] font-medium leading-[1.15] text-navy-900 md:text-[2.375rem]">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-muted">
+          <p className="mt-3 max-w-[680px] text-[16px] leading-[1.55] text-text-muted">
             Nach dem Architekturstudium und ersten Berufsjahren im
             Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
           </p>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_8.5rem] lg:gap-5">
+          <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_1fr] lg:gap-9">
             <div>
               {stations.map((s, i) => (
                 <div key={s.company} className="flex gap-4">
                   <div className="relative flex w-2 flex-none flex-col items-center">
-                    <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-taupe-500" />
+                    <span className="mt-2 h-2 w-2 flex-none rounded-full bg-taupe-500" />
                     {i < stations.length - 1 && (
                       <span className="mt-1 w-px flex-1 bg-border-subtle" />
                     )}
                   </div>
-                  <div className={i < stations.length - 1 ? "pb-4" : ""}>
-                    <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700">
+                  <div className={i < stations.length - 1 ? "pb-7" : ""}>
+                    <span className="block text-[12px] font-medium uppercase tracking-[0.12em] text-taupe-700">
                       {s.company}
                     </span>
-                    <h3 className="mt-1 font-display text-base font-medium leading-snug text-navy-900">
+                    <h3 className="mt-1 font-display text-[22px] font-medium leading-[1.25] text-navy-900">
                       {s.roles.join(" → ")}
                     </h3>
-                    <p className="mt-1 text-[15px] leading-relaxed text-text-secondary">
+                    <p className="mt-1 text-[15px] leading-[1.5] text-text-secondary">
                       {s.text}
                     </p>
                   </div>
@@ -286,15 +288,15 @@ export default function UeberMichPage() {
               ))}
             </div>
 
-            <aside className="lg:sticky lg:top-32 lg:self-start">
-              <div className="border-t border-border-subtle pt-3">
-                <p className="font-display text-lg italic leading-relaxed text-navy-900">
+            <aside className="lg:mt-14">
+              <div className="max-w-[270px] border-t border-border-subtle pt-3">
+                <p className="font-display text-[21px] italic leading-[1.55] text-navy-900">
                   „Mit jeder Station wuchs nicht nur die Verantwortung für
                   Mandate, sondern auch die für Teams, Kundenbeziehungen und
                   die Qualität komplexer Suchprozesse.“
                 </p>
+                <div className="mt-3 border-t border-border-subtle" />
               </div>
-              <div className="mt-3 border-t border-border-subtle" />
             </aside>
           </div>
         </Container>

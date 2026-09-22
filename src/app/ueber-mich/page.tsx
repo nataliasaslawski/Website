@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -12,9 +13,34 @@ export const metadata: Metadata = {
 };
 
 const highlights = [
-  "16 Jahre Search-Erfahrung",
-  "Executive & Professional Search",
-  "Persönliche Boutique-Beratung",
+  {
+    label: "16 Jahre Search-Erfahrung",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 8v4l2.5 1.5" />
+      </>
+    ),
+  },
+  {
+    label: "Executive & Professional Search",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <circle cx="12" cy="12" r="3.5" />
+        <circle cx="12" cy="12" r="0.5" fill="currentColor" />
+      </>
+    ),
+  },
+  {
+    label: "Persönliche Boutique-Beratung",
+    icon: (
+      <>
+        <path d="M19.5 4.5c-6 0-11.5 3-13 10.5-.6 2.6.8 4.3 3 3.8C17 17.3 19 10 19.5 4.5Z" />
+        <path d="M9.5 14.5 5 19" />
+      </>
+    ),
+  },
 ];
 
 const stations = [
@@ -48,33 +74,74 @@ const perspectives = [
   {
     title: "Als Senior Consultant",
     text: "Ich habe anspruchsvolle Mandate eigenverantwortlich von der Analyse bis zum erfolgreichen Abschluss begleitet.",
+    icon: (
+      <>
+        <circle cx="12" cy="8.5" r="3.2" />
+        <path d="M5 19c.9-3.5 3.8-5.5 7-5.5s6.1 2 7 5.5" />
+      </>
+    ),
   },
   {
     title: "Als Führungskraft",
     text: "Ich habe Teams aufgebaut, Ressourcen gesteuert und die Performance meiner Bereiche verantwortet.",
+    icon: (
+      <>
+        <circle cx="8.5" cy="8.5" r="2.8" />
+        <circle cx="15.5" cy="9.5" r="2.3" />
+        <path d="M3.5 19c.6-3.1 2.8-5 5-5s4.5 1.7 5.2 4.6" />
+        <path d="M13.8 14.2c2 .3 3.6 1.9 4.2 4.8" />
+      </>
+    ),
   },
   {
     title: "Als interne Mentorin",
     text: "Ich habe Junior-Kolleg:innen eingearbeitet sowie Schulungen zu Research, Direktansprache und Projektmanagement durchgeführt.",
+    icon: (
+      <>
+        <path d="M4 6c1.8-.9 4-.9 6 .2v10.3c-2-1.1-4.2-1.1-6-.2Z" />
+        <path d="M20 6c-1.8-.9-4-.9-6 .2v10.3c2-1.1 4.2-1.1 6-.2Z" />
+      </>
+    ),
   },
 ];
+
+function IconBadge({ children }: { children: ReactNode }) {
+  return (
+    <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-cream-100">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-taupe-600"
+        aria-hidden="true"
+      >
+        {children}
+      </svg>
+    </span>
+  );
+}
 
 export default function UeberMichPage() {
   return (
     <>
       <section className="bg-surface-page">
-        <Container className="grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+        <Container className="grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">
             <Eyebrow>Über mich</Eyebrow>
-            <h1 className="mt-4 font-display text-xl font-medium text-taupe-700">
+            <h1 className="mt-3 font-display text-xl font-medium text-taupe-700">
               Natalia Saslawski
             </h1>
-            <h2 className="mt-8 max-w-xl font-display text-[2rem] font-medium leading-[1.15] text-navy-900 md:text-[2.5rem]">
+            <h2 className="mt-5 font-display text-[1.85rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
               Menschen lassen sich nicht auf Lebensläufe reduzieren. Und gute
               Besetzungen nicht auf Stellenprofile.
             </h2>
-            <div className="max-w-xl text-[16px] leading-[1.8] text-text-secondary">
-              <p className="mt-6">
+            <div className="mt-6 text-[15px] leading-[1.75] text-text-secondary">
+              <p>
                 In vielen Jahren Personalberatung habe ich unzählige Gespräche
                 mit Unternehmen, Führungskräften und Kandidat:innen geführt.
                 Ich habe erlebt, dass der vermeintlich perfekte Kandidat am
@@ -82,27 +149,27 @@ export default function UeberMichPage() {
                 zunächst unscheinbaren Profil genau die Persönlichkeit
                 verbarg, die ein Unternehmen gesucht hatte.
               </p>
-              <p className="mt-6">
+              <p className="mt-4">
                 Genau das macht Executive Search für mich bis heute spannend.
                 Entscheidend ist nicht nur, wer eine fachliche Anforderung
                 erfüllt, sondern was hinter einer Position wirklich gebraucht
                 wird – und was Menschen zu einem Wechsel bewegt.
               </p>
-              <p className="mt-6">
+              <p className="mt-4">
                 Eine gute Suche beginnt für mich lange vor der ersten
                 Kandidatenansprache: mit Zuhören, Einordnen, Hinterfragen und
                 einem realistischen Blick auf den Markt. Besonders reizen mich
                 komplexe Mandate, bei denen die naheliegende Suche nicht
                 ausreicht.
               </p>
-              <p className="mt-6">
+              <p className="mt-4">
                 Diese strukturierte Arbeitsweise habe ich über viele Jahre und
                 Projekte entwickelt. Dabei sind zahlreiche erfolgreiche
                 Besetzungen entstanden, auf die ich mit Freude zurückblicke –
                 nicht zuletzt, weil einige dieser Entscheidungen Unternehmen
                 und Teams langfristig begleitet haben.
               </p>
-              <p className="mt-6">
+              <p className="mt-4">
                 Der Schritt in die Selbstständigkeit war für mich kein
                 Neuanfang, sondern die bewusste Entscheidung, meine
                 langjährige Search-Erfahrung in eigener Verantwortung
@@ -115,18 +182,24 @@ export default function UeberMichPage() {
               </p>
             </div>
 
-            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-border-subtle pt-6 text-xs font-medium uppercase tracking-[0.08em] text-taupe-700">
-              {highlights.map((item, i) => (
-                <span key={item} className="flex items-center gap-x-6">
-                  {i > 0 && <span className="text-border-default">·</span>}
-                  {item}
-                </span>
+            <div className="mt-8 grid grid-cols-1 gap-5 border-t border-border-subtle pt-6 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-border-subtle">
+              {highlights.map((h) => (
+                <div
+                  key={h.label}
+                  className="flex items-center gap-3 sm:pr-4 sm:first:pl-0 sm:[&:not(:first-child)]:pl-4"
+                >
+                  <IconBadge>{h.icon}</IconBadge>
+                  <span className="text-[13px] font-medium leading-snug text-navy-900">
+                    {h.label}
+                  </span>
+                </div>
               ))}
             </div>
 
             <div className="mt-8">
               <Button href="/kontakt#erstgespraech" variant="primary">
                 Unverbindliches Erstgespräch vereinbaren
+                <span aria-hidden="true">→</span>
               </Button>
             </div>
           </div>
@@ -142,9 +215,15 @@ export default function UeberMichPage() {
                 sizes="(min-width: 1024px) 40vw, 90vw"
               />
             </div>
-            <p className="mt-4 text-center font-display text-[15px] italic text-taupe-700">
-              Menschen. Möglichkeiten. Zusammenbringen.
-            </p>
+            <div className="mt-5 border-t border-border-subtle pt-5 text-right">
+              <p className="font-display text-lg italic leading-tight text-navy-900">
+                Menschen.
+                <br />
+                Möglichkeiten.
+                <br />
+                Zusammenbringen.
+              </p>
+            </div>
           </div>
         </Container>
       </section>
@@ -159,92 +238,91 @@ export default function UeberMichPage() {
           className="pointer-events-none absolute right-24 top-14 hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
         />
 
-        <Container className="relative py-16 md:py-24">
+        <Container className="relative py-14 md:py-20">
           <Eyebrow>Werdegang</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+          <h2 className="mt-3 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
+          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-text-secondary">
+            Nach dem Architekturstudium und ersten Berufsjahren im
+            Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
+          </p>
 
-          <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_18rem] lg:gap-16">
+          <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_16rem] lg:gap-16">
             <div>
               {stations.map((s, i) => (
-                <div key={s.company} className="flex gap-6">
+                <div key={s.company} className="flex gap-5">
                   <div className="relative flex w-3 flex-none flex-col items-center">
                     <span
                       className={
                         s.current
-                          ? "mt-1 h-3.5 w-3.5 flex-none rounded-full bg-navy-900"
-                          : "mt-1.5 h-2.5 w-2.5 flex-none rounded-full bg-taupe-600"
+                          ? "mt-1 h-3 w-3 flex-none rounded-full bg-navy-900"
+                          : "mt-1 h-2 w-2 flex-none rounded-full bg-taupe-600"
                       }
                     />
                     {i < stations.length - 1 && (
                       <span className="mt-1 w-px flex-1 bg-border-default" />
                     )}
                   </div>
-                  <div className={i < stations.length - 1 ? "pb-10" : ""}>
-                    <div className="md:grid md:grid-cols-[9rem_1fr] md:gap-x-8">
-                      <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700 md:pt-1">
-                        {s.company}
-                      </span>
-                      <div>
-                        <h3 className="mt-1 font-display text-lg font-medium text-navy-900 md:mt-0">
-                          {s.roles.join(" → ")}
-                        </h3>
-                        <p className="mt-1 text-[15px] leading-relaxed text-text-secondary">
-                          {s.text}
-                        </p>
-                      </div>
-                    </div>
+                  <div className={i < stations.length - 1 ? "pb-6" : ""}>
+                    <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700">
+                      {s.company}
+                    </span>
+                    <h3 className="mt-1 font-display text-lg font-medium leading-snug text-navy-900">
+                      {s.roles.join(" → ")}
+                    </h3>
+                    <p className="mt-1 text-sm leading-relaxed text-text-secondary">
+                      {s.text}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
 
             <aside className="lg:sticky lg:top-32 lg:self-start">
-              <p className="border-l-2 border-taupe-600 pl-5 font-display text-lg italic leading-snug text-navy-900">
-                „Mit jeder Station wuchs nicht nur die Verantwortung für
-                Mandate, sondern auch die für Teams, Kundenbeziehungen und die
-                Qualität komplexer Suchprozesse.“
-              </p>
+              <div className="border-t border-border-default pt-4">
+                <p className="font-display text-base italic leading-relaxed text-navy-900">
+                  „Mit jeder Station wuchs nicht nur die Verantwortung für
+                  Mandate, sondern auch die für Teams, Kundenbeziehungen und
+                  die Qualität komplexer Suchprozesse.“
+                </p>
+              </div>
+              <div className="mt-4 border-t border-border-default" />
             </aside>
           </div>
         </Container>
       </section>
 
       <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
-          <div className="max-w-2xl">
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Perspektiven, die meine Arbeit heute prägen
-            </h2>
-          </div>
+        <Container className="py-14 md:py-20">
+          <Eyebrow>Perspektiven, die meine Arbeit heute prägen</Eyebrow>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
             {perspectives.map((p) => (
-              <div
-                key={p.title}
-                className="border border-border-subtle bg-surface-card p-8"
-              >
-                <h3 className="font-display text-lg font-medium text-navy-900">
+              <div key={p.title} className="bg-cream-100/50 p-7">
+                <IconBadge>{p.icon}</IconBadge>
+                <h3 className="mt-4 font-display text-lg font-medium text-navy-900">
                   {p.title}
                 </h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                   „{p.text}“
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="mx-auto mt-10 max-w-2xl text-center text-[15px] leading-relaxed text-text-secondary">
-            Diese Erfahrungen prägen heute meine Arbeit als selbstständige
-            Beraterin – in der Verbindung aus operativer Search-Kompetenz,
-            Beratung, Führung und einem tiefen Verständnis dafür, wie
-            erfolgreiche Besetzungen entstehen.
-          </p>
+          <div className="mt-10 border-t border-border-subtle pt-8">
+            <p className="mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-text-secondary">
+              Diese Erfahrungen prägen heute meine Arbeit als selbstständige
+              Beraterin – in der Verbindung aus operativer Search-Kompetenz,
+              Beratung, Führung und einem tiefen Verständnis dafür, wie
+              erfolgreiche Besetzungen entstehen.
+            </p>
+          </div>
         </Container>
       </section>
 
-      <section className="bg-surface-page">
+      <section className="bg-surface-elevated">
         <Container narrow className="py-16 md:py-24">
           <Eyebrow>Arbeitsweise</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">

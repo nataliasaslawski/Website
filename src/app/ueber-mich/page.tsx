@@ -60,7 +60,7 @@ const stations = [
     text: "Weitere Vertiefung anspruchsvoller Suchmandate.",
   },
   {
-    company: "Odgers",
+    company: "Odgers Berndtson",
     roles: [
       "Senior Consultant",
       "Teamleitung für das Projekt Management der Industrial Practice Manufacturing",
@@ -264,14 +264,14 @@ export default function UeberMichPage() {
                       <span className="mt-1 w-px flex-1 bg-border-default" />
                     )}
                   </div>
-                  <div className={i < stations.length - 1 ? "pb-6" : ""}>
-                    <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700">
+                  <div className={i < stations.length - 1 ? "pb-5" : ""}>
+                    <h3 className="font-display text-lg font-medium leading-snug text-navy-900">
                       {s.company}
-                    </span>
-                    <h3 className="mt-1 font-display text-lg font-medium leading-snug text-navy-900">
-                      {s.roles.join(" → ")}
                     </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-text-secondary">
+                    <p className="mt-0.5 text-[15px] leading-snug text-navy-900/80">
+                      {s.roles.join(" → ")}
+                    </p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
                       {s.text}
                     </p>
                   </div>

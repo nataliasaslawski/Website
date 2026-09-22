@@ -256,29 +256,29 @@ export default function UeberMichPage() {
           <h2 className="mt-3 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-text-secondary">
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-muted">
             Nach dem Architekturstudium und ersten Berufsjahren im
             Gewerbeimmobilienumfeld führte mein Weg in die Personalberatung.
           </p>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_11rem] lg:gap-8">
+          <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_9.5rem] lg:gap-6">
             <div>
               {stations.map((s, i) => (
                 <div key={s.company} className="flex gap-4">
                   <div className="relative flex w-2 flex-none flex-col items-center">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-taupe-500" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-taupe-500" />
                     {i < stations.length - 1 && (
                       <span className="mt-1 w-px flex-1 bg-border-subtle" />
                     )}
                   </div>
-                  <div className={i < stations.length - 1 ? "pb-3.5" : ""}>
-                    <span className="block text-[11px] font-medium uppercase tracking-[0.1em] text-taupe-700">
+                  <div className={i < stations.length - 1 ? "pb-4" : ""}>
+                    <span className="block text-xs font-medium uppercase tracking-[0.1em] text-taupe-700">
                       {s.company}
                     </span>
-                    <h3 className="mt-0.5 font-display text-[17px] font-medium leading-snug text-navy-900">
+                    <h3 className="mt-1 font-display text-xl font-medium leading-snug text-navy-900">
                       {s.roles.join(" → ")}
                     </h3>
-                    <p className="mt-0.5 text-[13px] leading-snug text-text-secondary">
+                    <p className="mt-1 text-[14px] leading-relaxed text-text-secondary">
                       {s.text}
                     </p>
                   </div>
@@ -288,7 +288,7 @@ export default function UeberMichPage() {
 
             <aside className="lg:sticky lg:top-32 lg:self-start">
               <div className="border-t border-border-subtle pt-3">
-                <p className="font-display text-sm italic leading-relaxed text-navy-900">
+                <p className="font-display text-base italic leading-relaxed text-navy-900">
                   „Mit jeder Station wuchs nicht nur die Verantwortung für
                   Mandate, sondern auch die für Teams, Kundenbeziehungen und
                   die Qualität komplexer Suchprozesse.“

@@ -344,8 +344,20 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-page">
-        <Container className="py-14 md:py-20">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-16 -top-14 hidden h-56 w-56 rounded-full bg-taupe-400/14 xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-4 top-20 hidden h-32 w-32 rounded-full bg-taupe-600/11 xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-10 -left-10 hidden h-28 w-28 rounded-full bg-taupe-400/12 xl:block"
+        />
+        <Container className="relative py-14 md:py-20">
           <Eyebrow>Perspektiven, die meine Arbeit heute prägen</Eyebrow>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">

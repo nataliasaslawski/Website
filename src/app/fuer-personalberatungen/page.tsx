@@ -44,7 +44,7 @@ export default function FuerPersonalberatungenPage() {
   return (
     <>
       <section className="bg-surface-page">
-        <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <Container className="grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow>Für Personalberatungen</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
@@ -61,10 +61,10 @@ export default function FuerPersonalberatungenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated">
+          <div className="relative aspect-[886/689] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.agencies.hero}
-              alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+              alt="Natalia Saslawski"
               fill
               priority
               className="object-cover"

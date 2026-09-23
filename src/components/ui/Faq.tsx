@@ -19,7 +19,7 @@ export function Faq({ items }: { items: FaqItem[] }) {
               aria-expanded={open}
               className="flex w-full items-center gap-4 py-5 text-left"
             >
-              <span className="max-w-[560px] font-display text-[19px] font-medium leading-snug text-navy-900">
+              <span className="w-full font-display text-[19px] font-medium leading-snug text-navy-900 md:w-[460px]">
                 {item.question}
               </span>
               <span aria-hidden className="relative h-3 w-3 flex-none">

@@ -22,7 +22,7 @@ export const images = {
     secondary: "/images/moodboard/architektur-fassade.png",
   },
   companies: {
-    hero: "/images/moodboard/konferenzraum.png",
+    hero: "/images/portraits/natalia-fuer-unternehmen-hero.webp",
     secondary: "/images/portraits/natalia-mehrwert-unternehmen.webp",
   },
   agencies: {

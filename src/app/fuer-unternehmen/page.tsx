@@ -184,10 +184,10 @@ export default function FuerUnternehmenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated">
+          <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.companies.hero}
-              alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+              alt="Natalia Saslawski"
               fill
               priority
               className="object-cover"

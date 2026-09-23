@@ -8,20 +8,14 @@ export function FounderTeaser() {
   return (
     <section className="bg-surface-page">
       <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-        <div className="relative">
-          <div
-            aria-hidden="true"
-            className="absolute -bottom-4 -right-4 hidden h-full w-full bg-cream-100 md:block"
+        <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
+          <Image
+            src={images.home.aboutTeaser}
+            alt="Natalia Saslawski"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 35vw, 90vw"
           />
-          <div className="relative aspect-[2/3] w-full overflow-hidden border border-taupe-400/25 bg-surface-elevated">
-            <Image
-              src={images.home.aboutTeaser}
-              alt="Natalia Saslawski"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 35vw, 90vw"
-            />
-          </div>
         </div>
 
         <div>

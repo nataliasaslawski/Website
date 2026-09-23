@@ -15,8 +15,12 @@ export const metadata: Metadata = {
 export default function KontaktPage() {
   return (
     <>
-      <section className="bg-surface-page">
-        <Container className="grid items-center gap-12 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-14 -bottom-12 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <Container className="relative grid items-center gap-12 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow>Kontakt</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
@@ -43,8 +47,12 @@ export default function KontaktPage() {
         </Container>
       </section>
 
-      <section id="erstgespraech" className="scroll-mt-24 bg-surface-elevated">
-        <Container className="grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+      <section id="erstgespraech" className="relative scroll-mt-24 overflow-hidden bg-surface-elevated">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-16 -right-12 hidden h-36 w-36 rounded-full bg-taupe-400/14 xl:block"
+        />
+        <Container className="relative grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <div>
             <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Kontakt aufnehmen

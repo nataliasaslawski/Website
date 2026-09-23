@@ -159,8 +159,12 @@ const outcomes = [
 export default function FuerUnternehmenPage() {
   return (
     <>
-      <section className="bg-surface-page">
-        <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-16 -left-12 hidden h-44 w-44 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <Container className="relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow>Für Unternehmen</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
@@ -260,8 +264,15 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-inverse text-text-inverse">
-        <Container className="py-16 md:py-24">
+      <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-20 -left-16 hidden h-64 w-64 xl:block"
+        >
+          <span className="absolute bottom-0 left-10 h-36 w-36 rounded-full bg-navy-800/42" />
+          <span className="absolute bottom-16 left-32 h-24 w-24 rounded-full bg-navy-700/30" />
+        </div>
+        <Container className="relative py-16 md:py-24">
           <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
 
           <div className="mt-10 grid gap-8 md:grid-cols-5 md:gap-6">

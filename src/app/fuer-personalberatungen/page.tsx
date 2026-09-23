@@ -43,8 +43,12 @@ const outcomes = [
 export default function FuerPersonalberatungenPage() {
   return (
     <>
-      <section className="bg-surface-page">
-        <Container className="grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-14 -top-14 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <Container className="relative grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow>Für Personalberatungen</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
@@ -74,8 +78,12 @@ export default function FuerPersonalberatungenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-24">
+      <section className="relative overflow-hidden bg-surface-elevated">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-14 -right-10 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
+        />
+        <Container className="relative py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Typische Ausgangssituation</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">

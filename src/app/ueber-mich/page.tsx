@@ -175,8 +175,16 @@ function IconBadge({
 export default function UeberMichPage() {
   return (
     <>
-      <section className="bg-surface-page">
-        <Container className="grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-14 -top-10 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-12 -left-6 hidden h-24 w-24 rounded-full bg-taupe-400/12 xl:block"
+        />
+        <Container className="relative grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">
             <Eyebrow>Über mich</Eyebrow>
             <h1 className="mt-3 font-display text-xl font-medium text-taupe-700">
@@ -437,8 +445,15 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-inverse text-text-inverse">
-        <Container className="py-16 text-center md:py-24">
+      <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 xl:block"
+        >
+          <span className="absolute right-8 top-0 h-40 w-40 rounded-full bg-navy-800/40" />
+          <span className="absolute right-32 top-20 h-28 w-28 rounded-full bg-navy-700/30" />
+        </div>
+        <Container className="relative py-16 text-center md:py-24">
           <h2 className="font-display text-2xl font-medium leading-snug md:text-[2.25rem]">
             Lassen Sie uns über Ihr aktuelles Search-Projekt sprechen.
           </h2>

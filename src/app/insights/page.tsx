@@ -16,8 +16,16 @@ export default async function InsightsPage() {
 
   return (
     <>
-      <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-16 -top-12 hidden h-44 w-44 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-14 right-24 hidden h-28 w-28 rounded-full bg-taupe-400/12 xl:block"
+        />
+        <Container className="relative py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Insights</Eyebrow>
             <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">

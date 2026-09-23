@@ -301,23 +301,14 @@ export default function FuerUnternehmenPage() {
               </ul>
             </div>
 
-            <div className="relative flex min-h-[280px] w-full flex-col items-center justify-center gap-4 border-t border-border-subtle bg-surface-elevated p-8 lg:min-h-0 lg:border-l lg:border-t-0">
-              <svg
-                width="52"
-                height="52"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                className="text-taupe-600"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="8" r="3.5" />
-                <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
-              </svg>
-              <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
-                Bildplatzhalter
-              </span>
+            <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-surface-elevated lg:min-h-0 lg:border-l lg:border-t-0">
+              <Image
+                src={images.companies.secondary}
+                alt="Natalia Saslawski"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 35vw, 100vw"
+              />
             </div>
           </div>
         </Container>

@@ -23,7 +23,7 @@ export const images = {
   },
   companies: {
     hero: "/images/moodboard/konferenzraum.png",
-    secondary: "/images/moodboard/buero-konferenz.png",
+    secondary: "/images/portraits/natalia-mehrwert-unternehmen.webp",
   },
   agencies: {
     hero: "/images/moodboard/konferenz-gespraech.png",

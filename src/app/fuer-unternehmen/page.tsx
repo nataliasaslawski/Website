@@ -284,23 +284,25 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
+      <section className="bg-surface-page">
         <Container className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
           <div>
             <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Was Sie aus der Zusammenarbeit mitnehmen
             </h2>
-            <ul className="mt-6 space-y-3">
-              {outcomes.map((item) => (
-                <li
-                  key={item}
-                  className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-text-secondary first:border-none first:pt-0"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <div className="mt-6 rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-6 md:p-8">
+              <ul className="divide-y divide-border-subtle">
+                {outcomes.map((item) => (
+                  <li
+                    key={item}
+                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-card">

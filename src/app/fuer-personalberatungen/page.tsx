@@ -144,21 +144,21 @@ export default function FuerPersonalberatungenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-inverse text-text-inverse">
+      <section className="bg-surface-elevated">
         <Container narrow className="py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug md:text-[2.25rem]">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
             Lassen Sie uns über Ihr aktuelles Mandat sprechen.
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-inverse-muted">
+          <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary">
             Wenn bei Ihnen mehrere Mandate parallel laufen oder ein
             Search-Projekt zusätzliche Kompetenz benötigt, lassen Sie uns
             unverbindlich austauschen.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/kontakt#erstgespraech" variant="inverse">
+            <Button href="/kontakt#erstgespraech" variant="primary">
               Unverbindliches Erstgespräch vereinbaren
             </Button>
-            <Button href="/kontakt#rueckruf" variant="ghost" className="border-paper-050 text-text-inverse hover:bg-paper-050 hover:text-navy-900">
+            <Button href="/kontakt#rueckruf" variant="ghost">
               Rückruf anfragen
             </Button>
           </div>

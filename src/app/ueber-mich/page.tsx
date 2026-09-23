@@ -367,19 +367,31 @@ export default function UeberMichPage() {
 
       <section className="bg-surface-elevated">
         <Container className="py-16 md:py-24">
-          <div className="max-w-2xl">
-            <Eyebrow>Mein Anspruch</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Wofür ich in der Zusammenarbeit stehe
-            </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-              Für mich zählt Qualität vor Masse. Gute Personalberatung
-              bedeutet nicht, möglichst viele Profile zu präsentieren,
-              sondern genau hinzusehen: Welche Erfahrungen sind für eine neue
-              Aufgabe wirklich übertragbar? Welches Potenzial bringt jemand
-              für den nächsten Schritt mit? Und passt die Persönlichkeit zu
-              dem Umfeld, in dem sie künftig erfolgreich sein soll?
-            </p>
+          <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+            <div>
+              <Eyebrow>Mein Anspruch</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Wofür ich in der Zusammenarbeit stehe
+              </h2>
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+                Für mich zählt Qualität vor Masse. Gute Personalberatung
+                bedeutet nicht, möglichst viele Profile zu präsentieren,
+                sondern genau hinzusehen: Welche Erfahrungen sind für eine
+                neue Aufgabe wirklich übertragbar? Welches Potenzial bringt
+                jemand für den nächsten Schritt mit? Und passt die
+                Persönlichkeit zu dem Umfeld, in dem sie künftig erfolgreich
+                sein soll?
+              </p>
+            </div>
+            <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <Image
+                src={images.about.secondary}
+                alt="Natalia Saslawski im Gespräch"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 35vw, 90vw"
+              />
+            </div>
           </div>
 
           <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-10">

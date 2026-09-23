@@ -19,7 +19,7 @@ export const images = {
   },
   about: {
     portrait: "/images/portraits/natalia-ueber-mich.webp",
-    secondary: "/images/moodboard/architektur-fassade.png",
+    secondary: "/images/portraits/natalia-mein-anspruch.webp",
   },
   companies: {
     hero: "/images/portraits/natalia-fuer-unternehmen-hero.webp",

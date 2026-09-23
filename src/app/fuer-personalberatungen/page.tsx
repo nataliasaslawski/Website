@@ -65,7 +65,7 @@ export default function FuerPersonalberatungenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[886/689] w-full overflow-hidden bg-surface-elevated">
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.agencies.hero}
               alt="Natalia Saslawski"

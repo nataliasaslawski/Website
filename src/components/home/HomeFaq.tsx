@@ -62,7 +62,7 @@ export function HomeFaq() {
           <div className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated px-8 py-14 md:px-16 md:py-16">
             <Eyebrow>Häufige Fragen</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Fragen, die häufig vor einem Erstgespräch aufkommen
+              Was Sie vor einer Zusammenarbeit wissen möchten
             </h2>
             <div className="mt-10">
               <Faq items={items} />

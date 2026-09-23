@@ -47,7 +47,7 @@ export function Method() {
         <span className="absolute bottom-10 left-20 h-32 w-32 rounded-full bg-navy-700/34" />
       </div>
 
-      <Container className="relative py-10 md:py-11">
+      <Container className="relative pb-10 pt-14 md:pb-11 md:pt-16">
         <div className="max-w-xl">
           <h2 className="font-display text-2xl font-medium leading-snug md:text-[1.75rem]">
             Meine Arbeitsweise

@@ -47,7 +47,7 @@ const items = [
 
 export function HomeFaq() {
   return (
-    <section className="relative overflow-hidden bg-surface-page pb-20 pt-28 md:pb-28 md:pt-36">
+    <section className="relative overflow-hidden bg-surface-page pb-20 pt-12 md:pb-28 md:pt-14">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-16 top-10 hidden h-56 w-56 rounded-full bg-navy-900/[0.025] lg:block"
@@ -57,8 +57,8 @@ export function HomeFaq() {
         className="pointer-events-none absolute -bottom-20 -right-12 hidden h-64 w-64 rounded-full bg-navy-900/[0.025] lg:block"
       />
 
-      <Container narrow className="relative">
-        <div className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated px-8 py-14 md:px-16 md:py-16">
+      <Container className="relative">
+        <div className="mx-auto max-w-[920px] rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated px-8 py-14 md:px-16 md:py-16">
           <Eyebrow>Häufige Fragen</Eyebrow>
           <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
             Fragen, die häufig vor einem Erstgespräch aufkommen

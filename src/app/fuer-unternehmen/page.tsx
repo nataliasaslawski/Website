@@ -205,25 +205,22 @@ export default function FuerUnternehmenPage() {
               Wann eine externe Search-Perspektive den Unterschied macht
             </h2>
           </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
+          <div className="mt-10 grid gap-x-14 md:grid-cols-2">
             {[0, 1].map((column) => (
-              <div
-                key={column}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
-              >
-                <ul className="divide-y divide-border-subtle">
-                  {situations
-                    .filter((_, i) => i % 2 === column)
-                    .map((item) => (
-                      <li
-                        key={item}
-                        className="py-4 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
-                      >
+              <ul key={column} className="divide-y divide-border-subtle">
+                {situations
+                  .filter((_, i) => i % 2 === column)
+                  .map((item, idx) => (
+                    <li key={item} className="flex gap-4 py-5">
+                      <span className="font-display text-sm text-taupe-600">
+                        {String(idx + 1).padStart(2, "0")}
+                      </span>
+                      <span className="text-[15px] leading-relaxed text-text-secondary">
                         {item}
-                      </li>
-                    ))}
-                </ul>
-              </div>
+                      </span>
+                    </li>
+                  ))}
+              </ul>
             ))}
           </div>
         </Container>

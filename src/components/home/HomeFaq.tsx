@@ -58,13 +58,15 @@ export function HomeFaq() {
       />
 
       <Container className="relative">
-        <div className="mx-auto max-w-[920px] rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated px-8 py-14 md:px-16 md:py-16">
-          <Eyebrow>Häufige Fragen</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Fragen, die häufig vor einem Erstgespräch aufkommen
-          </h2>
-          <div className="mt-10">
-            <Faq items={items} />
+        <div className="mx-auto max-w-[960px] rounded-[calc(var(--radius-lg)+8px)] border border-taupe-400/15 bg-cream-050/60 p-3 md:p-4">
+          <div className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated px-8 py-14 md:px-16 md:py-16">
+            <Eyebrow>Häufige Fragen</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Fragen, die häufig vor einem Erstgespräch aufkommen
+            </h2>
+            <div className="mt-10">
+              <Faq items={items} />
+            </div>
           </div>
         </div>
       </Container>

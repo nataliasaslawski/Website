@@ -1,31 +1,22 @@
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
-const steps = [
+const principles = [
   {
-    n: "01",
-    title: "Verstehen",
-    text: "Rolle, Unternehmen, Kontext, Ausgangssituation, Anforderungen, Ziel der Besetzung und Erwartungen an die Rolle verstehen.",
+    title: "Verstehen & hinterfragen",
+    text: "Ich möchte Zusammenhänge wirklich verstehen, Anforderungen einordnen und auch bestehende Annahmen hinterfragen – bevor daraus eine Such- oder Handlungsempfehlung entsteht.",
   },
   {
-    n: "02",
-    title: "Analysieren",
-    text: "Suchparameter, Kandidat:innenmarkt, Branchen, Zielfirmen sowie mögliche alternative Märkte analysieren.",
+    title: "Qualität vor Quantität",
+    text: "Nicht die Anzahl präsentierter Profile entscheidet, sondern deren Relevanz, Qualität und Passung zur jeweiligen Aufgabe und zum Unternehmen.",
   },
   {
-    n: "03",
-    title: "Finden & Aktivieren",
-    text: "Relevante Kandidat:innen identifizieren, persönlich ansprechen und für den Prozess gewinnen.",
+    title: "Beratung statt reiner Vermittlung",
+    text: "Ich verstehe meine Rolle nicht als reine Kandidatenvermittlung, sondern als beratende Partnerschaft – mit Marktkenntnis, einer klaren Einschätzung und persönlicher Begleitung.",
   },
   {
-    n: "04",
-    title: "Bewerten",
-    text: "Erfahrung, Kompetenzen, Motivation, Persönlichkeit und mögliche Passung strukturiert bewerten.",
-  },
-  {
-    n: "05",
-    title: "Begleiten",
-    text: "Erkenntnisse transparent kommunizieren, Suchstrategie bei Bedarf anpassen und den weiteren Auswahlprozess begleiten.",
+    title: "Verbindlichkeit & Vertrauen",
+    text: "Diskretion, persönliche Verantwortung und ein offener, verlässlicher Austausch sind für mich Grundlage jeder Zusammenarbeit.",
   },
 ];
 
@@ -58,23 +49,24 @@ export function Method() {
       </div>
 
       <Container className="relative py-20 md:py-28">
-        <div className="max-w-4xl">
-          <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug md:text-[2rem]">
-            Ein strukturierter Prozess statt eines standardisierten Suchschemas
+        <div className="max-w-3xl">
+          <Eyebrow tone="inverse">Arbeitsweise</Eyebrow>
+          <h2 className="mt-5 font-display text-[1.9rem] font-medium leading-snug md:text-[2.5rem]">
+            Substanz, Urteilsvermögen und persönliche Verantwortung
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-5 md:gap-6">
-          {steps.map((step) => (
+        <div className="mt-16 grid gap-x-16 gap-y-14 md:grid-cols-2 md:gap-x-20 md:gap-y-16">
+          {principles.map((principle) => (
             <div
-              key={step.n}
-              className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.35)] pt-6"
+              key={principle.title}
+              className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.35)] pt-7"
             >
-              <span className="font-display text-lg text-cream-100">{step.n}</span>
-              <h3 className="mt-3 text-[17px] font-medium text-text-inverse">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-inverse/90">
-                {step.text}
+              <h3 className="text-[17px] font-medium text-text-inverse">
+                {principle.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-text-inverse/90">
+                {principle.text}
               </p>
             </div>
           ))}

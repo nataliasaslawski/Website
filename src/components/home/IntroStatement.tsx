@@ -6,7 +6,7 @@ export function IntroStatement() {
   return (
     <section className="bg-surface-elevated">
       <Container className="py-20 md:py-28">
-        <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
           <div>
             <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Executive Search &amp; Talent Advisory

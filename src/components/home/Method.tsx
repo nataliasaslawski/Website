@@ -1,22 +1,21 @@
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const principles = [
   {
     title: "Verstehen & hinterfragen",
-    text: "Ich möchte Zusammenhänge wirklich verstehen, Anforderungen einordnen und auch bestehende Annahmen hinterfragen – bevor daraus eine Such- oder Handlungsempfehlung entsteht.",
+    text: "Zusammenhänge verstehen, Anforderungen einordnen und Annahmen hinterfragen.",
   },
   {
     title: "Qualität vor Quantität",
-    text: "Nicht die Anzahl präsentierter Profile entscheidet, sondern deren Relevanz, Qualität und Passung zur jeweiligen Aufgabe und zum Unternehmen.",
+    text: "Entscheidend sind Relevanz, Qualität und Passung – nicht die Menge.",
   },
   {
-    title: "Beratung statt reiner Vermittlung",
-    text: "Ich verstehe meine Rolle nicht als reine Kandidatenvermittlung, sondern als beratende Partnerschaft – mit Marktkenntnis, einer klaren Einschätzung und persönlicher Begleitung.",
+    title: "Beratung statt Vermittlung",
+    text: "Ich begleite Mandate beratend, persönlich und mit klarer Einschätzung.",
   },
   {
     title: "Verbindlichkeit & Vertrauen",
-    text: "Diskretion, persönliche Verantwortung und ein offener, verlässlicher Austausch sind für mich Grundlage jeder Zusammenarbeit.",
+    text: "Diskretion, Verantwortung und ein verlässlicher Austausch prägen meine Arbeit.",
   },
 ];
 
@@ -48,24 +47,26 @@ export function Method() {
         <span className="absolute bottom-10 left-20 h-32 w-32 rounded-full bg-navy-700/34" />
       </div>
 
-      <Container className="relative py-20 md:py-28">
-        <div className="max-w-3xl">
-          <Eyebrow tone="inverse">Arbeitsweise</Eyebrow>
-          <h2 className="mt-5 font-display text-[1.9rem] font-medium leading-snug md:text-[2.5rem]">
-            Substanz, Urteilsvermögen und persönliche Verantwortung
+      <Container className="relative py-12 md:py-14">
+        <div className="max-w-xl">
+          <h2 className="font-display text-2xl font-medium leading-snug md:text-[1.75rem]">
+            Meine Arbeitsweise
           </h2>
+          <p className="mt-2 text-sm text-text-inverse/70 md:text-[15px]">
+            Substanz, Urteilsvermögen und persönliche Verantwortung
+          </p>
         </div>
 
-        <div className="mt-16 grid gap-x-16 gap-y-14 md:grid-cols-2 md:gap-x-20 md:gap-y-16">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {principles.map((principle) => (
             <div
               key={principle.title}
-              className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.35)] pt-7"
+              className="rounded-[var(--radius-md)] border border-cream-100/15 bg-navy-800/30 p-5"
             >
-              <h3 className="text-[17px] font-medium text-text-inverse">
+              <h3 className="text-[15px] font-medium text-text-inverse">
                 {principle.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-text-inverse/90">
+              <p className="mt-2 text-[13px] leading-relaxed text-text-inverse/80">
                 {principle.text}
               </p>
             </div>

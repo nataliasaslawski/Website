@@ -197,7 +197,7 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
+      <section className="bg-surface-page">
         <Container className="py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Typische Ausgangssituation</Eyebrow>
@@ -205,16 +205,27 @@ export default function FuerUnternehmenPage() {
               Wann eine externe Search-Perspektive den Unterschied macht
             </h2>
           </div>
-          <ul className="mt-10 grid gap-x-10 gap-y-4 md:grid-cols-2">
-            {situations.map((item) => (
-              <li
-                key={item}
-                className="border-t border-border-default pt-4 text-[15px] leading-relaxed text-text-secondary"
+          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
+            {[0, 1].map((column) => (
+              <div
+                key={column}
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
               >
-                {item}
-              </li>
+                <ul className="divide-y divide-border-subtle">
+                  {situations
+                    .filter((_, i) => i % 2 === column)
+                    .map((item) => (
+                      <li
+                        key={item}
+                        className="py-4 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </Container>
       </section>
 

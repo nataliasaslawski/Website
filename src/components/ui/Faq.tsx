@@ -17,12 +17,12 @@ export function Faq({ items }: { items: FaqItem[] }) {
               type="button"
               onClick={() => setOpenIndex(open ? null : index)}
               aria-expanded={open}
-              className="flex w-full items-center justify-between gap-6 py-6 text-left"
+              className="flex w-full items-center justify-between gap-6 py-5 text-left"
             >
-              <span className="font-display text-lg font-medium text-navy-900">
+              <span className="font-display text-[16px] font-medium leading-snug text-navy-900">
                 {item.question}
               </span>
-              <span aria-hidden className="relative h-3.5 w-3.5 flex-none">
+              <span aria-hidden className="relative h-2.5 w-2.5 flex-none">
                 <span className="absolute left-1/2 top-1/2 h-px w-full -translate-x-1/2 -translate-y-1/2 bg-navy-900/50" />
                 <span
                   className={`absolute left-1/2 top-1/2 h-full w-px -translate-x-1/2 -translate-y-1/2 bg-navy-900/50 transition-opacity duration-[var(--duration-normal)] ${open ? "opacity-0" : "opacity-100"}`}

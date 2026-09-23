@@ -35,6 +35,17 @@ export function FounderTeaser() {
             Ansprechpartnerin zusammen, die das jeweilige Projekt selbst
             versteht, begleitet und operativ umsetzt.
           </p>
+
+          <p className="mt-8 max-w-xl font-display text-lg italic leading-snug text-navy-900">
+            „Vertrauen entsteht durch Erfahrung und Verständnis – nicht durch
+            Versprechen.“
+          </p>
+          <p className="mt-3 text-[13px] text-text-muted">
+            Natalia Saslawski
+            <br />
+            Executive Search &amp; Talent Advisory
+          </p>
+
           <div className="mt-8">
             <Button href="/ueber-mich" variant="secondary">
               Mehr über mich

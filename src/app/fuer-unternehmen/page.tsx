@@ -238,9 +238,12 @@ export default function FuerUnternehmenPage() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-x-14 gap-y-10 md:grid-cols-2">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
             {serviceTiles.map((tile) => (
-              <div key={tile.title} className="border-t border-border-default pt-6">
+              <div
+                key={tile.title}
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
+              >
                 <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
                   {tile.title}
                 </h3>

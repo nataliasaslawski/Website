@@ -282,80 +282,84 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
-          <div>
-            <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Was Sie aus der Zusammenarbeit mitnehmen
-            </h2>
-            <ul className="mt-6 divide-y divide-border-subtle">
-              {outcomes.map((item) => (
-                <li
-                  key={item}
-                  className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <Container className="py-16 md:py-24">
+          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="p-8 md:p-10">
+              <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Was Sie aus der Zusammenarbeit mitnehmen
+              </h2>
+              <ul className="mt-6 divide-y divide-border-subtle">
+                {outcomes.map((item) => (
+                  <li
+                    key={item}
+                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          <div className="relative flex aspect-[3/4] w-full flex-col items-center justify-center gap-4 border border-border-default bg-surface-card">
-            <svg
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              className="text-taupe-600"
-              aria-hidden="true"
-            >
-              <circle cx="12" cy="8" r="3.5" />
-              <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
-            </svg>
-            <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
-              Bildplatzhalter
-            </span>
+            <div className="relative flex min-h-[280px] w-full flex-col items-center justify-center gap-4 border-t border-border-subtle bg-surface-elevated p-8 lg:min-h-0 lg:border-l lg:border-t-0">
+              <svg
+                width="52"
+                height="52"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                className="text-taupe-600"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="8" r="3.5" />
+                <path d="M4.5 20c1-3.8 4.2-6 7.5-6s6.5 2.2 7.5 6" />
+              </svg>
+              <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+                Bildplatzhalter
+              </span>
+            </div>
           </div>
         </Container>
       </section>
 
       <section className="bg-surface-page">
         <Container className="py-16 md:py-24">
-          <div className="max-w-3xl">
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Branchenerfahrung
-            </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-              Meine langjährige Erfahrung in Executive &amp; Professional
-              Search, Marktanalyse und strategischer Talentgewinnung umfasst
-              unterschiedliche Branchen und Märkte – mit besonderen
-              Schwerpunkten in den folgenden Bereichen:
-            </p>
-          </div>
+          <div className="border-t border-border-subtle pt-16 md:pt-20">
+            <div className="max-w-3xl">
+              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Branchenerfahrung
+              </h2>
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+                Meine langjährige Erfahrung in Executive &amp; Professional
+                Search, Marktanalyse und strategischer Talentgewinnung umfasst
+                unterschiedliche Branchen und Märkte – mit besonderen
+                Schwerpunkten in den folgenden Bereichen:
+              </p>
+            </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {industryGroups.map((group) => (
-              <div
-                key={group.title}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
-              >
-                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
-                  {group.title}
-                </h3>
-                <ul className="mt-5 space-y-2.5">
-                  {group.items.map((item) => (
-                    <li
-                      key={item}
-                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div className="mt-10 grid gap-6 lg:grid-cols-3">
+              {industryGroups.map((group) => (
+                <div
+                  key={group.title}
+                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
+                >
+                  <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                    {group.title}
+                  </h3>
+                  <ul className="mt-5 space-y-2.5">
+                    {group.items.map((item) => (
+                      <li
+                        key={item}
+                        className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
 
           <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-text-secondary">

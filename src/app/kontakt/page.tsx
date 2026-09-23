@@ -30,10 +30,10 @@ export default function KontaktPage() {
               Zusammenarbeit sinnvoll unterstützen kann.
             </p>
           </div>
-          <div className="relative aspect-[4/3] w-full overflow-hidden bg-surface-elevated">
+          <div className="relative aspect-square w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.contact.hero}
-              alt="Bild-Platzhalter – wird durch professionelle Businessfotos ersetzt"
+              alt="Natalia Saslawski"
               fill
               priority
               className="object-cover"

@@ -34,7 +34,7 @@ export const images = {
     cardFallback: "/images/moodboard/kaffee-notizbuch.png",
   },
   contact: {
-    hero: "/images/moodboard/buero-abends.png",
+    hero: "/images/portraits/natalia-kontakt-hero.webp",
   },
 } as const;
 

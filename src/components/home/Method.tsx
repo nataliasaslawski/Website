@@ -47,26 +47,26 @@ export function Method() {
         <span className="absolute bottom-10 left-20 h-32 w-32 rounded-full bg-navy-700/34" />
       </div>
 
-      <Container className="relative pb-10 pt-14 md:pb-11 md:pt-16">
+      <Container className="relative py-20 md:py-28">
         <div className="max-w-xl">
           <h2 className="font-display text-2xl font-medium leading-snug md:text-[1.75rem]">
             Meine Arbeitsweise
           </h2>
-          <p className="mt-1 text-sm text-text-inverse/70 md:text-[15px]">
+          <p className="mt-3 text-sm text-text-inverse/70 md:text-[15px]">
             Substanz, Urteilsvermögen und persönliche Verantwortung
           </p>
         </div>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
           {principles.map((principle) => (
             <div
               key={principle.title}
-              className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-5"
+              className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-6 md:px-6 md:py-8"
             >
               <h3 className="text-[15px] font-medium text-text-inverse">
                 {principle.title}
               </h3>
-              <p className="mt-2 text-[13px] leading-relaxed text-text-inverse/80">
+              <p className="mt-3 text-[13px] leading-relaxed text-text-inverse/80">
                 {principle.text}
               </p>
             </div>

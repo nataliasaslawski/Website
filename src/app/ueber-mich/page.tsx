@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const highlights = [
   {
-    label: "16 Jahre Search-Erfahrung",
+    label: "15 Jahre Search-Erfahrung",
     icon: (
       <>
         <circle cx="12" cy="8.5" r="3.8" />
@@ -187,13 +187,10 @@ export default function UeberMichPage() {
         <Container className="relative grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">
             <Eyebrow>Über mich</Eyebrow>
-            <h1 className="mt-3 font-display text-xl font-medium text-taupe-700">
-              Natalia Saslawski
-            </h1>
-            <h2 className="mt-5 font-display text-[1.85rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
+            <h1 className="mt-4 font-display text-[1.85rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
               Menschen lassen sich nicht auf Lebensläufe reduzieren. Und gute
               Besetzungen nicht auf Stellenprofile.
-            </h2>
+            </h1>
             <div className="mt-6 text-[15px] leading-[1.75] text-text-secondary">
               <p>
                 In vielen Jahren Personalberatung habe ich unzählige Gespräche
@@ -249,7 +246,7 @@ export default function UeberMichPage() {
             </div>
           </div>
 
-          <div className="lg:order-2 lg:sticky lg:top-28">
+          <div className="relative lg:order-2 lg:sticky lg:top-28 lg:w-[82%] lg:justify-self-end">
             <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.about.portrait}
@@ -257,18 +254,16 @@ export default function UeberMichPage() {
                 fill
                 priority
                 className="object-cover"
-                sizes="(min-width: 1024px) 40vw, 90vw"
+                sizes="(min-width: 1024px) 33vw, 90vw"
               />
             </div>
-            <div className="mt-5 border-t border-border-subtle pt-5 text-right">
-              <p className="font-display text-lg italic leading-tight text-navy-900">
-                Menschen.
-                <br />
-                Möglichkeiten.
-                <br />
-                Zusammenbringen.
-              </p>
-            </div>
+            <p className="absolute -bottom-5 right-4 -rotate-2 bg-surface-page px-4 py-2 text-right font-display text-[17px] font-light italic leading-[1.15] tracking-[0.01em] text-navy-900">
+              Menschen.
+              <br />
+              Möglichkeiten.
+              <br />
+              Zusammenbringen.
+            </p>
           </div>
         </Container>
       </section>

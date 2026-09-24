@@ -63,10 +63,10 @@ export function Method() {
               key={principle.title}
               className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-6 md:px-6 md:py-8"
             >
-              <h3 className="text-[15px] font-medium text-text-inverse">
+              <h3 className="text-[17px] font-medium leading-snug text-text-inverse">
                 {principle.title}
               </h3>
-              <p className="mt-3 text-[13px] leading-relaxed text-text-inverse/80">
+              <p className="mt-3 text-[15px] leading-relaxed text-text-inverse/80">
                 {principle.text}
               </p>
             </div>

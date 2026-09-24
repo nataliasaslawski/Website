@@ -257,18 +257,32 @@ export default function UeberMichPage() {
                 sizes="(min-width: 1024px) 33vw, 90vw"
               />
             </div>
-            <p className="absolute right-4 top-full -mt-1 hidden origin-top-right -rotate-3 font-display text-[25px] font-light italic leading-[1.08] tracking-[0.01em] text-navy-900 lg:block">
-              <span className="block pr-10 text-right">Menschen.</span>
-              <span className="block pr-5 text-right">Möglichkeiten.</span>
-              <span className="block text-right">Zusammenbringen.</span>
-            </p>
-            <p className="mt-5 text-right font-display text-[19px] font-light italic leading-[1.12] tracking-[0.02em] text-navy-900/85 lg:hidden">
-              Menschen.
-              <br />
-              Möglichkeiten.
-              <br />
-              Zusammenbringen.
-            </p>
+            <div className="mt-6 flex items-center gap-5">
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+                aria-hidden="true"
+                className="flex-none"
+              >
+                <circle cx="17" cy="22" r="14" className="fill-taupe-400/25" />
+                <circle
+                  cx="27"
+                  cy="22"
+                  r="14"
+                  className="stroke-navy-900/45"
+                  strokeWidth="1"
+                />
+              </svg>
+              <p className="font-display text-[20px] font-normal leading-[1.25] tracking-[0.01em] text-navy-900">
+                Menschen.
+                <br />
+                Möglichkeiten.
+                <br />
+                Zusammenbringen.
+              </p>
+            </div>
           </div>
         </Container>
       </section>

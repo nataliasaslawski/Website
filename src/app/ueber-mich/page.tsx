@@ -221,18 +221,9 @@ export default function UeberMichPage() {
                 Projekte entwickelt. Dabei sind zahlreiche erfolgreiche
                 Besetzungen entstanden, auf die ich mit Freude zurückblicke –
                 nicht zuletzt, weil einige dieser Entscheidungen Unternehmen
-                und Teams langfristig begleitet haben.
-              </p>
-              <p className="mt-4">
-                Der Schritt in die Selbstständigkeit war für mich kein
-                Neuanfang, sondern die bewusste Entscheidung, meine
-                langjährige Search-Erfahrung in eigener Verantwortung
-                einzusetzen – als persönliche Boutique-Beratung mit
-                durchgängiger Begleitung von der Suchstrategie bis zur
-                Umsetzung. So ist die Art der Beratung entstanden, für die ich
-                heute stehe: persönlich, verbindlich und mit einem Arbeitsstil,
-                der Kundenwunsch und Suchrealität in einen produktiven Dialog
-                bringt.
+                und Teams langfristig begleitet haben. Genau diese Erfahrung
+                prägt bis heute meinen Blick auf Menschen, Märkte und gute
+                Besetzungsentscheidungen.
               </p>
             </div>
 

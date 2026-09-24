@@ -175,14 +175,18 @@ function IconBadge({
 export default function UeberMichPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-surface-page">
+      <section className="relative overflow-x-clip bg-surface-page">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -left-14 -top-10 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-12 -left-6 hidden h-24 w-24 rounded-full bg-taupe-400/12 xl:block"
+          className="pointer-events-none absolute -bottom-20 -left-28 z-10 hidden h-64 w-64 rounded-full bg-taupe-400/14 xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-24 -right-28 z-10 hidden h-72 w-72 rounded-full bg-taupe-400/14 xl:block"
         />
         <Container className="relative grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">
@@ -257,24 +261,7 @@ export default function UeberMichPage() {
                 sizes="(min-width: 1024px) 33vw, 90vw"
               />
             </div>
-            <div className="mt-6 flex items-center gap-5">
-              <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                aria-hidden="true"
-                className="flex-none"
-              >
-                <circle cx="17" cy="22" r="14" className="fill-taupe-400/25" />
-                <circle
-                  cx="27"
-                  cy="22"
-                  r="14"
-                  className="stroke-navy-900/45"
-                  strokeWidth="1"
-                />
-              </svg>
+            <div className="mt-6">
               <p className="font-display text-[20px] font-normal leading-[1.25] tracking-[0.01em] text-navy-900">
                 Menschen.
                 <br />

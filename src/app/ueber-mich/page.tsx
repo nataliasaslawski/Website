@@ -257,7 +257,17 @@ export default function UeberMichPage() {
                 sizes="(min-width: 1024px) 33vw, 90vw"
               />
             </div>
-            <p className="absolute -bottom-5 right-4 -rotate-2 bg-surface-page px-4 py-2 text-right font-display text-[17px] font-light italic leading-[1.15] tracking-[0.01em] text-navy-900">
+            <div className="absolute right-0 top-full hidden items-stretch gap-3 lg:flex">
+              <p className="-rotate-2 pt-3 text-right font-display text-[21px] font-light italic leading-[1.12] tracking-[0.02em] text-navy-900/85">
+                Menschen.
+                <br />
+                Möglichkeiten.
+                <br />
+                Zusammenbringen.
+              </p>
+              <span aria-hidden="true" className="w-px bg-navy-900/35" />
+            </div>
+            <p className="mt-5 text-right font-display text-[19px] font-light italic leading-[1.12] tracking-[0.02em] text-navy-900/85 lg:hidden">
               Menschen.
               <br />
               Möglichkeiten.

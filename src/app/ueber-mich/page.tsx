@@ -182,10 +182,6 @@ export default function UeberMichPage() {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-20 -left-28 z-10 hidden h-64 w-64 rounded-full bg-taupe-400/14 xl:block"
-        />
-        <div
-          aria-hidden="true"
           className="pointer-events-none absolute -bottom-24 -right-28 z-10 hidden h-72 w-72 rounded-full bg-taupe-400/14 xl:block"
         />
         <Container className="relative grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
@@ -262,7 +258,7 @@ export default function UeberMichPage() {
               />
             </div>
             <div className="mt-6">
-              <p className="font-display text-[20px] font-normal leading-[1.25] tracking-[0.01em] text-navy-900">
+              <p className="font-display text-[19px] font-normal italic leading-[1.25] tracking-[0.01em] text-navy-900">
                 Menschen.
                 <br />
                 Möglichkeiten.

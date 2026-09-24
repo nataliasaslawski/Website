@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const principles = [
   {
@@ -49,8 +50,8 @@ export function Method() {
 
       <Container className="relative py-20 md:py-28">
         <div className="max-w-xl">
-          <h2 className="font-display text-2xl font-medium leading-snug md:text-[1.75rem]">
-            Meine Arbeitsweise
+          <h2>
+            <Eyebrow tone="inverse">Meine Arbeitsweise</Eyebrow>
           </h2>
           <p className="mt-3 text-sm text-text-inverse/70 md:text-[15px]">
             Substanz, Urteilsvermögen und persönliche Verantwortung

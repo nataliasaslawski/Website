@@ -393,7 +393,7 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-elevated">
         <Container className="py-16 md:py-20">
-          <div className="max-w-3xl">
+          <div>
             <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Positionslevel &amp; Funktionsbereiche
             </h2>

@@ -208,13 +208,13 @@ export default function FuerUnternehmenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
+          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated lg:w-[78%] lg:justify-self-end">
             <Image
               src={images.companies.hero}
               alt="Natalia Saslawski"
               fill
               priority
-              className="object-cover"
+              className="object-cover object-[50%_45%]"
               sizes="(min-width: 1024px) 40vw, 90vw"
             />
           </div>

@@ -221,7 +221,7 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-page">
+      <section className="bg-surface-elevated">
         <Container className="py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Typische Ausgangssituation</Eyebrow>

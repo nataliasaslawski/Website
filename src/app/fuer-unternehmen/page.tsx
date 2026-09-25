@@ -393,11 +393,17 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-elevated">
         <Container className="py-16 md:py-20">
-          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-            Positionslevel &amp; Funktionsbereiche
-          </h2>
+          <div className="max-w-3xl">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              Positionslevel &amp; Funktionsbereiche
+            </h2>
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              Meine Erfahrung umfasst Führungs- und Schlüsselpositionen über
+              verschiedene Hierarchieebenen und Funktionsbereiche hinweg.
+            </p>
+          </div>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {levelGroups.map((group) => (
               <div
                 key={group.title}

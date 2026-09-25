@@ -395,19 +395,19 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-page">
+      <section className="bg-surface-inverse text-text-inverse">
         <Container className="py-16 md:py-24">
-          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="p-8 md:p-10">
-              <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+          <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+            <div>
+              <Eyebrow tone="inverse">Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-text-inverse md:text-[2rem]">
                 Was Sie aus der Zusammenarbeit mitnehmen
               </h2>
-              <ul className="mt-6 divide-y divide-border-subtle">
+              <ul className="mt-6 divide-y divide-[oklch(from_var(--cream-100)_l_c_h_/_0.2)]">
                 {outcomes.map((item) => (
                   <li
                     key={item}
-                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                    className="py-3 text-[15px] leading-relaxed text-text-inverse/90 first:pt-0 last:pb-0"
                   >
                     {item}
                   </li>
@@ -415,7 +415,7 @@ export default function FuerUnternehmenPage() {
               </ul>
             </div>
 
-            <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-surface-elevated lg:min-h-0 lg:border-l lg:border-t-0">
+            <div className="relative min-h-[280px] w-full overflow-hidden bg-navy-800">
               <Image
                 src={images.companies.secondary}
                 alt="Natalia Saslawski"

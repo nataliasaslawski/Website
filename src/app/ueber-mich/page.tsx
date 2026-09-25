@@ -182,7 +182,7 @@ export default function UeberMichPage() {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-16 right-3 z-10 hidden h-32 w-32 rounded-full bg-taupe-400/14 min-[1400px]:block"
+          className="pointer-events-none absolute -bottom-24 right-4 z-10 hidden h-52 w-52 rounded-full bg-taupe-400/14 min-[1400px]:block"
         />
         <Container className="relative grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">

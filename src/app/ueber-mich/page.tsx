@@ -381,13 +381,11 @@ export default function UeberMichPage() {
                 Wofür ich in der Zusammenarbeit stehe
               </h2>
               <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-                Für mich zählt Qualität vor Masse. Gute Personalberatung
-                bedeutet nicht, möglichst viele Profile zu präsentieren,
-                sondern genau hinzusehen: Welche Erfahrungen sind für eine
-                neue Aufgabe wirklich übertragbar? Welches Potenzial bringt
-                jemand für den nächsten Schritt mit? Und passt die
-                Persönlichkeit zu dem Umfeld, in dem sie künftig erfolgreich
-                sein soll?
+                Für mich beginnt gute Personalberatung mit genauem Hinsehen:
+                Welche Erfahrungen sind für eine neue Aufgabe wirklich
+                übertragbar? Welches Potenzial bringt jemand für den nächsten
+                Schritt mit? Und passt die Persönlichkeit zu dem Umfeld, in
+                dem sie künftig erfolgreich sein soll?
               </p>
             </div>
             <div className="relative aspect-[3/2] w-full overflow-hidden">

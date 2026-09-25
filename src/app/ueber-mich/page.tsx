@@ -277,7 +277,7 @@ export default function UeberMichPage() {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-[38px] top-[62px] hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
+          className="pointer-events-none absolute right-[136px] top-[112px] hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
         />
 
         <Container className="relative z-20 py-12 md:py-16">

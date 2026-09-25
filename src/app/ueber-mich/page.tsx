@@ -328,38 +328,41 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="relative overflow-hidden bg-surface-page">
+      <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-16 -top-14 hidden h-56 w-56 rounded-full bg-taupe-400/14 xl:block"
+          className="pointer-events-none absolute -right-16 -top-14 hidden h-56 w-56 rounded-full bg-navy-800/45 xl:block"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-4 top-20 hidden h-32 w-32 rounded-full bg-taupe-600/11 xl:block"
+          className="pointer-events-none absolute -right-4 top-20 hidden h-32 w-32 rounded-full bg-navy-700/32 xl:block"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-10 -left-10 hidden h-28 w-28 rounded-full bg-taupe-400/12 xl:block"
+          className="pointer-events-none absolute -bottom-10 -left-10 hidden h-28 w-28 rounded-full bg-navy-800/46 xl:block"
         />
         <Container className="relative py-14 md:py-20">
-          <Eyebrow>Perspektiven, die meine Arbeit heute prägen</Eyebrow>
+          <Eyebrow tone="inverse">Perspektiven, die meine Arbeit heute prägen</Eyebrow>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {perspectives.map((p) => (
-              <div key={p.title} className="bg-cream-100/50 p-7">
+              <div
+                key={p.title}
+                className="border border-cream-100/10 bg-navy-800/30 p-7"
+              >
                 <IconBadge>{p.icon}</IconBadge>
-                <h3 className="mt-4 font-display text-lg font-medium text-navy-900">
+                <h3 className="mt-4 font-display text-lg font-medium text-text-inverse">
                   {p.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                <p className="mt-2 text-sm leading-relaxed text-text-inverse/80">
                   „{p.text}“
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-10 border-t border-border-subtle pt-8">
-            <p className="mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-text-secondary">
+          <div className="mt-10 border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.2)] pt-8">
+            <p className="mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-text-inverse/80">
               Diese Erfahrungen prägen heute meine Arbeit als selbstständige
               Beraterin – in der Verbindung aus operativer Search-Kompetenz,
               Beratung, Führung und einem tiefen Verständnis dafür, wie
@@ -369,7 +372,7 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
+      <section className="bg-surface-page">
         <Container className="py-16 md:py-24">
           <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
             <div>
@@ -441,20 +444,20 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
+      <section className="relative overflow-hidden bg-surface-elevated">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 xl:block"
         >
-          <span className="absolute right-8 top-0 h-40 w-40 rounded-full bg-navy-800/40" />
-          <span className="absolute right-32 top-20 h-28 w-28 rounded-full bg-navy-700/30" />
+          <span className="absolute right-8 top-0 h-40 w-40 rounded-full bg-taupe-400/14" />
+          <span className="absolute right-32 top-20 h-28 w-28 rounded-full bg-taupe-600/11" />
         </div>
         <Container className="relative py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug md:text-[2.25rem]">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
             Lassen Sie uns über Ihr aktuelles Search-Projekt sprechen.
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/kontakt#erstgespraech" variant="inverse">
+            <Button href="/kontakt#erstgespraech" variant="primary">
               Unverbindliches Erstgespräch vereinbaren
             </Button>
           </div>

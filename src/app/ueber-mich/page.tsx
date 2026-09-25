@@ -387,7 +387,9 @@ export default function UeberMichPage() {
                 beurteilen. Welche Erfahrungen sind für eine neue Aufgabe
                 wirklich übertragbar? Welches Potenzial bringt jemand für den
                 nächsten Schritt mit? Und passt die Persönlichkeit zu dem
-                Umfeld, in dem sie künftig erfolgreich sein soll?
+                Umfeld, in dem sie künftig erfolgreich sein soll? So entsteht
+                eine Bewertung, die über die reine Erfüllung formaler
+                Anforderungen hinausgeht.
               </p>
             </div>
             <div className="relative aspect-[3/2] w-full overflow-hidden">

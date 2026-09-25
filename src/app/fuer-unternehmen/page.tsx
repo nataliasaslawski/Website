@@ -314,40 +314,7 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-page">
         <Container className="py-16 md:py-24">
-          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="p-8 md:p-10">
-              <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-                Was Sie aus der Zusammenarbeit mitnehmen
-              </h2>
-              <ul className="mt-6 divide-y divide-border-subtle">
-                {outcomes.map((item) => (
-                  <li
-                    key={item}
-                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-surface-elevated lg:min-h-0 lg:border-l lg:border-t-0">
-              <Image
-                src={images.companies.secondary}
-                alt="Natalia Saslawski"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 35vw, 100vw"
-              />
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
-          <div className="border-t border-border-subtle pt-16 md:pt-20">
+          <div>
             <div className="max-w-3xl">
               <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
                 Branchenerfahrung
@@ -424,6 +391,39 @@ export default function FuerUnternehmenPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-surface-page">
+        <Container className="py-16 md:py-24">
+          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="p-8 md:p-10">
+              <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Was Sie aus der Zusammenarbeit mitnehmen
+              </h2>
+              <ul className="mt-6 divide-y divide-border-subtle">
+                {outcomes.map((item) => (
+                  <li
+                    key={item}
+                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-surface-elevated lg:min-h-0 lg:border-l lg:border-t-0">
+              <Image
+                src={images.companies.secondary}
+                alt="Natalia Saslawski"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 35vw, 100vw"
+              />
+            </div>
           </div>
         </Container>
       </section>

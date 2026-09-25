@@ -315,11 +315,15 @@ export default function UeberMichPage() {
 
             <aside>
               <div className="flex h-full items-center border-l border-border-default py-2 pl-7 lg:pl-8">
-                <p className="max-w-[260px] font-display text-[20px] italic leading-[1.5] text-navy-900">
-                  „Mit jeder Station wuchs nicht nur die Verantwortung für
-                  Mandate, sondern auch die für Teams, Kundenbeziehungen und
-                  die Qualität komplexer Suchprozesse.“
-                </p>
+                <div className="max-w-[260px]">
+                  <div className="h-px w-10 bg-border-default" />
+                  <p className="my-6 font-display text-[20px] italic leading-[1.5] text-navy-900">
+                    „Mit jeder Station wuchs nicht nur die Verantwortung für
+                    Mandate, sondern auch die für Teams, Kundenbeziehungen und
+                    die Qualität komplexer Suchprozesse.“
+                  </p>
+                  <div className="h-px w-10 bg-border-default" />
+                </div>
               </div>
             </aside>
           </div>

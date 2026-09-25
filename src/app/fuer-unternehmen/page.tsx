@@ -122,7 +122,7 @@ const industryGroups = [
     items: [
       "Consumer Goods",
       "Handel & Retail",
-      "Gastronomie, Catering & Foodservice",
+      "Gastronomie & Foodservice",
     ],
   },
   {
@@ -132,6 +132,10 @@ const industryGroups = [
       "Asset & Investment Management",
       "Financial Technology & digitale Lösungen",
     ],
+  },
+  {
+    title: "Sport & Verbände",
+    items: ["Profisport & Fußball", "Sportverbände & -organisationen"],
   },
 ];
 
@@ -356,19 +360,13 @@ export default function FuerUnternehmenPage() {
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-6">
-              {industryGroups.map((group, i) => (
+            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {industryGroups.map((group) => (
                 <div
                   key={group.title}
-                  className={`rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)] ${
-                    i < 2 ? "lg:col-span-3" : "lg:col-span-2"
-                  } ${i === 4 ? "md:col-span-2" : ""}`}
+                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
                 >
-                  <h3
-                    className={`font-display text-xl font-medium leading-snug text-navy-900 ${
-                      i >= 2 ? "lg:text-lg" : ""
-                    }`}
-                  >
+                  <h3 className="font-display text-xl font-medium leading-snug text-navy-900 lg:text-lg">
                     {group.title}
                   </h3>
                   <ul className="mt-5 space-y-2.5">

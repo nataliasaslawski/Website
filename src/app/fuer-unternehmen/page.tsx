@@ -93,11 +93,7 @@ const processSteps = [
   },
 ];
 
-type IndustryGroup =
-  | { title: string; items: string[] }
-  | { title: string; sections: { title: string; items: string[] }[] };
-
-const industryGroups: IndustryGroup[] = [
+const industryGroups = [
   {
     title: "Industrie & Technologie",
     items: [
@@ -118,20 +114,15 @@ const industryGroups: IndustryGroup[] = [
     ],
   },
   {
-    title: "Life Sciences & Consumer Markets",
-    sections: [
-      {
-        title: "Chemie & Life Sciences",
-        items: ["Chemie", "Pharma", "Life Sciences"],
-      },
-      {
-        title: "Consumer & Retail",
-        items: [
-          "Consumer Goods",
-          "Handel & Retail",
-          "Gastronomie, Catering & Foodservice",
-        ],
-      },
+    title: "Chemie & Life Sciences",
+    items: ["Chemie", "Pharma", "Life Sciences"],
+  },
+  {
+    title: "Consumer & Retail",
+    items: [
+      "Consumer Goods",
+      "Handel & Retail",
+      "Gastronomie, Catering & Foodservice",
     ],
   },
   {
@@ -143,27 +134,6 @@ const industryGroups: IndustryGroup[] = [
     ],
   },
 ];
-
-function IndustryList({
-  items,
-  className = "",
-}: {
-  items: string[];
-  className?: string;
-}) {
-  return (
-    <ul className={`space-y-2.5 ${className}`}>
-      {items.map((item) => (
-        <li
-          key={item}
-          className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
-        >
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 const levelGroups = [
   {
@@ -386,29 +356,31 @@ export default function FuerUnternehmenPage() {
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {industryGroups.map((group) => (
+            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-6">
+              {industryGroups.map((group, i) => (
                 <div
                   key={group.title}
-                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
+                  className={`rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)] ${
+                    i < 2 ? "lg:col-span-3" : "lg:col-span-2"
+                  } ${i === 4 ? "md:col-span-2" : ""}`}
                 >
-                  <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                  <h3
+                    className={`font-display text-xl font-medium leading-snug text-navy-900 ${
+                      i >= 2 ? "lg:text-lg" : ""
+                    }`}
+                  >
                     {group.title}
                   </h3>
-                  {"items" in group ? (
-                    <IndustryList items={group.items} className="mt-5" />
-                  ) : (
-                    <div className="mt-5 space-y-6 divide-y divide-border-subtle">
-                      {group.sections.map((section, i) => (
-                        <div key={section.title} className={i > 0 ? "pt-6" : ""}>
-                          <h4 className="font-display text-base font-medium leading-snug text-navy-900">
-                            {section.title}
-                          </h4>
-                          <IndustryList items={section.items} className="mt-3" />
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  <ul className="mt-5 space-y-2.5">
+                    {group.items.map((item) => (
+                      <li
+                        key={item}
+                        className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>

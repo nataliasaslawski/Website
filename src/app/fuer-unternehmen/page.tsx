@@ -384,10 +384,9 @@ export default function FuerUnternehmenPage() {
             </div>
           </div>
 
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-text-secondary">
-            Diese Branchenschwerpunkte bilden den Kern meiner Erfahrung und
-            lassen sich je nach Mandat gezielt auf angrenzende und weitere
-            Märkte übertragen.
+          <p className="mt-6 text-[16px] leading-relaxed text-text-secondary">
+            Diese Branchenschwerpunkte lassen sich je nach Mandat gezielt auf
+            angrenzende und weitere Märkte übertragen.
           </p>
         </Container>
       </section>

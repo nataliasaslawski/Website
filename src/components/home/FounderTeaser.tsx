@@ -37,8 +37,8 @@ export function FounderTeaser() {
           </p>
 
           <p className="mt-8 max-w-xl font-display text-lg italic leading-snug text-navy-900">
-            „Vertrauen entsteht durch Erfahrung und Verständnis – nicht durch
-            Versprechen.“
+            „Gute Entscheidungen entstehen dort, wo Marktkenntnis und
+            Menschenkenntnis zusammenkommen.“
           </p>
           <p className="mt-3 text-[13px] text-text-muted">
             Natalia Saslawski

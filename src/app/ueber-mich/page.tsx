@@ -381,11 +381,13 @@ export default function UeberMichPage() {
                 Wofür ich in der Zusammenarbeit stehe
               </h2>
               <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-                Für mich beginnt gute Personalberatung mit genauem Hinsehen:
-                Welche Erfahrungen sind für eine neue Aufgabe wirklich
-                übertragbar? Welches Potenzial bringt jemand für den nächsten
-                Schritt mit? Und passt die Persönlichkeit zu dem Umfeld, in
-                dem sie künftig erfolgreich sein soll?
+                In der Zusammenarbeit mit meinen Kund:innen ist mir wichtig,
+                Kandidat:innen nicht nur anhand ihres Lebenslaufs, sondern
+                differenziert und mit Blick auf die jeweilige Aufgabe zu
+                beurteilen. Welche Erfahrungen sind für eine neue Aufgabe
+                wirklich übertragbar? Welches Potenzial bringt jemand für den
+                nächsten Schritt mit? Und passt die Persönlichkeit zu dem
+                Umfeld, in dem sie künftig erfolgreich sein soll?
               </p>
             </div>
             <div className="relative aspect-[3/2] w-full overflow-hidden">

@@ -273,11 +273,11 @@ export default function UeberMichPage() {
       <section className="relative overflow-hidden bg-surface-elevated">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-8 top-6 hidden h-36 w-36 rounded-full bg-navy-900/5 xl:block"
+          className="pointer-events-none absolute right-[204px] top-12 hidden h-36 w-36 rounded-full bg-navy-900/5 xl:block"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-40 top-20 hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
+          className="pointer-events-none absolute right-[38px] top-[62px] hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
         />
 
         <Container className="relative z-20 py-12 md:py-16">

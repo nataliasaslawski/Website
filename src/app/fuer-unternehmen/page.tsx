@@ -234,14 +234,12 @@ export default function FuerUnternehmenPage() {
               <ul key={column} className="divide-y divide-border-subtle">
                 {situations
                   .filter((_, i) => i % 2 === column)
-                  .map((item, idx) => (
-                    <li key={item} className="flex gap-4 py-5">
-                      <span className="font-display text-sm text-taupe-600">
-                        {String(idx + 1).padStart(2, "0")}
-                      </span>
-                      <span className="text-[15px] leading-relaxed text-text-secondary">
-                        {item}
-                      </span>
+                  .map((item) => (
+                    <li
+                      key={item}
+                      className="py-5 text-[15px] leading-relaxed text-text-secondary"
+                    >
+                      {item}
                     </li>
                   ))}
               </ul>

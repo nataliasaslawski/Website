@@ -87,7 +87,7 @@ export default function FuerPersonalberatungenPage() {
           <div className="max-w-2xl">
             <Eyebrow>Ausgangssituation</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Wann sich eine erfahrene externe Projektpartnerin lohnt
+              Kennen Sie diese Engpässe?
             </h2>
           </div>
           <ul className="mt-10 grid gap-x-14 md:grid-cols-2">

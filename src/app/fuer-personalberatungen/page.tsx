@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const situations = [
   "Die Zahl paralleler Mandate übersteigt zeitweise die verfügbaren internen Kapazitäten.",
-  "Ein Mandat erfordert kurzfristig erfahrene Research- oder Projektmanagement-Unterstützung ohne lange Einarbeitung.",
+  "Einzelne Mandate erfordern kurzfristig zusätzliche Research- oder Projektmanagement-Unterstützung.",
   "Für ein schwieriges Mandat wird erfahrene Unterstützung mit zusätzlicher Markt- und Suchperspektive benötigt.",
   "Die Beratung möchte flexibel skalieren und bei Bedarf erfahrene Unterstützung kurzfristig einbinden, ohne dauerhaft interne Kapazität aufzubauen.",
 ];

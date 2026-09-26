@@ -32,7 +32,7 @@ const serviceTiles = [
     ],
   },
   {
-    title: "Teilprojekte & definierte Search-Bausteine",
+    title: "Definierte Projektbausteine",
     description:
       "Übernahme klar abgegrenzter Projektteile je nach Bedarf und vorhandener interner Struktur.",
     points: [

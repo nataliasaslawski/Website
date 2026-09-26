@@ -18,16 +18,51 @@ const situations = [
   "Die Beratung möchte flexibel skalieren und bei Bedarf erfahrene Unterstützung kurzfristig einbinden, ohne dauerhaft interne Kapazität aufzubauen.",
 ];
 
-const services = [
-  "Projekt- und Suchstrategie",
-  "Markt- und Zielfirmenanalyse",
-  "Research und Sourcing",
-  "Longlist-Erstellung",
-  "Direktansprache",
-  "Kandidat:innenidentifikation und Vorqualifizierung",
-  "Unterstützung bei Long- und Shortlists",
-  "Projektkoordination",
-  "Übernahme definierter Search-Workstreams oder umfangreicherer Projektteile",
+const serviceTiles = [
+  {
+    title: "Komplette Mandatsübernahme",
+    description:
+      "Eigenständige Durchführung kompletter Search-Mandate – von der Suchstrategie bis zur Kandidatenpräsentation.",
+    points: [
+      "Suchstrategie & Zielmarktdefinition",
+      "Research, Direktansprache & Qualifizierung",
+      "Kandidatenbewertung & Projektsteuerung",
+      "je nach gewünschtem Setup im direkten Kundenkontakt oder im Hintergrund als externe Projektpartnerin",
+    ],
+  },
+  {
+    title: "Teilprojekte & definierte Search-Bausteine",
+    description:
+      "Übernahme klar abgegrenzter Projektteile je nach Bedarf und vorhandener interner Struktur.",
+    points: [
+      "Markt- & Zielfirmenanalyse",
+      "Research & Kandidat:innenidentifikation",
+      "Direktansprache & Vorqualifizierung",
+      "Longlist- und Shortlist-Unterstützung",
+      "definierte Search-Workstreams",
+    ],
+  },
+  {
+    title: "Projektmanagement & Kapazitätsunterstützung",
+    description:
+      "Flexible Entlastung bei parallelen, umfangreichen oder zeitkritischen Mandaten.",
+    points: [
+      "Projektkoordination & Statussteuerung",
+      "Übernahme definierter Projektteile",
+      "Abstimmung mit Consultants und Research-Teams",
+      "flexible Unterstützung bei Kapazitätsspitzen",
+    ],
+  },
+  {
+    title: "Schulungen & Wissenstransfer",
+    description:
+      "Praxisnahe Unterstützung für Teams in Personalberatungen mit Fokus auf strukturierte Search-Arbeit.",
+    points: [
+      "Projektmanagement in Search-Mandaten",
+      "Direktansprache & Gesprächsführung",
+      "Research- und Prozessqualität",
+    ],
+  },
 ];
 
 const outcomes = [
@@ -103,51 +138,63 @@ export default function FuerPersonalberatungenPage() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="grid gap-16 py-16 md:py-24 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <Eyebrow>Mögliche Leistungsbausteine</Eyebrow>
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl">
+            <Eyebrow>Mein Angebot</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Flexibel an Projektvolumen und Mandat angepasst
+              So unterstütze ich Sie
             </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
-              Ziel ist keine reine zusätzliche Research-Kapazität, sondern
-              professionelle Unterstützung, die eigenständig arbeitet und
-              bestehende Search-Projekte fachlich und operativ verstärkt.
-            </p>
-            <ul className="mt-6 space-y-3">
-              {services.map((item) => (
-                <li
-                  key={item}
-                  className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-navy-900 first:border-none first:pt-0"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
 
-          <div>
-            <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
+            {serviceTiles.map((tile) => (
+              <div
+                key={tile.title}
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
+              >
+                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                  {tile.title}
+                </h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                  {tile.description}
+                </p>
+                <ul className="mt-4 space-y-2">
+                  {tile.points.map((point) => (
+                    <li key={point} className="text-sm leading-relaxed text-navy-900">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-surface-inverse text-text-inverse">
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl">
+            <Eyebrow tone="inverse">Mehrwert der Zusammenarbeit</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-text-inverse md:text-[2rem]">
               Was Sie aus der Zusammenarbeit mitnehmen
             </h2>
-            <ul className="mt-6 space-y-3">
-              {outcomes.map((item) => (
-                <li
-                  key={item}
-                  className="border-t border-border-subtle pt-3 text-[15px] leading-relaxed text-text-secondary first:border-none first:pt-0"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 border-t border-border-subtle pt-6 text-[15px] leading-relaxed text-text-secondary">
-              Vertraulichkeit gegenüber Ihrer Beratung, Ihren Unternehmenskund:innen
-              und den angesprochenen Kandidat:innen hat für mich höchste
-              Priorität – die Zusammenarbeit kann je nach Wunsch im
-              Hintergrund oder sichtbar erfolgen.
-            </p>
           </div>
+          <ul className="mt-10 grid gap-x-14 md:grid-cols-2">
+            {outcomes.map((item) => (
+              <li
+                key={item}
+                className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.2)] py-5 text-[15px] leading-relaxed text-text-inverse/90 first:border-t-0 md:[&:nth-child(2)]:border-t-0"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.2)] pt-6 text-[15px] leading-relaxed text-text-inverse/90">
+            Vertraulichkeit gegenüber Ihrer Beratung, Ihren Unternehmenskund:innen
+            und den angesprochenen Kandidat:innen hat für mich höchste
+            Priorität – die Zusammenarbeit kann je nach Wunsch im
+            Hintergrund oder sichtbar erfolgen.
+          </p>
         </Container>
       </section>
 

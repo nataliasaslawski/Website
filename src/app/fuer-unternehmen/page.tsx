@@ -246,7 +246,7 @@ export default function FuerUnternehmenPage() {
         <Container className="py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Mein Angebot</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <h2 className="mt-4 font-display text-[2rem] font-medium leading-[1.1] text-navy-900 md:text-[2.75rem]">
               So unterstütze ich Sie
             </h2>
           </div>
@@ -257,7 +257,7 @@ export default function FuerUnternehmenPage() {
                 key={tile.title}
                 className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
               >
-                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem]">
                   {tile.title}
                 </h3>
                 <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">

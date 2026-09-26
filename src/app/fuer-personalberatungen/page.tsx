@@ -16,7 +16,7 @@ const situations = [
   "Ein Search-Projekt benötigt kurzfristig zusätzliche Unterstützung.",
   "Für ein schwieriges Mandat wird erfahrene Kompetenz benötigt.",
   "Die Beratung möchte flexibel skalieren, ohne dauerhaft zusätzliche interne Kapazität aufzubauen.",
-  "Es fehlt flexible Unterstützung, die kurzfristig und ohne lange Einarbeitung einsatzfähig ist.",
+  "Es fehlt flexible, erfahrene Unterstützung, die kurzfristig und ohne lange Einarbeitung übernehmen kann.",
 ];
 
 const services = [

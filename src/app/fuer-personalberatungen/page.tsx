@@ -56,7 +56,7 @@ const serviceTiles = [
   {
     title: "Schulungen & Wissenstransfer",
     description:
-      "Praxisnahe Unterstützung für Teams in Personalberatungen mit Fokus auf strukturierte Search-Arbeit.",
+      "Praxisnahe Schulungen für Teams in Personalberatungen mit Fokus auf strukturierte und effiziente Projektarbeit.",
     points: [
       "Projektmanagement in Search-Mandaten",
       "Direktansprache & Gesprächsführung",

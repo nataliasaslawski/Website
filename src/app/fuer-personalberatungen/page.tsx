@@ -49,7 +49,6 @@ const serviceTiles = [
       "Flexible Entlastung bei parallelen, umfangreichen oder zeitkritischen Mandaten.",
     points: [
       "Projektkoordination & Statussteuerung",
-      "Übernahme definierter Projektteile",
       "Abstimmung mit Consultants und Research-Teams",
       "flexible Unterstützung bei Kapazitätsspitzen",
     ],

@@ -223,10 +223,10 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-elevated">
         <Container className="py-16 md:py-24">
-          <div className="max-w-2xl">
-            <Eyebrow>Typische Ausgangssituation</Eyebrow>
+          <div className="max-w-3xl">
+            <Eyebrow>Ausgangssituation</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Wann eine externe Search-Perspektive den Unterschied macht
+              Kommen Ihnen diese Herausforderungen bekannt vor?
             </h2>
           </div>
           <div className="mt-10 grid gap-x-14 md:grid-cols-2">

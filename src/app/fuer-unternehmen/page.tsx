@@ -187,7 +187,7 @@ export default function FuerUnternehmenPage() {
         <Container className="relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow>Für Unternehmen</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
+            <h1 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
               Besetzung anspruchsvoller Fach-, Führungs- und
               Schlüsselpositionen
             </h1>

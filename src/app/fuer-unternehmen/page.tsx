@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const situations = [
   "Eine anspruchsvolle Schlüsselposition ist schwer zu besetzen.",
   "Klassische Recruiting-Kanäle liefern nicht genügend passende Kandidat:innen.",
-  "Die Suche dauert bereits länger als geplant oder ist festgefahren.",
+  "Die Suche dauert länger als erwartet und führt nicht zu den gewünschten Kandidat:innen.",
   "Es fehlt Transparenz darüber, welche Kandidat:innen wirklich relevant sind und wie sie für das Unternehmen gewonnen werden können.",
   "Anforderungen und verfügbarer Kandidatenmarkt passen nicht ausreichend zusammen.",
   "Interne Recruiting-Kapazitäten reichen für eine intensive Suche und Direktansprache nicht aus.",

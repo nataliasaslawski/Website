@@ -171,7 +171,7 @@ export default function FuerPersonalberatungenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-page">
+      <section className="bg-surface-elevated">
         <Container className="py-16 md:py-24">
           <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
             <div className="p-8 md:p-10">
@@ -199,7 +199,7 @@ export default function FuerPersonalberatungenPage() {
 
             <div
               aria-hidden="true"
-              className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-surface-elevated lg:min-h-0 lg:border-l lg:border-t-0"
+              className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:border-l lg:border-t-0"
             />
           </div>
         </Container>

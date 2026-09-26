@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const situations = [
-  "Eine anspruchsvolle Fach-, Führungs- oder Schlüsselposition ist schwer zu besetzen.",
+  "Eine anspruchsvolle Schlüsselposition ist schwer zu besetzen.",
   "Klassische Recruiting-Kanäle liefern nicht genügend passende Kandidat:innen.",
   "Die Suche dauert bereits länger als geplant oder ist festgefahren.",
   "Der relevante Kandidatenmarkt ist nicht ausreichend transparent.",
@@ -229,22 +229,16 @@ export default function FuerUnternehmenPage() {
               Kommen Ihnen diese Herausforderungen bekannt vor?
             </h2>
           </div>
-          <div className="mt-10 grid gap-x-14 md:grid-cols-2">
-            {[0, 1].map((column) => (
-              <ul key={column} className="divide-y divide-border-subtle">
-                {situations
-                  .filter((_, i) => i % 2 === column)
-                  .map((item) => (
-                    <li
-                      key={item}
-                      className="py-5 text-[15px] leading-relaxed text-text-secondary"
-                    >
-                      {item}
-                    </li>
-                  ))}
-              </ul>
+          <ul className="mt-10 grid gap-x-14 md:grid-cols-2">
+            {situations.map((item) => (
+              <li
+                key={item}
+                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0"
+              >
+                {item}
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </section>
 

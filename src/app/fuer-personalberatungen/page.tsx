@@ -171,30 +171,37 @@ export default function FuerPersonalberatungenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-inverse text-text-inverse">
+      <section className="bg-surface-page">
         <Container className="py-16 md:py-24">
-          <div className="max-w-2xl">
-            <Eyebrow tone="inverse">Mehrwert der Zusammenarbeit</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-text-inverse md:text-[2rem]">
-              Was Sie aus der Zusammenarbeit mitnehmen
-            </h2>
+          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="p-8 md:p-10">
+              <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+                Was Sie aus der Zusammenarbeit mitnehmen
+              </h2>
+              <ul className="mt-6 divide-y divide-border-subtle">
+                {outcomes.map((item) => (
+                  <li
+                    key={item}
+                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 border-t border-border-subtle pt-6 text-[15px] leading-relaxed text-text-secondary">
+                Vertraulichkeit gegenüber Ihrer Beratung, Ihren
+                Unternehmenskund:innen und den angesprochenen Kandidat:innen
+                hat für mich höchste Priorität – die Zusammenarbeit kann je
+                nach Wunsch im Hintergrund oder sichtbar erfolgen.
+              </p>
+            </div>
+
+            <div
+              aria-hidden="true"
+              className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-surface-elevated lg:min-h-0 lg:border-l lg:border-t-0"
+            />
           </div>
-          <ul className="mt-10 grid gap-x-14 md:grid-cols-2">
-            {outcomes.map((item) => (
-              <li
-                key={item}
-                className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.2)] py-5 text-[15px] leading-relaxed text-text-inverse/90 first:border-t-0 md:[&:nth-child(2)]:border-t-0"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.2)] pt-6 text-[15px] leading-relaxed text-text-inverse/90">
-            Vertraulichkeit gegenüber Ihrer Beratung, Ihren Unternehmenskund:innen
-            und den angesprochenen Kandidat:innen hat für mich höchste
-            Priorität – die Zusammenarbeit kann je nach Wunsch im
-            Hintergrund oder sichtbar erfolgen.
-          </p>
         </Container>
       </section>
 

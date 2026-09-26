@@ -14,7 +14,7 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-[var(--container-max)] px-6 py-16 md:px-10 md:py-20">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <div className="inline-block bg-cream-050 px-6 py-4">
+            <div className="inline-block rounded-[var(--radius-md)] bg-cream-050 px-7 py-6">
               <Image
                 src={brand.logoNavy}
                 alt="Natalia Saslawski – Executive Search & Talent Advisory"
@@ -22,18 +22,18 @@ export function SiteFooter() {
                 height={526}
                 className="h-12 w-auto"
               />
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+                {site.locationShort}, {site.region}.
+              </p>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-sm tracking-[0.02em] text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
+              >
+                Auf LinkedIn vernetzen
+              </a>
             </div>
-            <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-text-inverse-muted">
-              {site.locationShort}, {site.region}.
-            </p>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block text-sm tracking-[0.02em] text-text-inverse underline decoration-taupe-600 underline-offset-4 hover:decoration-paper-050"
-            >
-              Auf LinkedIn vernetzen
-            </a>
           </div>
 
           <div>

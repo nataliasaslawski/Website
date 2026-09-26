@@ -438,13 +438,6 @@ export default function UeberMichPage() {
               </div>
             ))}
           </div>
-
-          <div className="mt-12 border-t border-border-subtle pt-8">
-            <p className="font-display text-lg italic leading-snug text-navy-900">
-              Substanz, Verbindlichkeit und Urteilsvermögen sind dabei
-              wichtiger als große Versprechen.
-            </p>
-          </div>
         </Container>
       </section>
 

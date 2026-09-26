@@ -246,7 +246,7 @@ export default function FuerUnternehmenPage() {
         <Container className="py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow>Mein Angebot</Eyebrow>
-            <h2 className="mt-4 font-display text-[2rem] font-medium leading-[1.1] text-navy-900 md:text-[2.75rem]">
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               So unterstütze ich Sie
             </h2>
           </div>

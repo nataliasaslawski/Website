@@ -15,8 +15,7 @@ const situations = [
   "Die Zahl paralleler Mandate übersteigt zeitweise die verfügbaren internen Kapazitäten.",
   "Ein Search-Projekt benötigt kurzfristig zusätzliche Unterstützung.",
   "Für ein schwieriges Mandat wird erfahrene Kompetenz benötigt.",
-  "Die Beratung möchte flexibel skalieren, ohne dauerhaft zusätzliche interne Kapazität aufzubauen.",
-  "Es fehlt flexible, erfahrene Unterstützung, die kurzfristig und ohne lange Einarbeitung übernehmen kann.",
+  "Die Beratung möchte flexibel skalieren und bei Bedarf erfahrene Unterstützung kurzfristig einbinden, ohne dauerhaft interne Kapazität aufzubauen.",
 ];
 
 const services = [

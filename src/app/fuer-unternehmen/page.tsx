@@ -16,7 +16,7 @@ const situations = [
   "Klassische Recruiting-Kanäle liefern nicht genügend passende Kandidat:innen.",
   "Die Suche dauert bereits länger als geplant oder ist festgefahren.",
   "Es fehlt Transparenz darüber, welche Kandidat:innen wirklich relevant sind und wie sie für das Unternehmen gewonnen werden können.",
-  "Das Anforderungsprofil ist komplex, sehr eng oder möglicherweise nicht marktgerecht.",
+  "Anforderungen und verfügbarer Kandidatenmarkt passen nicht ausreichend zusammen.",
   "Interne Recruiting-Kapazitäten reichen für eine intensive Suche und Direktansprache nicht aus.",
 ];
 

@@ -153,7 +153,7 @@ export default function FuerPersonalberatungenPage() {
                 key={tile.title}
                 className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
               >
-                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem]">
                   {tile.title}
                 </h3>
                 <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">

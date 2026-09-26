@@ -247,7 +247,7 @@ export default function FuerUnternehmenPage() {
           <div className="max-w-2xl">
             <Eyebrow>Mein Angebot</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-              Meine Leistungen
+              So unterstütze ich Sie
             </h2>
           </div>
 

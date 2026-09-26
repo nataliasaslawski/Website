@@ -22,11 +22,12 @@ const serviceTiles = [
   {
     title: "Komplette Mandatsübernahme",
     description:
-      "Eigenständige Durchführung kompletter Search-Mandate – von der Suchstrategie bis zur Kandidatenpräsentation.",
+      "Eigenständige Durchführung kompletter Suchmandate – von der Suchstrategie bis zur Kandidatenpräsentation.",
     points: [
       "Suchstrategie & Zielmarktdefinition",
-      "Research, Direktansprache & Qualifizierung",
-      "Kandidatenbewertung & Projektsteuerung",
+      "Research & Direktansprache",
+      "Kandidatenbewertung & Auswahl",
+      "Projektsteuerung & Kommunikation",
       "je nach gewünschtem Setup im direkten Kundenkontakt oder im Hintergrund als externe Projektpartnerin",
     ],
   },

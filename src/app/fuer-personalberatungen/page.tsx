@@ -37,7 +37,7 @@ const serviceTiles = [
       "Übernahme ausgewählter Projektteile – flexibel eingebunden in das jeweilige Mandat.",
     points: [
       "Markt- & Zielfirmenanalyse",
-      "Research & Kandidat:innenidentifikation",
+      "Research und Identifikation von Kandidat:innen",
       "Direktansprache & Vorqualifizierung",
       "Longlist- und Shortlist-Unterstützung",
       "definierte Search-Workstreams",

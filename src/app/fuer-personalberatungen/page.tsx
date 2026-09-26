@@ -85,16 +85,16 @@ export default function FuerPersonalberatungenPage() {
         />
         <Container className="relative py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>Typische Ausgangssituation</Eyebrow>
+            <Eyebrow>Ausgangssituation</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
               Wann sich eine erfahrene externe Projektpartnerin lohnt
             </h2>
           </div>
-          <ul className="mt-10 space-y-4">
+          <ul className="mt-10 grid gap-x-14 md:grid-cols-2">
             {situations.map((item) => (
               <li
                 key={item}
-                className="border-t border-border-default pt-4 text-[15px] leading-relaxed text-text-secondary"
+                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0"
               >
                 {item}
               </li>

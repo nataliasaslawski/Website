@@ -34,7 +34,7 @@ const serviceTiles = [
   {
     title: "Teilprojekte mit definiertem Umfang",
     description:
-      "Übernahme klar abgegrenzter Projektteile je nach Bedarf und vorhandener interner Struktur.",
+      "Übernahme ausgewählter Projektteile – flexibel eingebunden in das jeweilige Mandat.",
     points: [
       "Markt- & Zielfirmenanalyse",
       "Research & Kandidat:innenidentifikation",

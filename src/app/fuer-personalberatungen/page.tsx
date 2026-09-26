@@ -44,7 +44,7 @@ const serviceTiles = [
     ],
   },
   {
-    title: "Projektmanagement & Kapazitätsunterstützung",
+    title: "Projektmanagement & Entlastung",
     description:
       "Flexible Entlastung bei parallelen, umfangreichen oder zeitkritischen Mandaten.",
     points: [

@@ -37,8 +37,8 @@ export function FounderTeaser() {
           </p>
 
           <p className="mt-8 max-w-xl font-display text-lg italic leading-snug text-navy-900">
-            „Gute Entscheidungen entstehen dort, wo Marktkenntnis und
-            Menschenkenntnis zusammenkommen.“
+            „Vertrauen wächst durch Substanz, Urteilsvermögen und
+            Verbindlichkeit – nicht durch große Versprechen.“
           </p>
           <p className="mt-3 text-[13px] text-text-muted">
             Natalia Saslawski

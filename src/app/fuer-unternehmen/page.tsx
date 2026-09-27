@@ -99,7 +99,7 @@ const industryGroups = [
     items: [
       "Industrie & Produktion",
       "Maschinen- & Anlagenbau",
-      "Automotive – Hersteller sowie Tier-1- und Tier-2-Zulieferer",
+      "Automotive – OEM & Tier-1-/Tier-2-Zulieferer",
       "Automatisierungstechnik & Robotik",
       "Technische Produkte & Lösungen",
     ],

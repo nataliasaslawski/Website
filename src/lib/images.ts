@@ -22,7 +22,7 @@ export const images = {
     secondary: "/images/portraits/natalia-mein-anspruch.webp",
   },
   companies: {
-    hero: "/images/portraits/natalia-fuer-unternehmen-hero.webp",
+    hero: "/images/portraits/natalia-fuer-unternehmen-hero-v2.webp",
     secondary: "/images/portraits/natalia-mehrwert-unternehmen.webp",
   },
   agencies: {

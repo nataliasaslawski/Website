@@ -208,7 +208,7 @@ export default function FuerUnternehmenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface-elevated lg:w-[78%] lg:justify-self-end">
+          <div className="relative aspect-[885/642] w-full overflow-hidden bg-surface-elevated lg:w-[78%] lg:justify-self-end">
             <Image
               src={images.companies.hero}
               alt="Natalia Saslawski"

@@ -197,10 +197,15 @@ export default function FuerPersonalberatungenPage() {
               </p>
             </div>
 
-            <div
-              aria-hidden="true"
-              className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:border-l lg:border-t-0"
-            />
+            <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:border-l lg:border-t-0">
+              <Image
+                src={images.agencies.secondary}
+                alt="Natalia Saslawski"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 35vw, 100vw"
+              />
+            </div>
           </div>
         </Container>
       </section>

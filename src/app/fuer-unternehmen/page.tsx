@@ -203,15 +203,17 @@ export default function FuerUnternehmenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
-            <Image
-              src={images.companies.hero}
-              alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"
-              fill
-              priority
-              className="object-cover object-center"
-              sizes="(min-width: 1024px) 40vw, 90vw"
-            />
+          <div className="photo-shadow">
+            <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
+              <Image
+                src={images.companies.hero}
+                alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"
+                fill
+                priority
+                className="object-cover object-center"
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
+            </div>
           </div>
         </Container>
       </section>
@@ -418,14 +420,16 @@ export default function FuerUnternehmenPage() {
               </ul>
             </div>
 
-            <div className="relative min-h-[280px] w-full overflow-hidden bg-surface-elevated">
-              <Image
-                src={images.companies.secondary}
-                alt="Natalia Saslawski"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 35vw, 100vw"
-              />
+            <div className="photo-shadow h-full">
+              <div className="relative min-h-[280px] h-full w-full overflow-hidden bg-surface-elevated">
+                <Image
+                  src={images.companies.secondary}
+                  alt="Natalia Saslawski"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 35vw, 100vw"
+                />
+              </div>
             </div>
           </div>
         </Container>

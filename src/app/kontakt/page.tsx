@@ -34,15 +34,17 @@ export default function KontaktPage() {
               Zusammenarbeit sinnvoll unterstützen kann.
             </p>
           </div>
-          <div className="relative aspect-square w-full overflow-hidden bg-surface-elevated">
-            <Image
-              src={images.contact.hero}
-              alt="Natalia Saslawski"
-              fill
-              priority
-              className="object-cover"
-              sizes="(min-width: 1024px) 40vw, 90vw"
-            />
+          <div className="photo-shadow">
+            <div className="relative aspect-square w-full overflow-hidden bg-surface-elevated">
+              <Image
+                src={images.contact.hero}
+                alt="Natalia Saslawski"
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
+            </div>
           </div>
         </Container>
       </section>

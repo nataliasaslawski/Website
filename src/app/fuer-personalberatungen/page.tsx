@@ -102,15 +102,17 @@ export default function FuerPersonalberatungenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
-            <Image
-              src={images.agencies.hero}
-              alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"
-              fill
-              priority
-              className="object-cover"
-              sizes="(min-width: 1024px) 40vw, 90vw"
-            />
+          <div className="photo-shadow">
+            <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
+              <Image
+                src={images.agencies.hero}
+                alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
+            </div>
           </div>
         </Container>
       </section>

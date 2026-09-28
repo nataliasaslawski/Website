@@ -22,14 +22,16 @@ export function IntroStatement() {
             </p>
           </div>
 
-          <div className="relative aspect-[3/2] w-full overflow-hidden">
-            <Image
-              src={images.home.introPortrait}
-              alt="Natalia Saslawski"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 55vw, 90vw"
-            />
+          <div className="photo-shadow">
+            <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <Image
+                src={images.home.introPortrait}
+                alt="Natalia Saslawski"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 55vw, 90vw"
+              />
+            </div>
           </div>
         </div>
       </Container>

@@ -154,6 +154,14 @@ body {
   min-width: 0;
 }
 
+/* Shared shadow for real photos. Most photo containers use overflow-hidden
+   to crop the image (via object-cover), which would clip a box-shadow on
+   that same element — so this class goes on a plain wrapper div placed
+   around the existing sized/cropped container instead. */
+.photo-shadow {
+  box-shadow: 0 10px 30px rgba(15, 30, 45, 0.18);
+}
+
 ::selection {
   background: var(--navy-900);
   color: var(--paper-050);

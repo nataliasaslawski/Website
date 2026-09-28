@@ -247,15 +247,17 @@ export default function UeberMichPage() {
           </div>
 
           <div className="relative lg:order-2 lg:sticky lg:top-28 lg:w-[82%] lg:justify-self-end">
-            <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
-              <Image
-                src={images.about.portrait}
-                alt="Natalia Saslawski"
-                fill
-                priority
-                className="object-cover"
-                sizes="(min-width: 1024px) 33vw, 90vw"
-              />
+            <div className="photo-shadow">
+              <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
+                <Image
+                  src={images.about.portrait}
+                  alt="Natalia Saslawski"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, 90vw"
+                />
+              </div>
             </div>
             <div className="mt-6">
               <p className="font-display text-[19px] font-normal italic leading-[1.25] tracking-[0.01em] text-navy-900 desktop:text-[21px]!">
@@ -394,14 +396,16 @@ export default function UeberMichPage() {
                 Anforderungen hinausgeht.
               </p>
             </div>
-            <div className="relative aspect-[3/2] w-full overflow-hidden">
-              <Image
-                src={images.about.secondary}
-                alt="Natalia Saslawski im Gespräch"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 35vw, 90vw"
-              />
+            <div className="photo-shadow">
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src={images.about.secondary}
+                  alt="Natalia Saslawski im Gespräch"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 35vw, 90vw"
+                />
+              </div>
             </div>
           </div>
 

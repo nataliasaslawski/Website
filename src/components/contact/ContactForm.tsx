@@ -6,10 +6,10 @@ import { site } from "@/lib/content";
 type Status = "idle" | "submitting" | "success" | "error" | "not_configured";
 
 const inputClasses =
-  "w-full border border-border-default bg-surface-card px-4 py-3 text-[15px] text-navy-900 outline-none transition-colors focus:border-navy-900";
+  "w-full border border-border-default bg-surface-card px-4 py-3 text-[15px] text-navy-900 outline-none transition-colors focus:border-navy-900 desktop:text-[16px]!";
 
 const labelClasses =
-  "block text-eyebrow font-medium uppercase tracking-[var(--tracking-wide)] text-text-muted";
+  "block text-eyebrow font-medium uppercase tracking-[var(--tracking-wide)] text-text-muted desktop:text-[13px]!";
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -134,7 +134,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex items-center justify-center rounded-[var(--radius-sm)] bg-navy-900 px-6 py-3 text-sm font-medium text-text-inverse transition-colors hover:bg-navy-800 disabled:opacity-60"
+        className="inline-flex items-center justify-center rounded-[var(--radius-sm)] bg-navy-900 px-6 py-3 text-sm font-medium text-text-inverse transition-colors hover:bg-navy-800 disabled:opacity-60 desktop:text-[16px]!"
       >
         {status === "submitting" ? "Wird gesendet …" : "Nachricht senden"}
       </button>

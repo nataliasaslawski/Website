@@ -11,8 +11,8 @@ export default function DatenschutzPage() {
   return (
     <section className="bg-surface-page">
       <Container narrow className="py-16 md:py-24">
-        <Eyebrow>Rechtliches</Eyebrow>
-        <h1 className="mt-4 font-display text-2xl font-medium text-navy-900 md:text-[2rem]">
+        <Eyebrow className="desktop:text-[13.5px]!">Rechtliches</Eyebrow>
+        <h1 className="mt-4 font-display text-2xl font-medium text-navy-900 md:text-[2rem] desktop:text-[2.5rem]!">
           Datenschutzerklärung
         </h1>
 

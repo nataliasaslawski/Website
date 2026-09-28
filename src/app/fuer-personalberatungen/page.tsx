@@ -84,13 +84,13 @@ export default function FuerPersonalberatungenPage() {
           aria-hidden="true"
           className="pointer-events-none absolute -right-14 -top-14 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
         />
-        <Container className="relative grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <Container wide className="relative grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
-            <Eyebrow>Für Personalberatungen</Eyebrow>
-            <h1 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Für Personalberatungen</Eyebrow>
+            <h1 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem] desktop:text-[2.75rem]!">
               Professionelle Projektunterstützung
             </h1>
-            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
+            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Als erfahrene Projektpartnerin unterstütze ich
               Personalberatungen und Executive-Search-Boutiquen flexibel bei
               laufenden und neuen Mandaten – eigenständig, verbindlich und
@@ -120,10 +120,10 @@ export default function FuerPersonalberatungenPage() {
           aria-hidden="true"
           className="pointer-events-none absolute -bottom-14 -right-10 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
         />
-        <Container className="relative py-16 md:py-24">
+        <Container wide className="relative py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>Ausgangssituation</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Ausgangssituation</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
               Kennen Sie diese Engpässe?
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function FuerPersonalberatungenPage() {
             {situations.map((item) => (
               <li
                 key={item}
-                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0"
+                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0 desktop:text-[17px]!"
               >
                 {item}
               </li>
@@ -141,10 +141,10 @@ export default function FuerPersonalberatungenPage() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
+        <Container wide className="py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>Mein Angebot</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Mein Angebot</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
               So unterstütze ich Sie
             </h2>
           </div>
@@ -153,17 +153,17 @@ export default function FuerPersonalberatungenPage() {
             {serviceTiles.map((tile) => (
               <div
                 key={tile.title}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10 desktop:p-12!"
               >
-                <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem]">
+                <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem] desktop:text-[2rem]!">
                   {tile.title}
                 </h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
                   {tile.description}
                 </p>
                 <ul className="mt-4 space-y-2">
                   {tile.points.map((point) => (
-                    <li key={point} className="text-sm leading-relaxed text-navy-900">
+                    <li key={point} className="text-sm leading-relaxed text-navy-900 desktop:text-[16px]!">
                       {point}
                     </li>
                   ))}
@@ -175,18 +175,18 @@ export default function FuerPersonalberatungenPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-24">
-          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr]">
+        <Container wide className="py-16 md:py-24">
+          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">
             <div className="p-8 md:p-10">
-              <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              <Eyebrow className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
                 Ihr Mehrwert in der Zusammenarbeit
               </h2>
               <ul className="mt-6 divide-y divide-border-subtle">
                 {outcomes.map((item) => (
                   <li
                     key={item}
-                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0"
+                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0 desktop:text-[18px]! desktop:leading-[1.6]!"
                   >
                     {item}
                   </li>
@@ -209,10 +209,10 @@ export default function FuerPersonalberatungenPage() {
 
       <section className="bg-surface-elevated">
         <Container narrow className="py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] desktop:text-[2.5rem]!">
             Lassen Sie uns über Ihr aktuelles Mandat sprechen.
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary">
+          <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
             Wenn bei Ihnen mehrere Mandate parallel laufen oder ein
             Search-Projekt zusätzliche Kompetenz benötigt, lassen Sie uns
             unverbindlich austauschen.

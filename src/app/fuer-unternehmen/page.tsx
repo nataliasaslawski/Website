@@ -184,14 +184,14 @@ export default function FuerUnternehmenPage() {
           aria-hidden="true"
           className="pointer-events-none absolute -bottom-16 -left-12 hidden h-44 w-44 rounded-full bg-navy-900/[0.04] xl:block"
         />
-        <Container className="relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <Container wide className="relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
-            <Eyebrow>Für Unternehmen</Eyebrow>
-            <h1 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Für Unternehmen</Eyebrow>
+            <h1 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem] desktop:text-[2.75rem]!">
               Besetzung anspruchsvoller Fach-, Führungs- und
               Schlüsselpositionen
             </h1>
-            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
+            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Als erfahrene Sparringspartnerin begleite ich Unternehmen bei
               der Besetzung von Fach-, Führungs- und Schlüsselpositionen –
               mit fundierter Marktkenntnis, strukturierter Vorgehensweise und
@@ -217,10 +217,10 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-24">
+        <Container wide className="py-16 md:py-24">
           <div className="max-w-3xl">
-            <Eyebrow>Ausgangssituation</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Ausgangssituation</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
               Kommen Ihnen diese Herausforderungen bekannt vor?
             </h2>
           </div>
@@ -228,7 +228,7 @@ export default function FuerUnternehmenPage() {
             {situations.map((item) => (
               <li
                 key={item}
-                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0"
+                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0 desktop:text-[17px]!"
               >
                 {item}
               </li>
@@ -238,10 +238,10 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
+        <Container wide className="py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>Mein Angebot</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Mein Angebot</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
               So unterstütze ich Sie
             </h2>
           </div>
@@ -250,17 +250,17 @@ export default function FuerUnternehmenPage() {
             {serviceTiles.map((tile) => (
               <div
                 key={tile.title}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10"
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10 desktop:p-12!"
               >
-                <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem]">
+                <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem] desktop:text-[2rem]!">
                   {tile.title}
                 </h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
+                <p className="mt-3 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
                   {tile.description}
                 </p>
                 <ul className="mt-4 space-y-2">
                   {tile.points.map((point) => (
-                    <li key={point} className="text-sm leading-relaxed text-navy-900">
+                    <li key={point} className="text-sm leading-relaxed text-navy-900 desktop:text-[16px]!">
                       {point}
                     </li>
                   ))}
@@ -279,8 +279,8 @@ export default function FuerUnternehmenPage() {
           <span className="absolute bottom-0 left-10 h-36 w-36 rounded-full bg-navy-800/42" />
           <span className="absolute bottom-16 left-32 h-24 w-24 rounded-full bg-navy-700/30" />
         </div>
-        <Container className="relative py-16 md:py-24">
-          <Eyebrow tone="inverse">Vorgehensweise</Eyebrow>
+        <Container wide className="relative py-16 md:py-24">
+          <Eyebrow tone="inverse" className="desktop:text-[13.5px]!">Vorgehensweise</Eyebrow>
 
           <div className="mt-10 grid gap-8 md:grid-cols-5 md:gap-6">
             {processSteps.map((step) => (
@@ -288,9 +288,9 @@ export default function FuerUnternehmenPage() {
                 key={step.n}
                 className="border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.35)] pt-6"
               >
-                <span className="font-display text-lg text-cream-100">{step.n}</span>
-                <h3 className="mt-3 text-[17px] font-medium text-text-inverse">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-inverse/90">
+                <span className="font-display text-lg text-cream-100 desktop:text-[32px]!">{step.n}</span>
+                <h3 className="mt-3 text-[17px] font-medium text-text-inverse desktop:text-[19px]!">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-text-inverse/90 desktop:text-[16px]!">
                   {step.text}
                 </p>
               </div>
@@ -300,13 +300,13 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
+        <Container wide className="py-16 md:py-24">
           <div>
             <div className="max-w-3xl">
-              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
                 Branchenerfahrung
               </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
                 Meine langjährige Erfahrung in Executive &amp; Professional
                 Search, Marktanalyse und strategischer Talentgewinnung umfasst
                 unterschiedliche Branchen und Märkte – mit besonderen
@@ -318,16 +318,16 @@ export default function FuerUnternehmenPage() {
               {industryGroups.map((group) => (
                 <div
                   key={group.title}
-                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
+                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)] desktop:p-9!"
                 >
-                  <h3 className="font-display text-xl font-medium leading-snug text-navy-900 lg:text-lg">
+                  <h3 className="font-display text-xl font-medium leading-snug text-navy-900 lg:text-lg desktop:text-[24px]!">
                     {group.title}
                   </h3>
                   <ul className="mt-5 space-y-2.5">
                     {group.items.map((item) => (
                       <li
                         key={item}
-                        className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
+                        className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0 desktop:text-[16px]!"
                       >
                         {item}
                       </li>
@@ -338,7 +338,7 @@ export default function FuerUnternehmenPage() {
             </div>
           </div>
 
-          <p className="mt-6 text-[16px] leading-relaxed text-text-secondary">
+          <p className="mt-6 text-[16px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
             Diese Branchenschwerpunkte lassen sich je nach Mandat gezielt auf
             angrenzende und weitere Märkte übertragen.
           </p>
@@ -346,12 +346,12 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-20">
+        <Container wide className="py-16 md:py-20">
           <div>
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
               Positionslevel &amp; Funktionsbereiche
             </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Meine Erfahrung umfasst Führungs- und Schlüsselpositionen über
               verschiedene Hierarchieebenen und Funktionsbereiche hinweg.
             </p>
@@ -361,7 +361,7 @@ export default function FuerUnternehmenPage() {
             {levelGroups.map((group) => (
               <div
                 key={group.title}
-                className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
+                className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)] desktop:p-9!"
               >
                 {group.title === "Positionslevel" && (
                   <>
@@ -379,14 +379,14 @@ export default function FuerUnternehmenPage() {
                     />
                   </>
                 )}
-                <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
+                <h3 className="font-display text-xl font-medium leading-snug text-navy-900 desktop:text-[36px]!">
                   {group.title}
                 </h3>
                 <ul className="mt-5 space-y-2.5">
                   {group.items.map((item) => (
                     <li
                       key={item}
-                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0"
+                      className="border-t border-border-subtle pt-2.5 text-sm leading-relaxed text-text-secondary first:border-none first:pt-0 desktop:text-[16px]!"
                     >
                       {item}
                     </li>
@@ -399,18 +399,18 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="bg-surface-inverse text-text-inverse">
-        <Container className="py-16 md:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+        <Container wide className="py-16 md:py-24">
+          <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 desktop:grid-cols-[1.05fr_0.95fr]!">
             <div>
-              <Eyebrow tone="inverse">Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-text-inverse md:text-[2rem]">
+              <Eyebrow tone="inverse" className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-text-inverse md:text-[2rem] desktop:text-[2.75rem]!">
                 Was Sie aus der Zusammenarbeit mitnehmen
               </h2>
               <ul className="mt-6 divide-y divide-[oklch(from_var(--cream-100)_l_c_h_/_0.2)]">
                 {outcomes.map((item) => (
                   <li
                     key={item}
-                    className="py-3 text-[15px] leading-relaxed text-text-inverse/90 first:pt-0 last:pb-0"
+                    className="py-3 text-[15px] leading-relaxed text-text-inverse/90 first:pt-0 last:pb-0 desktop:text-[18px]! desktop:leading-[1.6]!"
                   >
                     {item}
                   </li>
@@ -433,7 +433,7 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-elevated">
         <Container narrow className="py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] desktop:text-[2.5rem]!">
             Lassen Sie uns über Ihre aktuelle Position sprechen.
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

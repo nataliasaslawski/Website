@@ -25,13 +25,13 @@ export default async function InsightsPage() {
           aria-hidden="true"
           className="pointer-events-none absolute -bottom-14 right-24 hidden h-28 w-28 rounded-full bg-taupe-400/12 xl:block"
         />
-        <Container className="relative py-16 md:py-24">
+        <Container wide className="relative py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>Insights</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Insights</Eyebrow>
+            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem] desktop:text-[3rem]!">
               Perspektiven aus Recruiting, Search und Talent Advisory
             </h1>
-            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
+            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Fachliche Beiträge zu Executive Search, Suchstrategien,
               Kandidatenmärkten und Recruiting-Prozessen — praxisnah und aus
               rund 15 Jahren Erfahrung in Personalberatung und Search.
@@ -42,7 +42,7 @@ export default async function InsightsPage() {
             {categories.map((c) => (
               <span
                 key={c}
-                className="border border-border-default px-3 py-1.5 text-xs uppercase tracking-[var(--tracking-wide)] text-text-secondary"
+                className="border border-border-default px-3 py-1.5 text-xs uppercase tracking-[var(--tracking-wide)] text-text-secondary desktop:text-[13px]!"
               >
                 {c}
               </span>
@@ -52,7 +52,7 @@ export default async function InsightsPage() {
       </section>
 
       <section className="bg-surface-elevated">
-        <Container className="py-16 md:py-24">
+        <Container wide className="py-16 md:py-24">
           {posts.length === 0 ? (
             <div className="flex flex-col items-center gap-8 border border-border-default bg-surface-card px-8 py-16 text-center md:flex-row md:text-left">
               <div className="relative h-40 w-full flex-none overflow-hidden md:h-32 md:w-48">
@@ -65,10 +65,10 @@ export default async function InsightsPage() {
                 />
               </div>
               <div>
-                <h2 className="font-display text-xl font-medium text-navy-900">
+                <h2 className="font-display text-xl font-medium text-navy-900 desktop:text-[1.5rem]!">
                   Die ersten Beiträge folgen in Kürze.
                 </h2>
-                <p className="mt-2 max-w-md text-[15px] leading-relaxed text-text-secondary">
+                <p className="mt-2 max-w-md text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
                   Hier entstehen fortlaufend fachliche Einblicke zu Search,
                   Recruiting und Talent Advisory. Ziel ist Qualität statt
                   Frequenz — neue Beiträge erscheinen, sobald sie fertig sind.
@@ -78,14 +78,14 @@ export default async function InsightsPage() {
           ) : (
             <div className="grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-3">
               {posts.map((post) => (
-                <article key={post.slug} className="bg-surface-card p-6">
-                  <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-accent">
+                <article key={post.slug} className="bg-surface-card p-6 desktop:p-8!">
+                  <span className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-accent desktop:text-[13.5px]!">
                     {post.category}
                   </span>
-                  <h3 className="mt-3 font-display text-lg font-medium text-navy-900">
+                  <h3 className="mt-3 font-display text-lg font-medium text-navy-900 desktop:text-[1.375rem]!">
                     {post.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                  <p className="mt-2 text-sm leading-relaxed text-text-secondary desktop:text-[17px]!">
                     {post.excerpt}
                   </p>
                 </article>

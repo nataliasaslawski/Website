@@ -20,14 +20,14 @@ export default function KontaktPage() {
           aria-hidden="true"
           className="pointer-events-none absolute -left-14 -bottom-12 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
         />
-        <Container className="relative grid items-center gap-12 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <Container wide className="relative grid items-center gap-12 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
-            <Eyebrow>Kontakt</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Kontakt</Eyebrow>
+            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem] desktop:text-[3rem]!">
               Lassen Sie uns über Ihre aktuelle Search-Herausforderung
               sprechen.
             </h1>
-            <p className="mt-6 max-w-lg text-[17px] leading-relaxed text-text-secondary">
+            <p className="mt-6 max-w-lg text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Ob anspruchsvolle Schlüsselposition, festgefahrene Suche oder
               zusätzlicher Unterstützungsbedarf in einem bestehenden Mandat –
               in einem unverbindlichen Erstgespräch klären wir, wo eine
@@ -52,16 +52,16 @@ export default function KontaktPage() {
           aria-hidden="true"
           className="pointer-events-none absolute -top-16 -right-12 hidden h-36 w-36 rounded-full bg-taupe-400/14 xl:block"
         />
-        <Container className="relative grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+        <Container wide className="relative grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <div>
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
               Kontakt aufnehmen
             </h2>
-            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary">
+            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Sie möchten sich zu einer möglichen Zusammenarbeit austauschen
               oder haben Fragen zu meinen Leistungen?
             </p>
-            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary">
+            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Kontaktieren Sie mich gerne telefonisch, per E-Mail, über
               LinkedIn oder über das Kontaktformular. Ich melde mich zeitnah
               persönlich bei Ihnen zurück und wir stimmen bei Bedarf einen
@@ -71,10 +71,10 @@ export default function KontaktPage() {
 
           <dl id="rueckruf" className="scroll-mt-24 self-center">
             <div className="border-t border-border-default py-5">
-              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted desktop:text-[13.5px]!">
                 Telefon
               </dt>
-              <dd className="mt-2 text-[15px]">
+              <dd className="mt-2 text-[15px] desktop:text-[17px]!">
                 <a
                   href="tel:+4917643983941"
                   className="text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
@@ -84,10 +84,10 @@ export default function KontaktPage() {
               </dd>
             </div>
             <div className="border-t border-border-default py-5">
-              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted desktop:text-[13.5px]!">
                 E-Mail
               </dt>
-              <dd className="mt-2 text-[15px]">
+              <dd className="mt-2 text-[15px] desktop:text-[17px]!">
                 <a
                   href={`mailto:${site.email}`}
                   className="text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
@@ -97,10 +97,10 @@ export default function KontaktPage() {
               </dd>
             </div>
             <div className="border-y border-border-default py-5">
-              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted">
+              <dt className="text-eyebrow font-medium uppercase tracking-[var(--tracking-wider)] text-text-muted desktop:text-[13.5px]!">
                 LinkedIn
               </dt>
-              <dd className="mt-2 text-[15px]">
+              <dd className="mt-2 text-[15px] desktop:text-[17px]!">
                 <a
                   href="https://www.linkedin.com/in/natalia-saslawski-20788467/"
                   target="_blank"
@@ -128,8 +128,8 @@ export default function KontaktPage() {
 
       <section id="kontaktformular" className="scroll-mt-24 bg-surface-page">
         <Container narrow className="py-16 md:py-24">
-          <Eyebrow>Kontaktformular</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+          <Eyebrow className="desktop:text-[13.5px]!">Kontaktformular</Eyebrow>
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.5rem]!">
             Schreiben Sie mir
           </h2>
           <div className="mt-10">

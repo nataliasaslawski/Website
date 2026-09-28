@@ -436,6 +436,11 @@ export default function FuerUnternehmenPage() {
           <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] desktop:relative! desktop:left-1/2! desktop:w-[1000px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[2.5rem]!">
             Lassen Sie uns über Ihre aktuelle Position sprechen.
           </h2>
+          <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:relative! desktop:left-1/2! desktop:w-[820px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[18px]! desktop:leading-[1.6]!">
+            Ob anspruchsvolle Schlüsselposition, festgefahrene Suche oder
+            zusätzlicher Unterstützungsbedarf – in einem unverbindlichen
+            Erstgespräch klären wir, wie ich Sie sinnvoll unterstützen kann.
+          </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href="/kontakt#erstgespraech" variant="primary">
               Unverbindliches Erstgespräch vereinbaren

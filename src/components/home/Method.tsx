@@ -51,9 +51,9 @@ export function Method() {
       <Container wide className="relative py-20 md:py-28">
         <div className="max-w-xl">
           <h2>
-            <Eyebrow tone="inverse" className="desktop:text-[13px]!">Meine Arbeitsweise</Eyebrow>
+            <Eyebrow tone="inverse" className="desktop:text-[13.5px]!">Meine Arbeitsweise</Eyebrow>
           </h2>
-          <p className="mt-3 text-sm text-text-inverse/70 md:text-[15px]">
+          <p className="mt-3 text-sm text-text-inverse/70 md:text-[15px] desktop:text-[18px]!">
             Substanz, Urteilsvermögen und persönliche Verantwortung
           </p>
         </div>

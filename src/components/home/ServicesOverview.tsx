@@ -52,12 +52,12 @@ export function ServicesOverview() {
       />
 
       <Container wide className="relative py-16 md:py-24">
-        <Eyebrow className="desktop:text-[13px]!">Leistungen</Eyebrow>
+        <Eyebrow className="desktop:text-[13.5px]!">Leistungen</Eyebrow>
 
         <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">
           {services.map((service) => (
             <div key={service.title} className="flex flex-col bg-surface-card p-10 xl:p-12 desktop:p-14!">
-              <Eyebrow className="desktop:text-[13px]!">{service.label}</Eyebrow>
+              <Eyebrow className="desktop:text-[13.5px]!">{service.label}</Eyebrow>
               <h3 className="mt-4 font-display text-xl font-medium leading-snug text-navy-900 xl:text-[1.375rem] desktop:text-[1.5rem]!">
                 {service.title}
               </h3>

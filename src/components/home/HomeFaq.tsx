@@ -60,8 +60,8 @@ export function HomeFaq() {
       <Container className="relative">
         <div className="mx-auto max-w-[960px] rounded-[calc(var(--radius-lg)+8px)] border border-taupe-400/15 bg-cream-050/60 p-3 md:p-4 xl:max-w-[1100px] desktop:max-w-[1220px]!">
           <div className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated px-8 py-14 md:px-16 md:py-16">
-            <Eyebrow className="desktop:text-[13px]!">Häufige Fragen</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.625rem]!">
+            <Eyebrow className="desktop:text-[13.5px]!">Häufige Fragen</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.75rem]!">
               Was Sie vor einer Zusammenarbeit wissen möchten
             </h2>
             <div className="mt-10">

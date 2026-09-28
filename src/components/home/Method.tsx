@@ -48,7 +48,7 @@ export function Method() {
         <span className="absolute bottom-10 left-20 h-32 w-32 rounded-full bg-navy-700/34" />
       </div>
 
-      <Container className="relative py-20 md:py-28">
+      <Container wide className="relative py-20 md:py-28">
         <div className="max-w-xl">
           <h2>
             <Eyebrow tone="inverse">Meine Arbeitsweise</Eyebrow>
@@ -58,16 +58,16 @@ export function Method() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4 xl:gap-6">
           {principles.map((principle) => (
             <div
               key={principle.title}
-              className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-6 md:px-6 md:py-8"
+              className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-6 md:px-6 md:py-8 xl:p-8"
             >
-              <h3 className="text-[17px] font-medium leading-snug text-text-inverse">
+              <h3 className="text-[17px] font-medium leading-snug text-text-inverse xl:text-[19px]">
                 {principle.title}
               </h3>
-              <p className="mt-3 text-[15px] leading-relaxed text-text-inverse/80">
+              <p className="mt-3 text-[15px] leading-relaxed text-text-inverse/80 xl:text-[16px]">
                 {principle.text}
               </p>
             </div>

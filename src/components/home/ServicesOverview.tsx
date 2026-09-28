@@ -51,17 +51,17 @@ export function ServicesOverview() {
         className="pointer-events-none absolute bottom-8 right-48 z-10 hidden h-28 w-28 rounded-full bg-navy-900/4 xl:block"
       />
 
-      <Container className="relative py-16 md:py-24">
+      <Container wide className="relative py-16 md:py-24">
         <Eyebrow>Leistungen</Eyebrow>
 
         <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">
           {services.map((service) => (
-            <div key={service.title} className="flex flex-col bg-surface-card p-10">
+            <div key={service.title} className="flex flex-col bg-surface-card p-10 xl:p-12">
               <Eyebrow>{service.label}</Eyebrow>
-              <h3 className="mt-4 font-display text-xl font-medium leading-snug text-navy-900">
+              <h3 className="mt-4 font-display text-xl font-medium leading-snug text-navy-900 xl:text-[1.375rem]">
                 {service.title}
               </h3>
-              <p className="mt-4 flex-1 text-[15px] leading-relaxed text-text-secondary">
+              <p className="mt-4 flex-1 text-[15px] leading-relaxed text-text-secondary xl:text-[16px] xl:leading-[1.7]">
                 {service.description}
               </p>
               <Link

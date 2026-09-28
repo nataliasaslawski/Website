@@ -16,14 +16,14 @@ export function ProblemSolution() {
           <span className="absolute left-48 bottom-0 h-44 w-44 rounded-full bg-taupe-400/17" />
         </div>
 
-        <Container className="relative py-14 md:py-20">
-          <div className="max-w-3xl">
+        <Container wide className="relative py-14 md:py-20">
+          <div className="max-w-3xl xl:max-w-[700px]">
             <Eyebrow>Die Ausgangslage</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] xl:text-[2.5rem]">
               Anspruchsvolle Positionen brauchen mehr als
               Standard-Recruiting.
             </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7]">
               Je spezifischer eine Rolle, desto anspruchsvoller wird die
               Suche. Oft sind relevante Kandidat:innen nur schwer erreichbar,
               Zielmärkte eng und klassische Recruiting-Kanäle wenig wirksam.
@@ -38,15 +38,15 @@ export function ProblemSolution() {
       </section>
 
       <section className="bg-surface-page">
-        <Container className="py-14 md:py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <Container wide className="py-14 md:py-20">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-[0.9fr_1.1fr] xl:gap-20">
             <div>
               <Eyebrow>Mein Ansatz</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem]">
                 Strategische Beratung, verbunden mit operativer
                 Besetzungskompetenz.
               </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7]">
                 Am Anfang steht für mich ein klares Verständnis der Rolle, des
                 Unternehmenskontextes und der Anforderungen. Darauf aufbauend
                 entwickle ich eine fundierte Suchstrategie, die sich im
@@ -54,7 +54,7 @@ export function ProblemSolution() {
                 weiterentwickelt, und führe den Besetzungsprozess operativ
                 durch.
               </p>
-              <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
+              <p className="mt-4 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7]">
                 Entscheidend ist für mich dabei nicht die Anzahl
                 präsentierter Profile, sondern die Identifikation von
                 Kandidat:innen, die fachlich, persönlich und zur jeweiligen

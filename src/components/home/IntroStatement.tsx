@@ -5,13 +5,13 @@ import { images } from "@/lib/images";
 export function IntroStatement() {
   return (
     <section className="bg-surface-elevated">
-      <Container className="py-20 md:py-28">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+      <Container wide className="py-20 md:py-28">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 xl:gap-14">
           <div>
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem]">
               Executive Search &amp; Talent Advisory
             </h2>
-            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary">
+            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[17px] xl:leading-[1.7]">
               Durch meine langjährige Arbeit in der Personalberatung und
               zahlreiche erfolgreich begleitete Besetzungen verstehe ich, was
               Unternehmen wirklich brauchen – und was Menschen bewegt, sich

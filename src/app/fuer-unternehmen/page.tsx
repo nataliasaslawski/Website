@@ -203,7 +203,7 @@ export default function FuerUnternehmenPage() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[885/642] w-full overflow-hidden bg-surface-elevated lg:w-[78%] lg:justify-self-end">
+          <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.companies.hero}
               alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"

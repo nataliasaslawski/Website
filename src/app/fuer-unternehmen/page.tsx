@@ -398,19 +398,19 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-inverse text-text-inverse">
+      <section className="bg-surface-muted">
         <Container wide className="py-16 md:py-24">
           <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 desktop:grid-cols-[1.05fr_0.95fr]!">
             <div>
-              <Eyebrow tone="inverse" className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-text-inverse md:text-[2rem] desktop:text-[2.75rem]!">
+              <Eyebrow className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
                 Was Sie aus der Zusammenarbeit mitnehmen
               </h2>
-              <ul className="mt-6 divide-y divide-[oklch(from_var(--cream-100)_l_c_h_/_0.2)]">
+              <ul className="mt-6 divide-y divide-border-subtle">
                 {outcomes.map((item) => (
                   <li
                     key={item}
-                    className="py-3 text-[15px] leading-relaxed text-text-inverse/90 first:pt-0 last:pb-0 desktop:text-[18px]! desktop:leading-[1.6]!"
+                    className="py-3 text-[15px] leading-relaxed text-text-secondary first:pt-0 last:pb-0 desktop:text-[18px]! desktop:leading-[1.6]!"
                   >
                     {item}
                   </li>
@@ -418,7 +418,7 @@ export default function FuerUnternehmenPage() {
               </ul>
             </div>
 
-            <div className="relative min-h-[280px] w-full overflow-hidden bg-navy-800">
+            <div className="relative min-h-[280px] w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.companies.secondary}
                 alt="Natalia Saslawski"

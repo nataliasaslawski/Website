@@ -73,7 +73,7 @@ const outcomes = [
   "Hohe fachliche und methodische Qualität in der Projektarbeit",
   "Transparente Kommunikation und verlässliches Projekt- und Berichtswesen",
   "Diskretion, Vertraulichkeit und Loyalität gegenüber Ihrer Beratung, Ihren Kund:innen und Kandidat:innen",
-  "Professionelle Einbindung in Ihre Kundenarbeit – im Hintergrund ebenso wie im direkten Endkundenkontakt",
+  "Nahtlose Einbindung in Ihre Mandatsarbeit – im Hintergrund ebenso wie im direkten Kontakt mit Ihren Kundenunternehmen",
 ];
 
 export default function FuerPersonalberatungenPage() {

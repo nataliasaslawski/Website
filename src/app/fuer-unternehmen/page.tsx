@@ -206,10 +206,10 @@ export default function FuerUnternehmenPage() {
           <div className="relative aspect-[885/642] w-full overflow-hidden bg-surface-elevated lg:w-[78%] lg:justify-self-end">
             <Image
               src={images.companies.hero}
-              alt="Natalia Saslawski"
+              alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"
               fill
               priority
-              className="object-cover object-[50%_45%]"
+              className="object-cover object-center"
               sizes="(min-width: 1024px) 40vw, 90vw"
             />
           </div>

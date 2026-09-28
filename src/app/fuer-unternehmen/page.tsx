@@ -192,15 +192,10 @@ export default function FuerUnternehmenPage() {
               Schlüsselpositionen
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
-              Ich unterstütze Unternehmen bei komplexen Besetzungen – von der
-              Klärung des Suchprofils über die Entwicklung der Suchstrategie
-              bis zur strukturierten Kandidatenbewertung und Begleitung des
-              Auswahlprozesses.
-            </p>
-            <p className="mt-4 text-[17px] leading-relaxed text-text-secondary">
-              Dabei verbinde ich langjährige Search-Erfahrung mit fundierter
-              Marktkenntnis und einer individuell entwickelten
-              Suchstrategie.
+              Als erfahrene Sparringspartnerin begleite ich Unternehmen bei
+              der Besetzung von Fach-, Führungs- und Schlüsselpositionen –
+              mit fundierter Marktkenntnis, strukturierter Vorgehensweise und
+              einem klaren Blick für tragfähige Besetzungsentscheidungen.
             </p>
             <div className="mt-8">
               <Button href="/kontakt#erstgespraech" variant="primary">

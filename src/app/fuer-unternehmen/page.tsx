@@ -361,8 +361,24 @@ export default function FuerUnternehmenPage() {
             {levelGroups.map((group) => (
               <div
                 key={group.title}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
+                className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)]"
               >
+                {group.title === "Positionslevel" && (
+                  <>
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute -bottom-10 -left-10 h-28 w-28 rounded-full bg-taupe-400/10"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute bottom-10 left-14 h-14 w-14 rounded-full bg-navy-900/[0.05]"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute bottom-4 left-28 h-6 w-6 rounded-full bg-taupe-600/10"
+                    />
+                  </>
+                )}
                 <h3 className="font-display text-xl font-medium leading-snug text-navy-900">
                   {group.title}
                 </h3>

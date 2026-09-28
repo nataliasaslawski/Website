@@ -66,12 +66,14 @@ const serviceTiles = [
 ];
 
 const outcomes = [
-  "Schnelle und verlässliche Unterstützung bei laufenden Mandaten",
-  "Professionelle Search-Kompetenz ohne lange Einarbeitung",
-  "Eigenständige Bearbeitung klar definierter Projektteile oder ganzer Search-Projekte",
-  "Flexible Kapazität bei Projektspitzen",
-  "Hohe Qualität in Research, Sourcing, Direktansprache und Kandidat:innengewinnung",
-  "Eine Zusammenarbeit, die gegenüber Ihren Endkund:innen professionell anschlussfähig ist",
+  "Professionelle und eigenständige Bearbeitung von Mandaten oder Projektteilen",
+  "Flexible Projektunterstützung ohne lange Einarbeitungszeiten",
+  "Effizienz in Suche, Ansprache und Aktivierung von Kandidat:innen",
+  "Lösungsorientierung und neue Suchansätze bei anspruchsvollen Mandaten",
+  "Hohe fachliche und methodische Qualität in der Projektarbeit",
+  "Transparente Kommunikation und verlässliches Projekt- und Berichtswesen",
+  "Diskretion, Vertraulichkeit und Loyalität gegenüber Ihrer Beratung, Ihren Kund:innen und Kandidat:innen",
+  "Professionelle Einbindung in Ihre Kundenarbeit – im Hintergrund ebenso wie im direkten Endkundenkontakt",
 ];
 
 export default function FuerPersonalberatungenPage() {
@@ -177,7 +179,7 @@ export default function FuerPersonalberatungenPage() {
             <div className="p-8 md:p-10">
               <Eyebrow>Mehrwert der Zusammenarbeit</Eyebrow>
               <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
-                Was Sie aus der Zusammenarbeit mitnehmen
+                Ihr Mehrwert in der Zusammenarbeit
               </h2>
               <ul className="mt-6 divide-y divide-border-subtle">
                 {outcomes.map((item) => (
@@ -189,12 +191,6 @@ export default function FuerPersonalberatungenPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 border-t border-border-subtle pt-6 text-[15px] leading-relaxed text-text-secondary">
-                Vertraulichkeit gegenüber Ihrer Beratung, Ihren
-                Unternehmenskund:innen und den angesprochenen Kandidat:innen
-                hat für mich höchste Priorität – die Zusammenarbeit kann je
-                nach Wunsch im Hintergrund oder sichtbar erfolgen.
-              </p>
             </div>
 
             <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:border-l lg:border-t-0">

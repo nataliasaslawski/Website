@@ -91,9 +91,10 @@ export default function FuerPersonalberatungenPage() {
               Professionelle Projektunterstützung
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary">
-              Externe Unterstützung für Personalberatungen und
-              Executive-Search-Boutiquen bei laufenden oder neuen Mandaten –
-              seniorig, eigenständig und ohne lange Einarbeitung.
+              Als erfahrene Projektpartnerin unterstütze ich
+              Personalberatungen und Executive-Search-Boutiquen flexibel bei
+              laufenden und neuen Mandaten – eigenständig, verbindlich und
+              ohne lange Einarbeitungszeiten.
             </p>
             <div className="mt-8">
               <Button href="/kontakt#erstgespraech" variant="primary">

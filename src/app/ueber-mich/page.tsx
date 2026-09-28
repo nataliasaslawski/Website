@@ -186,12 +186,12 @@ export default function UeberMichPage() {
         />
         <Container className="relative z-20 grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">
-            <Eyebrow>Über mich</Eyebrow>
-            <h1 className="mt-4 font-display text-[1.85rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem]">
+            <Eyebrow className="desktop:text-[13.5px]!">Über mich</Eyebrow>
+            <h1 className="mt-4 font-display text-[1.85rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem] desktop:text-[2.75rem]!">
               Menschen lassen sich nicht auf Lebensläufe reduzieren. Und gute
               Besetzungen nicht auf Stellenprofile.
             </h1>
-            <div className="mt-6 text-[15px] leading-[1.75] text-text-secondary">
+            <div className="mt-6 text-[15px] leading-[1.75] text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               <p>
                 In vielen Jahren Personalberatung habe ich unzählige Gespräche
                 mit Unternehmen, Führungskräften und Kandidat:innen geführt.
@@ -258,7 +258,7 @@ export default function UeberMichPage() {
               />
             </div>
             <div className="mt-6">
-              <p className="font-display text-[19px] font-normal italic leading-[1.25] tracking-[0.01em] text-navy-900">
+              <p className="font-display text-[19px] font-normal italic leading-[1.25] tracking-[0.01em] text-navy-900 desktop:text-[21px]!">
                 Menschen.
                 <br />
                 Möglichkeiten.
@@ -281,10 +281,10 @@ export default function UeberMichPage() {
         />
 
         <Container className="relative z-20 py-12 md:py-16">
-          <span className="block text-[12px] font-medium uppercase tracking-[0.18em] text-accent">
+          <span className="block text-[12px] font-medium uppercase tracking-[0.18em] text-accent desktop:text-[13.5px]!">
             Werdegang
           </span>
-          <h2 className="mt-3 font-display text-[1.75rem] font-medium leading-[1.15] text-navy-900 md:text-[2.375rem]">
+          <h2 className="mt-3 font-display text-[1.75rem] font-medium leading-[1.15] text-navy-900 md:text-[2.375rem] desktop:text-[2.75rem]!">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
 
@@ -299,13 +299,13 @@ export default function UeberMichPage() {
                     )}
                   </div>
                   <div className={i < stations.length - 1 ? "pb-7" : ""}>
-                    <span className="block text-[12px] font-medium uppercase tracking-[0.12em] text-taupe-700">
+                    <span className="block text-[12px] font-medium uppercase tracking-[0.12em] text-taupe-700 desktop:text-[13px]!">
                       {s.company}
                     </span>
-                    <h3 className="mt-1 font-display text-[22px] font-medium leading-[1.25] text-navy-900">
+                    <h3 className="mt-1 font-display text-[22px] font-medium leading-[1.25] text-navy-900 desktop:text-[24px]!">
                       {s.roles.join(" → ")}
                     </h3>
-                    <p className="mt-1 text-[15px] leading-[1.5] text-text-secondary">
+                    <p className="mt-1 text-[15px] leading-[1.5] text-text-secondary desktop:text-[17px]!">
                       {s.text}
                     </p>
                   </div>
@@ -317,7 +317,7 @@ export default function UeberMichPage() {
               <div className="flex h-full items-center border-l border-border-default py-2 pl-7 lg:pl-8">
                 <div className="max-w-[260px]">
                   <div className="h-px w-10 bg-border-default" />
-                  <p className="my-6 font-display text-[20px] italic leading-[1.5] text-navy-900">
+                  <p className="my-6 font-display text-[20px] italic leading-[1.5] text-navy-900 desktop:text-[22px]!">
                     „Mit jeder Station wuchs nicht nur die Verantwortung für
                     Mandate, sondern auch die für Teams, Kundenbeziehungen und
                     die Qualität komplexer Suchprozesse.“
@@ -344,7 +344,7 @@ export default function UeberMichPage() {
           className="pointer-events-none absolute -bottom-10 -left-10 hidden h-28 w-28 rounded-full bg-navy-800/46 xl:block"
         />
         <Container className="relative py-14 md:py-20">
-          <Eyebrow tone="inverse">Perspektiven, die meine Arbeit heute prägen</Eyebrow>
+          <Eyebrow tone="inverse" className="desktop:text-[13.5px]!">Perspektiven, die meine Arbeit heute prägen</Eyebrow>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {perspectives.map((p) => (
@@ -356,7 +356,7 @@ export default function UeberMichPage() {
                 <h3 className="mt-4 font-display text-lg font-medium text-text-inverse">
                   {p.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-inverse/80">
+                <p className="mt-2 text-sm leading-relaxed text-text-inverse/80 desktop:text-[18px]! desktop:leading-[1.6]!">
                   „{p.text}“
                 </p>
               </div>
@@ -364,7 +364,7 @@ export default function UeberMichPage() {
           </div>
 
           <div className="mt-10 border-t border-[oklch(from_var(--cream-100)_l_c_h_/_0.2)] pt-8">
-            <p className="mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-text-inverse/80">
+            <p className="mx-auto max-w-2xl text-center text-[15px] leading-relaxed text-text-inverse/80 desktop:text-[18px]! desktop:leading-[1.6]!">
               Diese Erfahrungen prägen heute meine Arbeit als selbstständige
               Beraterin – in der Verbindung aus operativer Search-Kompetenz,
               Beratung, Führung und einem tiefen Verständnis dafür, wie
@@ -378,11 +378,11 @@ export default function UeberMichPage() {
         <Container className="py-16 md:py-24">
           <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
             <div>
-              <Eyebrow>Mein Anspruch</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem]">
+              <Eyebrow className="desktop:text-[13.5px]!">Mein Anspruch</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
                 Wofür ich in der Zusammenarbeit stehe
               </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary">
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
                 In der Zusammenarbeit mit meinen Kund:innen ist mir wichtig,
                 Kandidat:innen nicht nur anhand ihres Lebenslaufs, sondern
                 differenziert und mit Blick auf die jeweilige Aufgabe zu
@@ -429,10 +429,10 @@ export default function UeberMichPage() {
                 >
                   {p.icon}
                 </svg>
-                <span className="mt-4 block text-xs font-medium uppercase tracking-[0.12em] text-taupe-700">
+                <span className="mt-4 block text-xs font-medium uppercase tracking-[0.12em] text-taupe-700 desktop:text-[14px]!">
                   {p.title}
                 </span>
-                <p className="mt-3 font-display text-[17px] leading-snug text-navy-900">
+                <p className="mt-3 font-display text-[17px] leading-snug text-navy-900 desktop:text-[18px]!">
                   {p.text}
                 </p>
               </div>

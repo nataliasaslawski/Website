@@ -26,7 +26,7 @@ export const images = {
     secondary: "/images/portraits/natalia-mehrwert-unternehmen.webp",
   },
   agencies: {
-    hero: "/images/portraits/natalia-fuer-personalberatungen-hero-v3.webp",
+    hero: "/images/portraits/natalia-fuer-personalberatungen-hero-v4.webp",
     secondary: "/images/portraits/natalia-personalberatungen-mehrwert.webp",
   },
   insights: {

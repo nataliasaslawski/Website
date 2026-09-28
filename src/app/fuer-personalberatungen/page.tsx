@@ -105,7 +105,7 @@ export default function FuerPersonalberatungenPage() {
           <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.agencies.hero}
-              alt="Natalia Saslawski"
+              alt="Aufgeräumter Schreibtisch mit Laptop, Notizbuch und Kaffee"
               fill
               priority
               className="object-cover"

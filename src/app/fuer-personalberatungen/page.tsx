@@ -209,7 +209,7 @@ export default function FuerPersonalberatungenPage() {
 
       <section className="bg-surface-elevated">
         <Container narrow className="py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] desktop:text-[2.5rem]!">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] desktop:relative! desktop:left-1/2! desktop:w-[880px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[2.5rem]!">
             Lassen Sie uns über Ihr aktuelles Mandat sprechen.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">

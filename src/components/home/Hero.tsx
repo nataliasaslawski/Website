@@ -14,7 +14,7 @@ export function Hero() {
           className="object-cover object-[50%_35%]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-navy-900/35" />
+        <div className="absolute inset-0 bg-navy-900/55" />
       </div>
 
       <Container narrow className="relative z-10 py-20 text-center md:py-24">

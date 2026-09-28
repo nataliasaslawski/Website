@@ -17,13 +17,13 @@ export function ProblemSolution() {
         </div>
 
         <Container wide className="relative py-14 md:py-20">
-          <div className="max-w-3xl xl:max-w-[700px]">
-            <Eyebrow>Die Ausgangslage</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] xl:text-[2.5rem]">
+          <div className="max-w-3xl xl:max-w-[700px] desktop:max-w-[780px]!">
+            <Eyebrow className="desktop:text-[13px]!">Die Ausgangslage</Eyebrow>
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] xl:text-[2.5rem] desktop:text-[3rem]!">
               Anspruchsvolle Positionen brauchen mehr als
               Standard-Recruiting.
             </h2>
-            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7]">
+            <p className="mt-5 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
               Je spezifischer eine Rolle, desto anspruchsvoller wird die
               Suche. Oft sind relevante Kandidat:innen nur schwer erreichbar,
               Zielmärkte eng und klassische Recruiting-Kanäle wenig wirksam.
@@ -39,14 +39,14 @@ export function ProblemSolution() {
 
       <section className="bg-surface-page">
         <Container wide className="py-14 md:py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-[0.9fr_1.1fr] xl:gap-20">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-[0.9fr_1.1fr] xl:gap-20 desktop:grid-cols-[0.88fr_1.12fr]!">
             <div>
-              <Eyebrow>Mein Ansatz</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem]">
+              <Eyebrow className="desktop:text-[13px]!">Mein Ansatz</Eyebrow>
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.625rem]!">
                 Strategische Beratung, verbunden mit operativer
                 Besetzungskompetenz.
               </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7]">
+              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
                 Am Anfang steht für mich ein klares Verständnis der Rolle, des
                 Unternehmenskontextes und der Anforderungen. Darauf aufbauend
                 entwickle ich eine fundierte Suchstrategie, die sich im
@@ -54,7 +54,7 @@ export function ProblemSolution() {
                 weiterentwickelt, und führe den Besetzungsprozess operativ
                 durch.
               </p>
-              <p className="mt-4 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7]">
+              <p className="mt-4 text-[15px] leading-relaxed text-text-secondary xl:text-[17px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
                 Entscheidend ist für mich dabei nicht die Anzahl
                 präsentierter Profile, sondern die Identifikation von
                 Kandidat:innen, die fachlich, persönlich und zur jeweiligen

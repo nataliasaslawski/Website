@@ -51,23 +51,23 @@ export function Method() {
       <Container wide className="relative py-20 md:py-28">
         <div className="max-w-xl">
           <h2>
-            <Eyebrow tone="inverse">Meine Arbeitsweise</Eyebrow>
+            <Eyebrow tone="inverse" className="desktop:text-[13px]!">Meine Arbeitsweise</Eyebrow>
           </h2>
           <p className="mt-3 text-sm text-text-inverse/70 md:text-[15px]">
             Substanz, Urteilsvermögen und persönliche Verantwortung
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4 xl:gap-6">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4 xl:gap-6 desktop:gap-8!">
           {principles.map((principle) => (
             <div
               key={principle.title}
-              className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-6 md:px-6 md:py-8 xl:p-8"
+              className="rounded-[var(--radius-md)] border border-cream-100/10 bg-navy-800/25 p-6 md:px-6 md:py-8 xl:p-8 desktop:px-8! desktop:py-12!"
             >
-              <h3 className="text-[17px] font-medium leading-snug text-text-inverse xl:text-[19px]">
+              <h3 className="text-[17px] font-medium leading-snug text-text-inverse xl:text-[19px] desktop:text-[21px]!">
                 {principle.title}
               </h3>
-              <p className="mt-3 text-[15px] leading-relaxed text-text-inverse/80 xl:text-[16px]">
+              <p className="mt-3 text-[15px] leading-relaxed text-text-inverse/80 xl:text-[16px] desktop:text-[18px]!">
                 {principle.text}
               </p>
             </div>

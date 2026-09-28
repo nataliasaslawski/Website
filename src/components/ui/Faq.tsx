@@ -19,7 +19,7 @@ export function Faq({ items }: { items: FaqItem[] }) {
               aria-expanded={open}
               className="grid w-full grid-cols-[1fr_32px] items-start gap-x-4 py-5 text-left"
             >
-              <span className="font-display text-[20px] font-semibold leading-snug text-navy-900">
+              <span className="font-display text-[20px] font-semibold leading-snug text-navy-900 desktop:text-[22px]">
                 {item.question}
               </span>
               <span aria-hidden className="relative mt-1.5 h-3 w-3 flex-none justify-self-end">
@@ -30,7 +30,7 @@ export function Faq({ items }: { items: FaqItem[] }) {
               </span>
             </button>
             {open && (
-              <p className="max-w-2xl pb-7 pr-12 text-[16px] font-normal leading-relaxed text-text-muted">
+              <p className="max-w-2xl pb-7 pr-12 text-[16px] font-normal leading-relaxed text-text-muted desktop:text-[18px]">
                 {item.answer}
               </p>
             )}

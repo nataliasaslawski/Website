@@ -19,24 +19,24 @@ export function FounderTeaser() {
         </div>
 
         <div>
-          <Eyebrow>Über mich</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem]">
+          <Eyebrow className="desktop:text-[13px]!">Über mich</Eyebrow>
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.625rem]!">
             15 Jahre Erfahrung in Executive Search und Personalberatung
           </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7]">
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
             Ich verbinde langjährige Erfahrung aus Personalberatung,
             Führungsverantwortung und Inhouse Talent Acquisition mit
             fundierter Professional- und Executive-Search-Expertise aus
             zahlreichen erfolgreichen Besetzungen.
           </p>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7]">
+          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
             Im Mittelpunkt steht eine persönliche, pragmatische und beratende
             Arbeitsweise: Kund:innen arbeiten direkt mit einer erfahrenen
             Ansprechpartnerin zusammen, die das jeweilige Projekt selbst
             versteht, begleitet und operativ umsetzt.
           </p>
 
-          <p className="mt-8 max-w-xl font-display text-lg italic leading-snug text-navy-900">
+          <p className="mt-8 max-w-xl font-display text-lg italic leading-snug text-navy-900 desktop:text-[28px]!">
             „Vertrauen wächst durch Substanz, Urteilsvermögen und
             Verbindlichkeit – nicht durch große Versprechen.“
           </p>

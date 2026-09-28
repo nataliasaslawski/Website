@@ -48,6 +48,10 @@
 }
 
 @theme inline {
+  /* Extra breakpoint between xl (1280px) and 2xl (1536px), used only for the
+     large-desktop scale-up on the Home page (variant: desktop:). */
+  --breakpoint-desktop: 1440px;
+
   /* Fonts (wired up via next/font in layout.tsx) */
   --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
   --font-body: var(--font-work-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

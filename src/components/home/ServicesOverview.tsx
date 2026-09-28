@@ -52,21 +52,21 @@ export function ServicesOverview() {
       />
 
       <Container wide className="relative py-16 md:py-24">
-        <Eyebrow>Leistungen</Eyebrow>
+        <Eyebrow className="desktop:text-[13px]!">Leistungen</Eyebrow>
 
         <div className="mt-8 grid gap-px overflow-hidden border border-border-default bg-border-default md:grid-cols-2">
           {services.map((service) => (
-            <div key={service.title} className="flex flex-col bg-surface-card p-10 xl:p-12">
-              <Eyebrow>{service.label}</Eyebrow>
-              <h3 className="mt-4 font-display text-xl font-medium leading-snug text-navy-900 xl:text-[1.375rem]">
+            <div key={service.title} className="flex flex-col bg-surface-card p-10 xl:p-12 desktop:p-14!">
+              <Eyebrow className="desktop:text-[13px]!">{service.label}</Eyebrow>
+              <h3 className="mt-4 font-display text-xl font-medium leading-snug text-navy-900 xl:text-[1.375rem] desktop:text-[1.5rem]!">
                 {service.title}
               </h3>
-              <p className="mt-4 flex-1 text-[15px] leading-relaxed text-text-secondary xl:text-[16px] xl:leading-[1.7]">
+              <p className="mt-4 flex-1 text-[15px] leading-relaxed text-text-secondary xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
                 {service.description}
               </p>
               <Link
                 href={service.href}
-                className="mt-10 inline-flex items-center gap-2 text-sm font-medium text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900"
+                className="mt-10 inline-flex items-center gap-2 text-sm font-medium text-navy-900 underline decoration-taupe-600 underline-offset-4 hover:decoration-navy-900 desktop:text-[16px]!"
               >
                 {service.cta}
               </Link>

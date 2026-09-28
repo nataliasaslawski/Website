@@ -9,11 +9,12 @@ export function Container({
   children: ReactNode;
   narrow?: boolean;
   /**
-   * On very large desktop viewports (xl, 1280px+), lets the container grow
-   * beyond the site-wide --container-max (1180px) up to 1260px, so content
-   * can use more of the available width on big screens. Below xl, behaves
-   * exactly like the default container. Opt-in per usage; does not affect
-   * the shared --container-max token or any Container that doesn't pass it.
+   * On very large desktop viewports, lets the container grow beyond the
+   * site-wide --container-max (1180px): up to 1260px from xl (1280px), and
+   * up to 1360px from the custom `desktop` breakpoint (1440px). Below xl,
+   * behaves exactly like the default container. Opt-in per usage; does not
+   * affect the shared --container-max token or any Container that doesn't
+   * pass it.
    */
   wide?: boolean;
   className?: string;
@@ -21,7 +22,7 @@ export function Container({
   if (wide) {
     return (
       <div
-        className={`mx-auto w-full max-w-[var(--container-max)] px-6 md:px-10 xl:max-w-[1260px] ${className}`}
+        className={`mx-auto w-full max-w-[var(--container-max)] px-6 md:px-10 xl:max-w-[1260px] desktop:max-w-[1360px]! ${className}`}
       >
         {children}
       </div>

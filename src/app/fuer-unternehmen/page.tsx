@@ -400,7 +400,7 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-muted">
+      <section className="bg-surface-page">
         <Container wide className="py-16 md:py-24">
           <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 desktop:grid-cols-[1.05fr_0.95fr]!">
             <div>

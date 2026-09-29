@@ -218,8 +218,12 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
-        <Container wide className="py-16 md:py-24">
+      <section className="relative overflow-hidden bg-surface-elevated">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-14 -right-10 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
+        />
+        <Container wide className="relative py-16 md:py-24">
           <div className="max-w-3xl">
             <Eyebrow className="desktop:text-[13.5px]!">Ausgangssituation</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
@@ -239,8 +243,16 @@ export default function FuerUnternehmenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-page">
-        <Container wide className="py-16 md:py-24">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-12 right-0 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute top-16 right-24 hidden h-20 w-20 rounded-full bg-navy-900/[0.05] xl:block"
+        />
+        <Container wide className="relative py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow className="desktop:text-[13.5px]!">Mein Angebot</Eyebrow>
             <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">

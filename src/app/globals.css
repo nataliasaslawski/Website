@@ -161,8 +161,8 @@ body {
 .photo-shadow {
   overflow: visible;
   box-shadow:
-    0 16px 40px rgba(10, 30, 50, 0.25),
-    0 6px 16px rgba(10, 30, 50, 0.15);
+    0 20px 45px rgba(10, 30, 50, 0.38),
+    0 8px 18px rgba(10, 30, 50, 0.24) !important;
 }
 
 ::selection {

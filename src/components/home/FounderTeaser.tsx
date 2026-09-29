@@ -8,7 +8,7 @@ export function FounderTeaser() {
   return (
     <section className="bg-surface-page">
       <Container wide className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-        <div className="photo-shadow photo-frame-a">
+        <div className="photo-shadow photo-frame-a lg:w-[78%] lg:justify-self-start">
           <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.home.aboutTeaser}

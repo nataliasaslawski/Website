@@ -34,7 +34,7 @@ export default function KontaktPage() {
               Zusammenarbeit sinnvoll unterstützen kann.
             </p>
           </div>
-          <div className="photo-shadow">
+          <div className="photo-shadow lg:w-[85%] lg:justify-self-end">
             <div className="relative aspect-square w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.contact.hero}
@@ -42,7 +42,7 @@ export default function KontaktPage() {
                 fill
                 priority
                 className="object-cover"
-                sizes="(min-width: 1024px) 40vw, 90vw"
+                sizes="(min-width: 1024px) 34vw, 90vw"
               />
             </div>
           </div>

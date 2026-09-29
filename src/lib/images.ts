@@ -13,7 +13,7 @@ export const images = {
   home: {
     hero: "/images/portraits/hero-skyline-v4.webp",
     methodAccent: "/images/moodboard/talent-strategy.png",
-    aboutTeaser: "/images/portraits/natalia-home-teaser.webp",
+    aboutTeaser: "/images/portraits/natalia-home-teaser-v2.webp",
     ansatzPortrait: "/images/portraits/natalia-ansatz-beratung.webp",
     introPortrait: "/images/portraits/natalia-intro-wide.webp",
   },

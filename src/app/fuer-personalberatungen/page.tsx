@@ -176,6 +176,12 @@ export default function FuerPersonalberatungenPage() {
         </Container>
       </section>
 
+      <div className="bg-surface-page">
+        <Container wide>
+          <div className="border-t border-border-subtle" />
+        </Container>
+      </div>
+
       <section className="bg-surface-page">
         <Container wide className="py-16 md:py-24">
           <div className="grid rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">

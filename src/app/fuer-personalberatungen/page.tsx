@@ -178,7 +178,7 @@ export default function FuerPersonalberatungenPage() {
 
       <section className="bg-surface-page">
         <Container wide className="py-16 md:py-24">
-          <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">
+          <div className="grid rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">
             <div className="p-8 md:p-10">
               <Eyebrow className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
               <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
@@ -196,14 +196,16 @@ export default function FuerPersonalberatungenPage() {
               </ul>
             </div>
 
-            <div className="relative min-h-[280px] w-full overflow-hidden border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:border-l lg:border-t-0">
-              <Image
-                src={images.agencies.secondary}
-                alt="Natalia Saslawski"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 35vw, 100vw"
-              />
+            <div className="photo-shadow h-full rounded-b-[var(--radius-lg)] lg:rounded-b-none lg:rounded-r-[var(--radius-lg)]">
+              <div className="relative min-h-[280px] h-full w-full overflow-hidden rounded-b-[var(--radius-lg)] border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:rounded-b-none lg:rounded-r-[var(--radius-lg)] lg:border-l lg:border-t-0">
+                <Image
+                  src={images.agencies.secondary}
+                  alt="Natalia Saslawski"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 35vw, 100vw"
+                />
+              </div>
             </div>
           </div>
         </Container>

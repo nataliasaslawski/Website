@@ -62,7 +62,7 @@ export function ProblemSolution() {
               </p>
             </div>
 
-            <div className="photo-shadow relative aspect-[3/2] w-full border border-border-default">
+            <div className="photo-shadow photo-frame-b relative aspect-[3/2] w-full border border-border-default">
               <Image
                 src={images.home.ansatzPortrait}
                 alt="Natalia Saslawski"

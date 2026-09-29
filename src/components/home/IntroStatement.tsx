@@ -22,7 +22,7 @@ export function IntroStatement() {
             </p>
           </div>
 
-          <div className="photo-shadow">
+          <div className="photo-shadow photo-frame-a">
             <div className="relative aspect-[3/2] w-full overflow-hidden">
               <Image
                 src={images.home.introPortrait}

@@ -102,7 +102,7 @@ export default function FuerPersonalberatungenPage() {
               </Button>
             </div>
           </div>
-          <div className="photo-shadow">
+          <div className="photo-shadow photo-frame-b">
             <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.agencies.hero}
@@ -196,7 +196,7 @@ export default function FuerPersonalberatungenPage() {
               </ul>
             </div>
 
-            <div className="photo-shadow h-full rounded-b-[var(--radius-lg)] lg:rounded-b-none lg:rounded-r-[var(--radius-lg)]">
+            <div className="photo-shadow photo-frame-a h-full rounded-b-[var(--radius-lg)] lg:rounded-b-none lg:rounded-r-[var(--radius-lg)]">
               <div className="relative min-h-[280px] h-full w-full overflow-hidden rounded-b-[var(--radius-lg)] border-t border-border-subtle bg-cream-050 lg:min-h-0 lg:rounded-b-none lg:rounded-r-[var(--radius-lg)] lg:border-l lg:border-t-0">
                 <Image
                   src={images.agencies.secondary}

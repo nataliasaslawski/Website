@@ -55,7 +55,7 @@ export default async function InsightsPage() {
         <Container wide className="py-16 md:py-24">
           {posts.length === 0 ? (
             <div className="flex flex-col items-center gap-8 border border-border-default bg-surface-card px-8 py-16 text-center md:flex-row md:text-left">
-              <div className="photo-shadow h-40 w-full flex-none md:h-32 md:w-48">
+              <div className="photo-shadow photo-frame-a h-40 w-full flex-none md:h-32 md:w-48">
                 <div className="relative h-full w-full overflow-hidden">
                   <Image
                     src={images.insights.hero}

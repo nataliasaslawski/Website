@@ -203,7 +203,7 @@ export default function FuerUnternehmenPage() {
               </Button>
             </div>
           </div>
-          <div className="photo-shadow">
+          <div className="photo-shadow photo-frame-b">
             <div className="relative aspect-[1013/644] w-full overflow-hidden bg-surface-elevated">
               <Image
                 src={images.companies.hero}
@@ -420,7 +420,7 @@ export default function FuerUnternehmenPage() {
               </ul>
             </div>
 
-            <div className="photo-shadow h-full">
+            <div className="photo-shadow photo-frame-a h-full">
               <div className="relative min-h-[280px] h-full w-full overflow-hidden bg-surface-elevated">
                 <Image
                   src={images.companies.secondary}

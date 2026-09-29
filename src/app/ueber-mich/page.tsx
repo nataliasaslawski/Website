@@ -247,7 +247,7 @@ export default function UeberMichPage() {
           </div>
 
           <div className="relative lg:order-2 lg:sticky lg:top-28 lg:w-[82%] lg:justify-self-end">
-            <div className="photo-shadow">
+            <div className="photo-shadow photo-frame-b">
               <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
                 <Image
                   src={images.about.portrait}
@@ -396,7 +396,7 @@ export default function UeberMichPage() {
                 Anforderungen hinausgeht.
               </p>
             </div>
-            <div className="photo-shadow">
+            <div className="photo-shadow photo-frame-a">
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
                   src={images.about.secondary}

@@ -176,7 +176,7 @@ export default function FuerPersonalberatungenPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-elevated">
+      <section className="bg-surface-page">
         <Container wide className="py-16 md:py-24">
           <div className="grid overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">
             <div className="p-8 md:p-10">

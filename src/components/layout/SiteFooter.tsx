@@ -27,7 +27,7 @@ export function SiteFooter() {
               {site.locationShort}, {site.region}.
             </p>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/natalia-saslawski-20788467/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-block text-sm tracking-[0.02em] text-text-inverse underline decoration-taupe-600 underline-offset-4 hover:decoration-paper-050"

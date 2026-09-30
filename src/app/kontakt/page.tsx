@@ -18,7 +18,7 @@ export default function KontaktPage() {
       <section className="relative overflow-hidden bg-surface-page">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-14 -bottom-12 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
+          className="pointer-events-none absolute bottom-10 left-10 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
         />
         <Container wide className="relative grid items-center gap-12 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
@@ -52,7 +52,7 @@ export default function KontaktPage() {
       <section id="erstgespraech" className="relative scroll-mt-24 overflow-hidden bg-surface-elevated">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-16 -right-12 hidden h-36 w-36 rounded-full bg-taupe-400/14 xl:block"
+          className="pointer-events-none absolute top-10 right-10 hidden h-36 w-36 rounded-full bg-taupe-400/14 xl:block"
         />
         <Container wide className="relative grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <div>

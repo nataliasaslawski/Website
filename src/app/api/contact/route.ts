@@ -1,10 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// Where contact-form submissions are actually delivered. Defaults to the
-// same Gmail account used to send, since that's the client's personal
-// inbox. Override via CONTACT_TO_EMAIL if that should ever change.
-const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL || "natalia.saslawski@gmail.com";
+// Where contact-form submissions are actually delivered. Override via
+// CONTACT_TO_EMAIL if that should ever change.
+const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL || "kontakt@natalia-saslawski.de";
 
 /**
  * Contact form endpoint. Sends the submission to CONTACT_TO_EMAIL via the

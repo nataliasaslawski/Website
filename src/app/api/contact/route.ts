@@ -1,16 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-// Where contact-form submissions are actually delivered. Intentionally
-// separate from `site.email` (the public-facing address shown on the page),
-// since the client wants form submissions routed to her personal inbox.
-// Override via CONTACT_TO_EMAIL if that should ever change.
+// Where contact-form submissions are actually delivered. Defaults to the
+// same Gmail account used to send, since that's the client's personal
+// inbox. Override via CONTACT_TO_EMAIL if that should ever change.
 const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL || "natalia.saslawski@gmail.com";
 
 /**
- * Contact form endpoint. Sends the submission to CONTACT_TO_EMAIL via Resend.
- * Falls back to a clear "not configured" response (which the UI turns into
- * a mailto link) until RESEND_API_KEY is set in the environment.
+ * Contact form endpoint. Sends the submission to CONTACT_TO_EMAIL via the
+ * client's own Gmail account over SMTP (using a Google "App Password", not
+ * her real password). Falls back to a clear "not configured" response
+ * (which the UI turns into a mailto link) until GMAIL_USER and
+ * GMAIL_APP_PASSWORD are set in the environment.
  */
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => null);
@@ -35,21 +36,26 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: true });
   }
 
-  if (!process.env.RESEND_API_KEY) {
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
     return NextResponse.json(
       { ok: false, error: "not_configured" },
       { status: 501 },
     );
   }
 
-  const resend = new Resend(process.env.RESEND_API_KEY);
-  const fromAddress = process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev";
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_APP_PASSWORD,
+    },
+  });
 
   const { name, unternehmen, email, telefon, rolle, message } = body as Record<string, string>;
 
   try {
-    await resend.emails.send({
-      from: `Kontaktformular Website <${fromAddress}>`,
+    await transporter.sendMail({
+      from: `Kontaktformular Website <${process.env.GMAIL_USER}>`,
       to: CONTACT_TO_EMAIL,
       replyTo: email,
       subject: `Neue Anfrage über das Kontaktformular – ${name}`,

@@ -3,16 +3,16 @@
  * and Brand Guidelines. Keep in sync if the client updates those documents.
  */
 
-// TODO: No domain, email address, or phone number was supplied in the
-// briefing/knowledge documents. These are intentionally obvious placeholders
-// — replace before launch, do not treat as real contact details.
+// TODO: No domain or phone number was supplied in the briefing/knowledge
+// documents. The domain below is an intentionally obvious placeholder —
+// replace before launch, do not treat as a real contact detail.
 export const site = {
   name: "Natalia Saslawski",
   tagline: "Executive Search & Talent Advisory",
   locationShort: "Frankfurt am Main",
   region: "Deutschland / DACH",
   url: "https://www.ihre-domain-platzhalter.de",
-  email: "kontakt@ihre-domain-platzhalter.de",
+  email: "kontakt@natalia-saslawski.de",
 } as const;
 
 // Header nav: "Für Unternehmen" and "Für Personalberatungen" are grouped

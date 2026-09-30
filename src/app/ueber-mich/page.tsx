@@ -388,8 +388,16 @@ export default function UeberMichPage() {
         </Container>
       </section>
 
-      <section className="bg-surface-page">
-        <Container className="py-16 md:py-24">
+      <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-16 left-8 hidden h-32 w-32 rounded-full bg-taupe-400/12 xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-8 left-28 hidden h-16 w-16 rounded-full bg-navy-900/[0.04] xl:block"
+        />
+        <Container className="relative py-16 md:py-24">
           <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
             <div>
               <Eyebrow className="desktop:text-[13.5px]!">Mein Anspruch</Eyebrow>
@@ -458,6 +466,10 @@ export default function UeberMichPage() {
       </section>
 
       <section className="relative overflow-hidden bg-surface-elevated">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-16 left-8 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
+        />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 xl:block"

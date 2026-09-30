@@ -39,33 +39,47 @@ client-supplied design system. Fonts (Cormorant Garamond, Work Sans, Lato)
 are self-hosted via `next/font/google` (downloaded at build time, served from
 this site's own origin — no runtime calls to Google).
 
-## Known placeholders — must be resolved before launch
+## Deployment (Netlify via GitHub)
 
-- **Photography**: all photos are temporary stand-ins from the client's
-  moodboard (`public/images/moodboard/`), approved for interim use. Swap via
-  `src/lib/images.ts` once professional photos exist.
+This repo includes a `netlify.toml` (build command, Node version, and the
+`@netlify/plugin-nextjs` plugin needed for SSR/API routes like
+`/api/contact` to run as serverless functions). To deploy:
+
+1. Push this repo to GitHub.
+2. In Netlify: **Add new site → Import an existing project → GitHub**, pick
+   the repo. Netlify reads `netlify.toml` automatically — no manual build
+   settings needed.
+3. Under **Site settings → Environment variables**, set the variables listed
+   in `.env.example` (currently `GMAIL_USER`, `GMAIL_APP_PASSWORD`, and
+   optionally `CONTACT_TO_EMAIL`) so the contact form can send email. Without
+   these it still works, just falls back to a "please email me directly"
+   message instead of sending.
+4. Trigger a deploy.
+
+## Known placeholders — still to resolve before launch
+
+- **Domain**: `src/lib/content.ts` still has a placeholder `url`
+  (`ihre-domain-platzhalter.de`) — the Datenschutzerklärung/Impressum
+  reference `www.natalia-saslawski.de` and `kontakt@natalia-saslawski.de`;
+  once the real domain is confirmed and connected in Netlify, update
+  `site.url` to match.
+- **Photography**: most sections use real client photos
+  (`public/images/portraits/`); `home.methodAccent` and both `insights.*`
+  images still use the moodboard placeholders (`public/images/moodboard/`).
+  Swap via `src/lib/images.ts`.
 - **Logo**: `public/brand/logo-light*.png` were derived programmatically from
   the supplied `logo-navy.png` (color-remapped for dark backgrounds, shape
   unchanged) — replace with an official file if/when the client provides one.
-- **Domain & email**: `src/lib/content.ts` uses obvious placeholder values
-  (`ihre-domain-platzhalter.de`) — no real domain or email address was ever
-  supplied. Update before launch.
-- **Phone number**: none was supplied; the Kontakt page currently omits one
-  ("Telefonnummer folgt in Kürze").
-- **Impressum / Datenschutz**: structurally complete but explicitly marked as
-  placeholders in the UI — need real legal content, ideally reviewed by the
-  client's legal/data-protection advisor before going live.
-- **Contact form**: `/api/contact` validates and honeypot-checks submissions
-  but doesn't send email yet — needs `RESEND_API_KEY` (or an equivalent
-  provider) once that account exists. Until then it degrades gracefully to a
-  "please email me directly" message.
 - **Booking (Cal.com)**: not yet embedded — the Kontakt page's Erstgespräch
   section currently points to the contact form instead.
 - **CMS (Sanity)**: not yet connected — Insights page shows a clean empty
   state. See `src/lib/posts.ts`.
-- **Analytics (Plausible)**: not yet added.
+- **Analytics (Plausible)**: not yet added — and per `src/app/datenschutz`,
+  none is currently active, so adding one later requires a matching update
+  there plus a cookie-consent banner if it isn't a cookie-free/consent-exempt
+  setup.
 
 None of the above required creating third-party accounts, which isn't
-something to do on the client's behalf — she'll need to set those up (Resend,
-Cal.com, Sanity, Plausible, a domain registrar, and a Vercel project for
-hosting), after which each integration is a scoped, mechanical follow-up.
+something to do on the client's behalf — she'll need to set those up
+(Cal.com, Sanity, Plausible, a domain registrar), after which each
+integration is a scoped, mechanical follow-up.

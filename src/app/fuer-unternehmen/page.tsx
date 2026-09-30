@@ -221,7 +221,7 @@ export default function FuerUnternehmenPage() {
       <section className="relative overflow-hidden bg-surface-elevated">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-14 -right-10 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
+          className="pointer-events-none absolute -bottom-16 right-40 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
         />
         <Container wide className="relative py-16 md:py-24">
           <div className="max-w-3xl">
@@ -244,6 +244,10 @@ export default function FuerUnternehmenPage() {
       </section>
 
       <section className="relative overflow-hidden bg-surface-page">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-16 right-40 hidden h-32 w-32 rounded-full bg-taupe-400/14 xl:block"
+        />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -top-12 right-0 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"

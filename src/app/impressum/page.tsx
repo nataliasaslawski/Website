@@ -16,36 +16,86 @@ export default function ImpressumPage() {
           Impressum
         </h1>
 
-        <div className="mt-8 border border-border-default bg-surface-elevated p-6 text-[15px] leading-relaxed text-text-secondary">
-          <strong className="text-navy-900">Platzhalter — noch nicht final.</strong>{" "}
-          Diese Seite enthält noch keine rechtsverbindlichen Angaben. Sie muss
-          vor Launch mit den tatsächlichen Angaben (u. a. Anbieterkennzeichnung
-          nach § 5 DDG, Kontaktdaten, USt-IdNr. sofern vorhanden,
-          Berufsbezeichnung) final abgestimmt werden.
-        </div>
-
         <div className="mt-10 space-y-8 text-[15px] leading-relaxed text-text-secondary">
           <div>
             <h2 className="font-display text-lg font-medium text-navy-900">
               Angaben gemäß § 5 DDG
             </h2>
-            <p className="mt-2">[Name], [Anschrift] — wird ergänzt.</p>
+            <p className="mt-2">
+              Natalia Saslawski – Executive Search &amp; Talent Advisory
+              <br />
+              Inhaberin: Natalia Saslawski
+              <br />
+              Römischer Ring 48
+              <br />
+              60486 Frankfurt am Main
+              <br />
+              Deutschland
+            </p>
           </div>
           <div>
             <h2 className="font-display text-lg font-medium text-navy-900">Kontakt</h2>
-            <p className="mt-2">E-Mail: [wird ergänzt] · Telefon: [wird ergänzt]</p>
+            <p className="mt-2">
+              Telefon: +49 176 43983941
+              <br />
+              E-Mail: kontakt@natalia-saslawski.de
+            </p>
+          </div>
+          <div>
+            <h2 className="font-display text-lg font-medium text-navy-900">
+              Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV)
+            </h2>
+            <p className="mt-2">
+              Natalia Saslawski
+              <br />
+              Römischer Ring 48
+              <br />
+              60486 Frankfurt am Main
+            </p>
           </div>
           <div>
             <h2 className="font-display text-lg font-medium text-navy-900">
               Umsatzsteuer-Identifikationsnummer
             </h2>
-            <p className="mt-2">[falls vorhanden, wird ergänzt]</p>
+            <p className="mt-2">
+              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
+              <br />
+              DE463819060
+            </p>
           </div>
           <div>
             <h2 className="font-display text-lg font-medium text-navy-900">
-              Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+              Verbraucherstreitbeilegung
             </h2>
-            <p className="mt-2">[wird ergänzt]</p>
+            <p className="mt-2">
+              Ich bin nicht bereit und nicht verpflichtet, an
+              Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+              teilzunehmen.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-display text-lg font-medium text-navy-900">
+              Haftung für externe Links
+            </h2>
+            <p className="mt-2">
+              Diese Website kann Links zu externen Websites Dritter enthalten.
+              Auf deren Inhalte habe ich keinen Einfluss. Für die Inhalte der
+              verlinkten Seiten ist der jeweilige Anbieter oder Betreiber
+              verantwortlich.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-display text-lg font-medium text-navy-900">
+              Urheberrecht
+            </h2>
+            <p className="mt-2">
+              Die auf dieser Website veröffentlichten Inhalte, Texte, Bilder,
+              Fotografien, Grafiken und das Design unterliegen dem deutschen
+              Urheberrecht bzw. den Rechten der jeweiligen Urheber:innen. Eine
+              Vervielfältigung, Bearbeitung, Verbreitung oder sonstige
+              Verwendung außerhalb der gesetzlichen Grenzen des Urheberrechts
+              bedarf der vorherigen Zustimmung des jeweiligen Rechteinhabers.
+            </p>
           </div>
         </div>
       </Container>

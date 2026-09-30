@@ -281,6 +281,14 @@ export default function UeberMichPage() {
           aria-hidden="true"
           className="pointer-events-none absolute right-[168px] top-[164px] hidden h-24 w-24 rounded-full bg-navy-900/4 xl:block"
         />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-16 left-8 hidden h-32 w-32 rounded-full bg-navy-900/5 xl:block"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-6 left-28 hidden h-16 w-16 rounded-full bg-taupe-400/10 xl:block"
+        />
 
         <Container className="relative z-20 py-12 md:py-16">
           <span className="block text-[12px] font-medium uppercase tracking-[0.18em] text-accent desktop:text-[13.5px]!">
@@ -333,6 +341,10 @@ export default function UeberMichPage() {
       </section>
 
       <section className="relative overflow-hidden bg-surface-inverse text-text-inverse">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-16 left-8 hidden h-32 w-32 rounded-full bg-navy-800/35 xl:block"
+        />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -right-16 -top-14 hidden h-56 w-56 rounded-full bg-navy-800/45 xl:block"

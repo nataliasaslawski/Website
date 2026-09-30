@@ -1,14 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
+
+// Where contact-form submissions are actually delivered. Intentionally
+// separate from `site.email` (the public-facing address shown on the page),
+// since the client wants form submissions routed to her personal inbox.
+// Override via CONTACT_TO_EMAIL if that should ever change.
+const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL || "natalia.saslawski@gmail.com";
 
 /**
- * Contact form endpoint.
- *
- * Not yet wired to a real mail provider — that requires an account the
- * client needs to create herself (see project notes). Once RESEND_API_KEY
- * (or an equivalent provider) is configured in the environment, replace the
- * TODO block below with an actual send call. Until then this endpoint
- * validates input and responds with a clear "not configured" error so the
- * UI can fall back to a mailto link instead of silently failing.
+ * Contact form endpoint. Sends the submission to CONTACT_TO_EMAIL via Resend.
+ * Falls back to a clear "not configured" response (which the UI turns into
+ * a mailto link) until RESEND_API_KEY is set in the environment.
  */
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => null);
@@ -40,9 +42,33 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // TODO: send via Resend (or chosen provider) once RESEND_API_KEY is set.
-  // const resend = new Resend(process.env.RESEND_API_KEY);
-  // await resend.emails.send({ ... });
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const fromAddress = process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev";
+
+  const { name, unternehmen, email, telefon, rolle, message } = body as Record<string, string>;
+
+  try {
+    await resend.emails.send({
+      from: `Kontaktformular Website <${fromAddress}>`,
+      to: CONTACT_TO_EMAIL,
+      replyTo: email,
+      subject: `Neue Anfrage über das Kontaktformular – ${name}`,
+      text: [
+        `Name: ${name}`,
+        unternehmen ? `Unternehmen: ${unternehmen}` : null,
+        `E-Mail: ${email}`,
+        telefon ? `Telefon: ${telefon}` : null,
+        rolle ? `Ich bin: ${rolle}` : null,
+        "",
+        "Anliegen:",
+        message,
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    });
+  } catch {
+    return NextResponse.json({ ok: false, error: "send_failed" }, { status: 502 });
+  }
 
   return NextResponse.json({ ok: true });
 }

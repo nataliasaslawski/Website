@@ -71,7 +71,8 @@ export async function POST(request: NextRequest) {
         .filter(Boolean)
         .join("\n"),
     });
-  } catch {
+  } catch (error) {
+    console.error("Contact form email send failed:", error);
     return NextResponse.json({ ok: false, error: "send_failed" }, { status: 502 });
   }
 

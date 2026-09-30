@@ -416,7 +416,7 @@ export default function UeberMichPage() {
                 Anforderungen hinausgeht.
               </p>
             </div>
-            <div className="photo-shadow photo-frame-a">
+            <div className="photo-shadow photo-frame-a lg:w-[112%] lg:justify-self-end">
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
                   src={images.about.secondary}

@@ -268,7 +268,7 @@ export default function FuerUnternehmenPage() {
             {serviceTiles.map((tile) => (
               <div
                 key={tile.title}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10 desktop:p-12!"
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 shadow-[var(--shadow-card)] md:p-10 desktop:p-12!"
               >
                 <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem] desktop:text-[2rem]!">
                   {tile.title}
@@ -336,7 +336,7 @@ export default function FuerUnternehmenPage() {
               {industryGroups.map((group) => (
                 <div
                   key={group.title}
-                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)] desktop:p-9!"
+                  className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-card)] desktop:p-9!"
                 >
                   <h3 className="font-display text-xl font-medium leading-snug text-navy-900 lg:text-lg desktop:text-[24px]!">
                     {group.title}
@@ -379,7 +379,7 @@ export default function FuerUnternehmenPage() {
             {levelGroups.map((group) => (
               <div
                 key={group.title}
-                className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-sm)] desktop:p-9!"
+                className="relative overflow-hidden rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card p-8 shadow-[var(--shadow-card)] desktop:p-9!"
               >
                 {group.title === "Positionslevel" && (
                   <>

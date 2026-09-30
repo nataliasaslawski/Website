@@ -163,7 +163,7 @@ export default function FuerPersonalberatungenPage() {
             {serviceTiles.map((tile) => (
               <div
                 key={tile.title}
-                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 md:p-10 desktop:p-12!"
+                className="rounded-[var(--radius-lg)] border border-border-subtle bg-surface-elevated p-8 shadow-[var(--shadow-card)] md:p-10 desktop:p-12!"
               >
                 <h3 className="font-display text-[1.5rem] font-medium leading-snug text-navy-900 md:text-[1.875rem] desktop:text-[2rem]!">
                   {tile.title}
@@ -196,7 +196,7 @@ export default function FuerPersonalberatungenPage() {
           className="pointer-events-none absolute -bottom-10 -left-10 hidden h-32 w-32 rounded-full bg-taupe-400/12 xl:block"
         />
         <Container wide className="relative py-16 md:py-24">
-          <div className="grid rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">
+          <div className="grid rounded-[var(--radius-lg)] border border-border-subtle bg-surface-card shadow-[var(--shadow-card)] lg:grid-cols-[1.2fr_0.8fr] desktop:grid-cols-[1.05fr_0.95fr]!">
             <div className="p-8 md:p-10">
               <Eyebrow className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
               <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">

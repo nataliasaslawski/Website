@@ -157,6 +157,32 @@ body {
   min-width: 0;
 }
 
+/* Shared font size for every large section headline (H2 level) site-wide —
+   centralized here so a single rule controls all of them instead of
+   per-instance Tailwind text-size utilities. Mobile size intentionally
+   matches Tailwind's text-2xl (1.5rem) and is left untouched; md/xl/desktop
+   are reduced ~11-13% from the previous per-instance values per client
+   request. Only font-size is set here — family/weight/color/line-height
+   stay on each heading's own Tailwind classes. */
+.section-headline {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-headline {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1280px) {
+  .section-headline {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .section-headline {
+    font-size: 2.375rem !important;
+  }
+}
+
 /* Shared shadow for real photos. Most photo containers use overflow-hidden
    to crop the image (via object-cover), which would clip a box-shadow on
    that same element — so this class goes on a plain wrapper div placed

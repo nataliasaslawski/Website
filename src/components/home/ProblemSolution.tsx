@@ -19,7 +19,7 @@ export function ProblemSolution() {
         <Container wide className="relative py-14 md:py-20">
           <div className="max-w-3xl xl:max-w-[700px] desktop:max-w-[780px]!">
             <Eyebrow className="desktop:text-[13.5px]!">Die Ausgangslage</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
+            <h2 className="mt-4 font-display section-headline font-medium leading-snug text-navy-900">
               Anspruchsvolle Positionen brauchen mehr als
               Standard-Recruiting.
             </h2>
@@ -42,7 +42,7 @@ export function ProblemSolution() {
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-[0.9fr_1.1fr] xl:gap-20 desktop:grid-cols-[0.88fr_1.12fr]!">
             <div>
               <Eyebrow className="desktop:text-[13.5px]!">Mein Ansatz</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
+              <h2 className="mt-4 font-display section-headline font-medium leading-snug text-navy-900">
                 Strategische Beratung, verbunden mit operativer
                 Besetzungskompetenz.
               </h2>

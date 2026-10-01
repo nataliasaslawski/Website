@@ -5,7 +5,7 @@ export function FinalCta() {
   return (
     <section className="bg-surface-elevated">
       <Container narrow className="py-16 text-center md:py-24">
-        <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
+        <h2 className="font-display section-headline font-medium leading-snug text-navy-900">
           Lassen Sie uns über Ihre aktuelle Herausforderung bei der Besetzung sprechen.
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary">

@@ -8,7 +8,7 @@ export function IntroStatement() {
       <Container wide className="py-20 md:py-28">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 xl:gap-14 desktop:grid-cols-[1fr_1fr]! desktop:gap-16!">
           <div>
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
+            <h2 className="font-display section-headline font-medium leading-snug text-navy-900">
               Executive Search &amp; Talent Advisory
             </h2>
             <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[17px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">

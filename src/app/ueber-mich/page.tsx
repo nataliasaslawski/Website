@@ -294,7 +294,7 @@ export default function UeberMichPage() {
           <span className="block text-[12px] font-medium uppercase tracking-[0.18em] text-accent desktop:text-[13.5px]!">
             Werdegang
           </span>
-          <h2 className="mt-3 font-display text-[1.75rem] font-medium leading-[1.15] text-navy-900 md:text-[2.375rem] desktop:text-[2.75rem]!">
+          <h2 className="mt-3 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
 
@@ -401,7 +401,7 @@ export default function UeberMichPage() {
           <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
             <div>
               <Eyebrow className="desktop:text-[13.5px]!">Mein Anspruch</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
                 Wofür ich in der Zusammenarbeit stehe
               </h2>
               <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
@@ -416,7 +416,7 @@ export default function UeberMichPage() {
                 Anforderungen hinausgeht.
               </p>
             </div>
-            <div className="photo-shadow photo-frame-a lg:w-[112%] lg:justify-self-end">
+            <div className="photo-shadow photo-frame-a lg:mt-[35px] lg:w-[70%] lg:justify-self-end">
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
                   src={images.about.secondary}
@@ -478,7 +478,7 @@ export default function UeberMichPage() {
           <span className="absolute right-32 top-20 h-28 w-28 rounded-full bg-taupe-600/11" />
         </div>
         <Container className="relative py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem]">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
             Lassen Sie uns über Ihr aktuelles Search-Projekt sprechen.
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

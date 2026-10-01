@@ -56,7 +56,7 @@ export default function KontaktPage() {
         />
         <Container wide className="relative grid gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <div>
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
               Kontakt aufnehmen
             </h2>
             <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
@@ -131,7 +131,7 @@ export default function KontaktPage() {
       <section id="kontaktformular" className="scroll-mt-24 bg-surface-page">
         <Container narrow className="py-16 md:py-24">
           <Eyebrow className="desktop:text-[13.5px]!">Kontaktformular</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.5rem]!">
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
             Schreiben Sie mir
           </h2>
           <div className="mt-10">

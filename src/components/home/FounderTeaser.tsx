@@ -22,7 +22,7 @@ export function FounderTeaser() {
 
         <div>
           <Eyebrow className="desktop:text-[13.5px]!">Über mich</Eyebrow>
-          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.75rem]!">
+          <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
             15 Jahre Erfahrung in Executive Search und Personalberatung
           </h2>
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">

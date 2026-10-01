@@ -226,7 +226,7 @@ export default function FuerUnternehmenPage() {
         <Container wide className="relative py-16 md:py-24">
           <div className="max-w-3xl">
             <Eyebrow className="desktop:text-[13.5px]!">Ausgangssituation</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
               Kommen Ihnen diese Herausforderungen bekannt vor?
             </h2>
           </div>
@@ -259,7 +259,7 @@ export default function FuerUnternehmenPage() {
         <Container wide className="relative py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow className="desktop:text-[13.5px]!">Mein Angebot</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+            <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
               So unterstütze ich Sie
             </h2>
           </div>
@@ -321,7 +321,7 @@ export default function FuerUnternehmenPage() {
         <Container wide className="py-16 md:py-24">
           <div>
             <div className="max-w-3xl">
-              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+              <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
                 Branchenerfahrung
               </h2>
               <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
@@ -366,7 +366,7 @@ export default function FuerUnternehmenPage() {
       <section className="bg-surface-elevated">
         <Container wide className="py-16 md:py-20">
           <div>
-            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+            <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
               Positionslevel &amp; Funktionsbereiche
             </h2>
             <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
@@ -421,7 +421,7 @@ export default function FuerUnternehmenPage() {
           <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 desktop:grid-cols-[1.05fr_0.95fr]!">
             <div>
               <Eyebrow className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] desktop:text-[2.75rem]!">
+              <h2 className="mt-4 font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:text-[2.6875rem]!">
                 Was Sie aus der Zusammenarbeit mitnehmen
               </h2>
               <ul className="mt-6 divide-y divide-border-subtle">
@@ -453,7 +453,7 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-elevated">
         <Container narrow className="py-16 text-center md:py-24">
-          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2.25rem] desktop:relative! desktop:left-1/2! desktop:w-[1000px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[2.5rem]!">
+          <h2 className="font-display text-2xl font-medium leading-snug text-navy-900 md:text-[2rem] xl:text-[2.25rem] desktop:relative! desktop:left-1/2! desktop:w-[1000px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[2.6875rem]!">
             Lassen Sie uns über Ihre aktuelle Position sprechen.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:relative! desktop:left-1/2! desktop:w-[820px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[18px]! desktop:leading-[1.6]!">

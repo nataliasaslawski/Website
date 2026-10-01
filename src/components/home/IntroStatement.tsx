@@ -11,7 +11,7 @@ export function IntroStatement() {
             <h2 className="font-display section-headline font-medium leading-snug text-navy-900">
               Executive Search &amp; Talent Advisory
             </h2>
-            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[17px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
+            <p className="mt-6 max-w-xl text-justify hyphens-auto text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[17px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
               Durch meine langjährige Arbeit in der Personalberatung und
               zahlreiche erfolgreich begleitete Besetzungen verstehe ich, was
               Unternehmen wirklich brauchen – und was Menschen bewegt, sich

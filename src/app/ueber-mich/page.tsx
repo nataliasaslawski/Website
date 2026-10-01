@@ -187,11 +187,11 @@ export default function UeberMichPage() {
         <Container className="relative z-20 grid items-start gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div className="lg:order-1">
             <Eyebrow className="desktop:text-[13.5px]!">Über mich</Eyebrow>
-            <h1 className="mt-4 font-display text-[1.85rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem] desktop:text-[2.75rem]!">
+            <h1 className="mt-4 font-display section-headline font-medium leading-[1.2] text-navy-900">
               Menschen lassen sich nicht auf Lebensläufe reduzieren. Und gute
               Besetzungen nicht auf Stellenprofile.
             </h1>
-            <div className="mt-6 text-[15px] leading-[1.75] text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
+            <div className="mt-6 text-justify hyphens-auto text-[15px] leading-[1.75] text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               <p>
                 In vielen Jahren Personalberatung habe ich unzählige Gespräche
                 mit Unternehmen, Führungskräften und Kandidat:innen geführt.
@@ -294,7 +294,7 @@ export default function UeberMichPage() {
           <span className="block text-[12px] font-medium uppercase tracking-[0.18em] text-accent desktop:text-[13.5px]!">
             Werdegang
           </span>
-          <h2 className="mt-3 font-display section-headline font-medium leading-snug text-navy-900">
+          <h2 className="mt-3 font-display text-[1.35rem] font-medium leading-snug text-navy-900 md:text-[1.575rem] xl:text-[1.8rem] desktop:text-[2.1375rem]!">
             Vom Projektmanagement zur Beratung und Führung
           </h2>
 
@@ -370,7 +370,7 @@ export default function UeberMichPage() {
                 <h3 className="mt-4 font-display text-lg font-medium text-text-inverse">
                   {p.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-inverse/80 desktop:text-[18px]! desktop:leading-[1.6]!">
+                <p className="mt-2 text-justify hyphens-auto text-sm leading-relaxed text-text-inverse/80 desktop:text-[18px]! desktop:leading-[1.6]!">
                   „{p.text}“
                 </p>
               </div>
@@ -404,7 +404,7 @@ export default function UeberMichPage() {
               <h2 className="mt-4 font-display section-headline font-medium leading-snug text-navy-900">
                 Wofür ich in der Zusammenarbeit stehe
               </h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
+              <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
                 In der Zusammenarbeit mit meinen Kund:innen ist mir wichtig,
                 Kandidat:innen nicht nur anhand ihres Lebenslaufs, sondern
                 differenziert und mit Blick auf die jeweilige Aufgabe zu
@@ -416,7 +416,7 @@ export default function UeberMichPage() {
                 Anforderungen hinausgeht.
               </p>
             </div>
-            <div className="photo-shadow photo-frame-a lg:mt-[35px] lg:w-[70%] lg:justify-self-end">
+            <div className="photo-shadow photo-frame-a lg:mt-[35px] lg:w-[95%] lg:justify-self-end">
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
                   src={images.about.secondary}
@@ -456,7 +456,7 @@ export default function UeberMichPage() {
                 <span className="mt-4 block text-xs font-medium uppercase tracking-[0.12em] text-taupe-700 desktop:text-[14px]!">
                   {p.title}
                 </span>
-                <p className="mt-3 font-display text-[17px] leading-snug text-navy-900 desktop:text-[18px]!">
+                <p className="mt-3 font-display text-justify hyphens-auto text-[17px] leading-snug text-navy-900 desktop:text-[18px]!">
                   {p.text}
                 </p>
               </div>
@@ -478,7 +478,7 @@ export default function UeberMichPage() {
           <span className="absolute right-32 top-20 h-28 w-28 rounded-full bg-taupe-600/11" />
         </div>
         <Container className="relative py-16 text-center md:py-24">
-          <h2 className="font-display section-headline font-medium leading-snug text-navy-900">
+          <h2 className="font-display text-[1.35rem] font-medium leading-snug text-navy-900 md:text-[1.575rem] xl:text-[1.8rem] desktop:text-[2.1375rem]!">
             Lassen Sie uns über Ihr aktuelles Search-Projekt sprechen.
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

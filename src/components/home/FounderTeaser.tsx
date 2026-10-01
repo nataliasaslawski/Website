@@ -25,13 +25,13 @@ export function FounderTeaser() {
           <h2 className="mt-4 font-display section-headline font-medium leading-snug text-navy-900">
             15 Jahre Erfahrung in Executive Search und Personalberatung
           </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
+          <p className="mt-5 max-w-xl text-justify hyphens-auto text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
             Ich verbinde langjährige Erfahrung aus Personalberatung,
             Führungsverantwortung und Inhouse Talent Acquisition mit
             fundierter Professional- und Executive-Search-Expertise aus
             zahlreichen erfolgreichen Besetzungen.
           </p>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
+          <p className="mt-4 max-w-xl text-justify hyphens-auto text-[15px] leading-relaxed text-text-secondary xl:max-w-2xl xl:text-[16px] xl:leading-[1.7] desktop:text-[18px]! desktop:leading-[1.6]!">
             Im Mittelpunkt steht eine persönliche, pragmatische und beratende
             Arbeitsweise: Kund:innen arbeiten direkt mit einer erfahrenen
             Ansprechpartnerin zusammen, die das jeweilige Projekt selbst

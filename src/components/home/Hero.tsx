@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       <Container narrow className="relative z-10 py-20 text-center md:py-24">
-        <h1 className="font-display text-3xl font-medium leading-tight text-text-inverse md:text-4xl lg:text-[3rem]">
+        <h1 className="font-display text-[1.575rem] font-medium leading-tight text-text-inverse md:text-[1.8375rem] xl:text-[2.1rem] desktop:text-[2.49375rem]!">
           Was morgen zählt, beginnt heute. Mit den richtigen Menschen.
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-[17px] leading-relaxed text-text-inverse-muted">

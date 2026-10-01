@@ -23,7 +23,7 @@ export default function KontaktPage() {
         <Container wide className="relative grid items-center gap-12 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow className="desktop:text-[13.5px]!">Kontakt</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem] desktop:text-[3rem]!">
+            <h1 className="mt-4 font-display section-headline font-medium leading-[1.05] text-navy-900">
               Lassen Sie uns über Ihre aktuelle Search-Herausforderung
               sprechen.
             </h1>

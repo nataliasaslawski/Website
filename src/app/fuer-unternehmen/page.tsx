@@ -12,12 +12,55 @@ export const metadata: Metadata = {
 };
 
 const situations = [
-  "Eine anspruchsvolle Schlüsselposition ist schwer zu besetzen.",
-  "Klassische Recruiting-Kanäle liefern nicht genügend passende Kandidat:innen.",
-  "Die Suche dauert länger als erwartet und führt nicht zu den gewünschten Kandidat:innen.",
-  "Es fehlt Transparenz darüber, welche Kandidat:innen wirklich relevant sind und wie sie für das Unternehmen gewonnen werden können.",
-  "Anforderungen und verfügbarer Kandidatenmarkt passen nicht ausreichend zusammen.",
-  "Interne Recruiting-Kapazitäten reichen für eine intensive Suche und Direktansprache nicht aus.",
+  {
+    text: "Eine anspruchsvolle Schlüsselposition ist schwer zu besetzen.",
+    icon: (
+      <>
+        <circle cx="12" cy="8.5" r="3.2" />
+        <path d="M5 19c.9-3.5 3.8-5.5 7-5.5s6.1 2 7 5.5" />
+      </>
+    ),
+  },
+  {
+    text: "Klassische Recruiting-Kanäle liefern nicht genügend passende Kandidat:innen.",
+    icon: <path d="M4 5h16l-6 7v6l-4 2v-8z" />,
+  },
+  {
+    text: "Die Suche dauert länger als erwartet und führt nicht zu den gewünschten Kandidat:innen.",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 7v5l3.5 2" />
+      </>
+    ),
+  },
+  {
+    text: "Es fehlt Transparenz darüber, welche Kandidat:innen wirklich relevant sind und wie sie für das Unternehmen gewonnen werden können.",
+    icon: (
+      <>
+        <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" />
+        <circle cx="12" cy="12" r="2.6" />
+      </>
+    ),
+  },
+  {
+    text: "Anforderungen und verfügbarer Kandidatenmarkt passen nicht ausreichend zusammen.",
+    icon: (
+      <>
+        <circle cx="6.5" cy="12" r="4.5" />
+        <circle cx="17.5" cy="12" r="4.5" />
+      </>
+    ),
+  },
+  {
+    text: "Interne Recruiting-Kapazitäten reichen für eine intensive Suche und Direktansprache nicht aus.",
+    icon: (
+      <>
+        <rect x="3" y="8" width="18" height="8" rx="2" />
+        <rect x="5.5" y="10.5" width="4" height="3" rx="0.5" fill="currentColor" stroke="none" />
+      </>
+    ),
+  },
 ];
 
 const serviceTiles = [
@@ -182,21 +225,43 @@ export default function FuerUnternehmenPage() {
       <section className="relative overflow-hidden bg-surface-page">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-16 -left-12 hidden h-44 w-44 rounded-full bg-navy-900/[0.04] xl:block"
+          className="pointer-events-none absolute bottom-0 left-2 hidden h-20 w-20 rounded-full bg-navy-900/[0.04] xl:block"
         />
         <Container wide className="relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <Eyebrow className="desktop:text-[13.5px]!">Für Unternehmen</Eyebrow>
-            <h1 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.2] text-navy-900 md:text-[2.25rem] desktop:text-[2.75rem]!">
+            <h1 className="mt-4 text-balance font-display section-headline font-medium leading-[1.2] text-navy-900">
               Besetzung anspruchsvoller Fach-, Führungs- und
               Schlüsselpositionen
             </h1>
-            <p className="mt-6 text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
+            <p className="mt-6 text-justify hyphens-auto text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">
               Als erfahrene Sparringspartnerin begleite ich Unternehmen bei
               der Besetzung von Fach-, Führungs- und Schlüsselpositionen –
               mit fundierter Marktkenntnis, strukturierter Vorgehensweise und
               einem klaren Blick für tragfähige Besetzungsentscheidungen.
             </p>
+            <div className="mt-8 flex items-center gap-3 border-t border-border-subtle pt-6">
+              <span className="flex h-14 w-14 flex-none items-center justify-center rounded-full bg-cream-100">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-taupe-700"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="11" width="14" height="9" rx="2" />
+                  <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                </svg>
+              </span>
+              <span className="text-[15px] font-medium leading-snug text-navy-900">
+                Vertraulich. Strukturiert. Persönlich.
+              </span>
+            </div>
             <div className="mt-8">
               <Button href="/kontakt#erstgespraech" variant="primary">
                 Unverbindliches Erstgespräch vereinbaren
@@ -226,17 +291,31 @@ export default function FuerUnternehmenPage() {
         <Container wide className="relative py-16 md:py-24">
           <div className="max-w-3xl">
             <Eyebrow className="desktop:text-[13.5px]!">Ausgangssituation</Eyebrow>
-            <h2 className="mt-4 font-display section-headline font-medium leading-snug text-navy-900">
+            <h2 className="mt-4 font-display text-[1.32rem] font-medium leading-snug text-navy-900 md:text-[1.54rem] xl:text-[1.76rem] desktop:text-[2.09rem]!">
               Kommen Ihnen diese Herausforderungen bekannt vor?
             </h2>
           </div>
           <ul className="mt-10 grid gap-x-14 md:grid-cols-2">
             {situations.map((item) => (
               <li
-                key={item}
-                className="border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0 desktop:text-[17px]!"
+                key={item.text}
+                className="flex items-start gap-4 border-t border-border-subtle py-5 text-[15px] leading-relaxed text-text-secondary first:border-t-0 md:[&:nth-child(2)]:border-t-0 desktop:text-[17px]!"
               >
-                {item}
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="mt-0.5 shrink-0 text-taupe-600"
+                  aria-hidden="true"
+                >
+                  {item.icon}
+                </svg>
+                <span>{item.text}</span>
               </li>
             ))}
           </ul>
@@ -250,11 +329,11 @@ export default function FuerUnternehmenPage() {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-12 right-0 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
+          className="pointer-events-none absolute top-10 right-10 hidden h-40 w-40 rounded-full bg-navy-900/[0.04] xl:block"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute top-16 right-24 hidden h-20 w-20 rounded-full bg-navy-900/[0.05] xl:block"
+          className="pointer-events-none absolute top-36 right-4 hidden h-20 w-20 rounded-full bg-navy-900/[0.05] xl:block"
         />
         <Container wide className="relative py-16 md:py-24">
           <div className="max-w-2xl">
@@ -421,7 +500,7 @@ export default function FuerUnternehmenPage() {
           <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 desktop:grid-cols-[1.05fr_0.95fr]!">
             <div>
               <Eyebrow className="desktop:text-[13.5px]!">Mehrwert der Zusammenarbeit</Eyebrow>
-              <h2 className="mt-4 font-display section-headline font-medium leading-snug text-navy-900">
+              <h2 className="mt-4 font-display text-[1.575rem] font-medium leading-snug text-navy-900 md:text-[1.8375rem] xl:text-[2.1rem] desktop:text-[2.1rem]!">
                 Was Sie aus der Zusammenarbeit mitnehmen
               </h2>
               <ul className="mt-6 divide-y divide-border-subtle">
@@ -453,7 +532,7 @@ export default function FuerUnternehmenPage() {
 
       <section className="bg-surface-elevated">
         <Container narrow className="py-16 text-center md:py-24">
-          <h2 className="font-display section-headline font-medium leading-snug text-navy-900 desktop:relative! desktop:left-1/2! desktop:w-[1000px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2!">
+          <h2 className="font-display text-[1.35rem] font-medium leading-snug text-navy-900 md:text-[1.575rem] xl:text-[1.8rem] desktop:relative! desktop:left-1/2! desktop:w-[1000px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[2.1375rem]!">
             Lassen Sie uns über Ihre aktuelle Position sprechen.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-text-secondary desktop:relative! desktop:left-1/2! desktop:w-[820px]! desktop:max-w-[calc(100vw-80px)]! desktop:-translate-x-1/2! desktop:text-[18px]! desktop:leading-[1.6]!">

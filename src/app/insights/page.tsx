@@ -28,7 +28,7 @@ export default async function InsightsPage() {
         <Container wide className="relative py-16 md:py-24">
           <div className="max-w-2xl">
             <Eyebrow className="desktop:text-[13.5px]!">Insights</Eyebrow>
-            <h1 className="mt-4 font-display text-[2.5rem] font-medium leading-[1.05] text-navy-900 md:text-[2.75rem] desktop:text-[3rem]!">
+            <h1 className="mt-4 font-display section-headline font-medium leading-[1.05] text-navy-900">
               Perspektiven aus Recruiting, Search und Talent Advisory
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-text-secondary desktop:text-[18px]! desktop:leading-[1.6]!">

@@ -7,8 +7,8 @@ import { images } from "@/lib/images";
 export function FounderTeaser() {
   return (
     <section className="bg-surface-page">
-      <Container wide className="grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-        <div className="photo-shadow photo-frame-a lg:w-[53%] lg:justify-self-end">
+      <Container wide className="grid items-start gap-12 py-16 md:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <div className="photo-shadow photo-frame-a lg:mt-[35px] lg:w-[53%] lg:justify-self-end">
           <div className="relative aspect-[2/3] w-full overflow-hidden bg-surface-elevated">
             <Image
               src={images.home.aboutTeaser}
@@ -49,7 +49,7 @@ export function FounderTeaser() {
           </p>
 
           <div className="mt-8">
-            <Button href="/ueber-mich" variant="secondary">
+            <Button href="/ueber-mich" variant="primary">
               Mehr über mich
             </Button>
           </div>

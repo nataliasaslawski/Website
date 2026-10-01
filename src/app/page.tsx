@@ -1,3 +1,4 @@
+import { Container } from "@/components/ui/Container";
 import { Hero } from "@/components/home/Hero";
 import { IntroStatement } from "@/components/home/IntroStatement";
 import { ProblemSolution } from "@/components/home/ProblemSolution";
@@ -16,6 +17,11 @@ export default function Home() {
       <ServicesOverview />
       <Method />
       <FounderTeaser />
+      <div className="bg-surface-page">
+        <Container wide>
+          <div className="border-t-2 border-border-default shadow-[0_1px_3px_rgba(10,30,50,0.08)]" />
+        </Container>
+      </div>
       <HomeFaq />
       <FinalCta />
     </>
